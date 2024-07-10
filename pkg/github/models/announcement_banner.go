@@ -1,0 +1,140 @@
+package models
+
+import (
+    i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e "time"
+    i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91 "github.com/microsoft/kiota-abstractions-go/serialization"
+)
+
+// AnnouncementBanner announcement at either the repository, organization, or enterprise level
+type AnnouncementBanner struct {
+    // Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.
+    additionalData map[string]any
+    // The announcement text in GitHub Flavored Markdown. For more information about GitHub Flavored Markdown, see "[Basic writing and formatting syntax](https://docs.github.com/enterprise-cloud@latest//github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)."
+    announcement *string
+    // The time at which the announcement expires. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. To set an announcement that never expires, omit this parameter, set it to `null`, or set it to an empty string.
+    expires_at *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time
+    // Whether an announcement can be dismissed by the user.
+    user_dismissible *bool
+}
+// NewAnnouncementBanner instantiates a new AnnouncementBanner and sets the default values.
+func NewAnnouncementBanner()(*AnnouncementBanner) {
+    m := &AnnouncementBanner{
+    }
+    m.SetAdditionalData(make(map[string]any))
+    return m
+}
+// CreateAnnouncementBannerFromDiscriminatorValue creates a new instance of the appropriate class based on discriminator value
+// returns a Parsable when successful
+func CreateAnnouncementBannerFromDiscriminatorValue(parseNode i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode)(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.Parsable, error) {
+    return NewAnnouncementBanner(), nil
+}
+// GetAdditionalData gets the AdditionalData property value. Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.
+// returns a map[string]any when successful
+func (m *AnnouncementBanner) GetAdditionalData()(map[string]any) {
+    return m.additionalData
+}
+// GetAnnouncement gets the announcement property value. The announcement text in GitHub Flavored Markdown. For more information about GitHub Flavored Markdown, see "[Basic writing and formatting syntax](https://docs.github.com/enterprise-cloud@latest//github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)."
+// returns a *string when successful
+func (m *AnnouncementBanner) GetAnnouncement()(*string) {
+    return m.announcement
+}
+// GetExpiresAt gets the expires_at property value. The time at which the announcement expires. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. To set an announcement that never expires, omit this parameter, set it to `null`, or set it to an empty string.
+// returns a *Time when successful
+func (m *AnnouncementBanner) GetExpiresAt()(*i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time) {
+    return m.expires_at
+}
+// GetFieldDeserializers the deserialization information for the current model
+// returns a map[string]func(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode)(error) when successful
+func (m *AnnouncementBanner) GetFieldDeserializers()(map[string]func(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode)(error)) {
+    res := make(map[string]func(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode)(error))
+    res["announcement"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetStringValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetAnnouncement(val)
+        }
+        return nil
+    }
+    res["expires_at"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetTimeValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetExpiresAt(val)
+        }
+        return nil
+    }
+    res["user_dismissible"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetBoolValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetUserDismissible(val)
+        }
+        return nil
+    }
+    return res
+}
+// GetUserDismissible gets the user_dismissible property value. Whether an announcement can be dismissed by the user.
+// returns a *bool when successful
+func (m *AnnouncementBanner) GetUserDismissible()(*bool) {
+    return m.user_dismissible
+}
+// Serialize serializes information the current object
+func (m *AnnouncementBanner) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
+    {
+        err := writer.WriteStringValue("announcement", m.GetAnnouncement())
+        if err != nil {
+            return err
+        }
+    }
+    {
+        err := writer.WriteTimeValue("expires_at", m.GetExpiresAt())
+        if err != nil {
+            return err
+        }
+    }
+    {
+        err := writer.WriteBoolValue("user_dismissible", m.GetUserDismissible())
+        if err != nil {
+            return err
+        }
+    }
+    {
+        err := writer.WriteAdditionalData(m.GetAdditionalData())
+        if err != nil {
+            return err
+        }
+    }
+    return nil
+}
+// SetAdditionalData sets the AdditionalData property value. Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.
+func (m *AnnouncementBanner) SetAdditionalData(value map[string]any)() {
+    m.additionalData = value
+}
+// SetAnnouncement sets the announcement property value. The announcement text in GitHub Flavored Markdown. For more information about GitHub Flavored Markdown, see "[Basic writing and formatting syntax](https://docs.github.com/enterprise-cloud@latest//github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)."
+func (m *AnnouncementBanner) SetAnnouncement(value *string)() {
+    m.announcement = value
+}
+// SetExpiresAt sets the expires_at property value. The time at which the announcement expires. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. To set an announcement that never expires, omit this parameter, set it to `null`, or set it to an empty string.
+func (m *AnnouncementBanner) SetExpiresAt(value *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)() {
+    m.expires_at = value
+}
+// SetUserDismissible sets the user_dismissible property value. Whether an announcement can be dismissed by the user.
+func (m *AnnouncementBanner) SetUserDismissible(value *bool)() {
+    m.user_dismissible = value
+}
+type AnnouncementBannerable interface {
+    i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.AdditionalDataHolder
+    i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.Parsable
+    GetAnnouncement()(*string)
+    GetExpiresAt()(*i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)
+    GetUserDismissible()(*bool)
+    SetAnnouncement(value *string)()
+    SetExpiresAt(value *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)()
+    SetUserDismissible(value *bool)()
+}
