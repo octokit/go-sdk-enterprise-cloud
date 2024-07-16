@@ -10,7 +10,7 @@ import (
 type ItemSettingsBillingUsageRequestBuilder struct {
     i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.BaseRequestBuilder
 }
-// ItemSettingsBillingUsageRequestBuilderGetQueryParameters gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.
+// ItemSettingsBillingUsageRequestBuilderGetQueryParameters gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see "[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform)."
 type ItemSettingsBillingUsageRequestBuilderGetQueryParameters struct {
     // The ID corresponding to a cost center.
     Cost_center_id *string `uriparametername:"cost_center_id"`
@@ -36,7 +36,7 @@ func NewItemSettingsBillingUsageRequestBuilder(rawUrl string, requestAdapter i2a
     urlParams["request-raw-url"] = rawUrl
     return NewItemSettingsBillingUsageRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Get gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.
+// Get gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see "[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform)."
 // returns a BillingUsageReportable when successful
 // returns a BasicError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 403 status code
@@ -65,7 +65,7 @@ func (m *ItemSettingsBillingUsageRequestBuilder) Get(ctx context.Context, reques
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.BillingUsageReportable), nil
 }
-// ToGetRequestInformation gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.
+// ToGetRequestInformation gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see "[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform)."
 // returns a *RequestInformation when successful
 func (m *ItemSettingsBillingUsageRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[ItemSettingsBillingUsageRequestBuilderGetQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
