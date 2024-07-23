@@ -10,7 +10,7 @@ import (
 type V2EnterprisesItemGroupsRequestBuilder struct {
     i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.BaseRequestBuilder
 }
-// V2EnterprisesItemGroupsRequestBuilderGetQueryParameters **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
+// V2EnterprisesItemGroupsRequestBuilderGetQueryParameters > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
 type V2EnterprisesItemGroupsRequestBuilderGetQueryParameters struct {
     // Used for pagination: the number of results to return per page.
     Count *int32 `uriparametername:"count"`
@@ -46,7 +46,7 @@ func NewV2EnterprisesItemGroupsRequestBuilder(rawUrl string, requestAdapter i2ae
     urlParams["request-raw-url"] = rawUrl
     return NewV2EnterprisesItemGroupsRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Get **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
+// Get > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
 // returns a ScimEnterpriseGroupListable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a ScimError error when the service returns a 429 status code
@@ -73,7 +73,7 @@ func (m *V2EnterprisesItemGroupsRequestBuilder) Get(ctx context.Context, request
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseGroupListable), nil
 }
-// Post **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they're designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
+// Post > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they're designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
 // returns a ScimEnterpriseGroupResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a ScimError error when the service returns a 429 status code
@@ -100,7 +100,7 @@ func (m *V2EnterprisesItemGroupsRequestBuilder) Post(ctx context.Context, body i
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseGroupResponseable), nil
 }
-// ToGetRequestInformation **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
+// ToGetRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemGroupsRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[V2EnterprisesItemGroupsRequestBuilderGetQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -108,7 +108,7 @@ func (m *V2EnterprisesItemGroupsRequestBuilder) ToGetRequestInformation(ctx cont
     requestInfo.Headers.TryAdd("Accept", "application/scim+json")
     return requestInfo, nil
 }
-// ToPostRequestInformation **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they're designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
+// ToPostRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they're designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemGroupsRequestBuilder) ToPostRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.Groupable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.POST, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)

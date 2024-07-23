@@ -18,7 +18,7 @@ type ItemCodeSecurityConfigurationsRequestBuilderGetQueryParameters struct {
     After *string `uriparametername:"after"`
     // A cursor, as given in the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers). If specified, the query only searches for results before this cursor. For more information, see "[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api)."
     Before *string `uriparametername:"before"`
-    // 'The number of results per page (max 100). For more information, see "[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api)."'
+    // The number of results per page (max 100). For more information, see "[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api)."
     Per_page *int32 `uriparametername:"per_page"`
     // The target type of the code security configuration
     Target_type *i18d6a4f15acb84822797a160ce43772fd953a37d6cd2bf772f0ee85c7bd7a917.GetTarget_typeQueryParameterType `uriparametername:"target_type"`
