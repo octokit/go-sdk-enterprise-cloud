@@ -23,7 +23,7 @@ func NewV2OrganizationsItemUsersWithScim_user_ItemRequestBuilder(rawUrl string, 
     urlParams["request-raw-url"] = rawUrl
     return NewV2OrganizationsItemUsersWithScim_user_ItemRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Delete delete a SCIM user from an organization
+// Delete deletes a SCIM user from an organization.
 // returns a ScimError error when the service returns a 403 status code
 // returns a ScimError error when the service returns a 404 status code
 // [API method documentation]
@@ -44,7 +44,7 @@ func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) Delete(ctx co
     }
     return nil
 }
-// Get get SCIM provisioning information for a user
+// Get gets SCIM provisioning information for a user.
 // returns a ScimUserable when successful
 // returns a ScimError error when the service returns a 403 status code
 // returns a ScimError error when the service returns a 404 status code
@@ -69,7 +69,7 @@ func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) Get(ctx conte
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimUserable), nil
 }
-// Patch allows you to change a provisioned user's individual attributes. To change a user's values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).**Note:** Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will not work.**Warning:** If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.```{  "Operations":[{    "op":"replace",    "value":{      "active":false    }  }]}```
+// Patch allows you to change a provisioned user's individual attributes. To change a user's values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).> [!NOTE]> Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will not work.> [!WARNING]> If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.> ```> {>   "Operations":[{>     "op":"replace",>     "value":{>       "active":false>     }>   }]> }> ```
 // returns a ScimUserable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a ScimError error when the service returns a 403 status code
@@ -98,7 +98,7 @@ func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) Patch(ctx con
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimUserable), nil
 }
-// Put replaces an existing provisioned user's information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don't provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.**Warning:** Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
+// Put replaces an existing provisioned user's information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don't provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.> [!WARNING]> Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
 // returns a ScimUserable when successful
 // returns a ScimError error when the service returns a 403 status code
 // returns a ScimError error when the service returns a 404 status code
@@ -123,6 +123,7 @@ func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) Put(ctx conte
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimUserable), nil
 }
+// ToDeleteRequestInformation deletes a SCIM user from an organization.
 // returns a *RequestInformation when successful
 func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) ToDeleteRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DELETE, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -130,6 +131,7 @@ func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) ToDeleteReque
     requestInfo.Headers.TryAdd("Accept", "application/json, application/scim+json")
     return requestInfo, nil
 }
+// ToGetRequestInformation gets SCIM provisioning information for a user.
 // returns a *RequestInformation when successful
 func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -137,7 +139,7 @@ func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) ToGetRequestI
     requestInfo.Headers.TryAdd("Accept", "application/scim+json")
     return requestInfo, nil
 }
-// ToPatchRequestInformation allows you to change a provisioned user's individual attributes. To change a user's values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).**Note:** Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will not work.**Warning:** If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.```{  "Operations":[{    "op":"replace",    "value":{      "active":false    }  }]}```
+// ToPatchRequestInformation allows you to change a provisioned user's individual attributes. To change a user's values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).> [!NOTE]> Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will not work.> [!WARNING]> If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.> ```> {>   "Operations":[{>     "op":"replace",>     "value":{>       "active":false>     }>   }]> }> ```
 // returns a *RequestInformation when successful
 func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) ToPatchRequestInformation(ctx context.Context, body V2OrganizationsItemUsersItemWithScim_user_PatchRequestBodyable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PATCH, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -149,7 +151,7 @@ func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) ToPatchReques
     }
     return requestInfo, nil
 }
-// ToPutRequestInformation replaces an existing provisioned user's information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don't provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.**Warning:** Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
+// ToPutRequestInformation replaces an existing provisioned user's information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don't provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.> [!WARNING]> Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
 // returns a *RequestInformation when successful
 func (m *V2OrganizationsItemUsersWithScim_user_ItemRequestBuilder) ToPutRequestInformation(ctx context.Context, body V2OrganizationsItemUsersItemWithScim_user_PutRequestBodyable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PUT, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
