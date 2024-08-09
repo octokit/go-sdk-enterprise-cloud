@@ -88,3 +88,8 @@ func (m *WithEnterpriseItemRequestBuilder) SecretScanning()(*ItemSecretScanningR
 func (m *WithEnterpriseItemRequestBuilder) Settings()(*ItemSettingsRequestBuilder) {
     return NewItemSettingsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// Team the team property
+// returns a *ItemTeamRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) Team()(*ItemTeamRequestBuilder) {
+    return NewItemTeamRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
