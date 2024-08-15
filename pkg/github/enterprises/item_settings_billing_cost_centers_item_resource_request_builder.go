@@ -56,6 +56,7 @@ func (m *ItemSettingsBillingCostCentersItemResourceRequestBuilder) Delete(ctx co
 // returns a ItemSettingsBillingCostCentersItemResourcePostResponseable when successful
 // returns a BasicError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 403 status code
+// returns a BasicError error when the service returns a 409 status code
 // returns a BasicError error when the service returns a 500 status code
 // returns a Resource503Error error when the service returns a 503 status code
 // [API method documentation]
@@ -69,6 +70,7 @@ func (m *ItemSettingsBillingCostCentersItemResourceRequestBuilder) Post(ctx cont
     errorMapping := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.ErrorMappings {
         "400": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
         "403": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
+        "409": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
         "500": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
         "503": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateResource503ErrorFromDiscriminatorValue,
     }
