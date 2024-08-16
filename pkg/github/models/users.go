@@ -7,16 +7,12 @@ import (
 type Users struct {
     // Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.
     additionalData map[string]any
-    // The fragment property
-    fragment *string
-    // The matches property
-    matches []Users_matchesable
-    // The object_type property
-    object_type *string
-    // The object_url property
-    object_url *string
-    // The property property
-    property *string
+    // Whether this email address is the primary address.
+    primary *bool
+    // The type of email address.
+    typeEscaped *string
+    // The email address.
+    value *string
 }
 // NewUsers instantiates a new Users and sets the default values.
 func NewUsers()(*Users) {
@@ -39,123 +35,69 @@ func (m *Users) GetAdditionalData()(map[string]any) {
 // returns a map[string]func(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode)(error) when successful
 func (m *Users) GetFieldDeserializers()(map[string]func(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode)(error)) {
     res := make(map[string]func(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode)(error))
-    res["fragment"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+    res["primary"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetBoolValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetPrimary(val)
+        }
+        return nil
+    }
+    res["type"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
         val, err := n.GetStringValue()
         if err != nil {
             return err
         }
         if val != nil {
-            m.SetFragment(val)
+            m.SetTypeEscaped(val)
         }
         return nil
     }
-    res["matches"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
-        val, err := n.GetCollectionOfObjectValues(CreateUsers_matchesFromDiscriminatorValue)
-        if err != nil {
-            return err
-        }
-        if val != nil {
-            res := make([]Users_matchesable, len(val))
-            for i, v := range val {
-                if v != nil {
-                    res[i] = v.(Users_matchesable)
-                }
-            }
-            m.SetMatches(res)
-        }
-        return nil
-    }
-    res["object_type"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+    res["value"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
         val, err := n.GetStringValue()
         if err != nil {
             return err
         }
         if val != nil {
-            m.SetObjectType(val)
-        }
-        return nil
-    }
-    res["object_url"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
-        val, err := n.GetStringValue()
-        if err != nil {
-            return err
-        }
-        if val != nil {
-            m.SetObjectUrl(val)
-        }
-        return nil
-    }
-    res["property"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
-        val, err := n.GetStringValue()
-        if err != nil {
-            return err
-        }
-        if val != nil {
-            m.SetProperty(val)
+            m.SetValue(val)
         }
         return nil
     }
     return res
 }
-// GetFragment gets the fragment property value. The fragment property
-// returns a *string when successful
-func (m *Users) GetFragment()(*string) {
-    return m.fragment
+// GetPrimary gets the primary property value. Whether this email address is the primary address.
+// returns a *bool when successful
+func (m *Users) GetPrimary()(*bool) {
+    return m.primary
 }
-// GetMatches gets the matches property value. The matches property
-// returns a []Users_matchesable when successful
-func (m *Users) GetMatches()([]Users_matchesable) {
-    return m.matches
-}
-// GetObjectType gets the object_type property value. The object_type property
+// GetTypeEscaped gets the type property value. The type of email address.
 // returns a *string when successful
-func (m *Users) GetObjectType()(*string) {
-    return m.object_type
+func (m *Users) GetTypeEscaped()(*string) {
+    return m.typeEscaped
 }
-// GetObjectUrl gets the object_url property value. The object_url property
+// GetValue gets the value property value. The email address.
 // returns a *string when successful
-func (m *Users) GetObjectUrl()(*string) {
-    return m.object_url
-}
-// GetProperty gets the property property value. The property property
-// returns a *string when successful
-func (m *Users) GetProperty()(*string) {
-    return m.property
+func (m *Users) GetValue()(*string) {
+    return m.value
 }
 // Serialize serializes information the current object
 func (m *Users) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        err := writer.WriteStringValue("fragment", m.GetFragment())
-        if err != nil {
-            return err
-        }
-    }
-    if m.GetMatches() != nil {
-        cast := make([]i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.Parsable, len(m.GetMatches()))
-        for i, v := range m.GetMatches() {
-            if v != nil {
-                cast[i] = v.(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.Parsable)
-            }
-        }
-        err := writer.WriteCollectionOfObjectValues("matches", cast)
+        err := writer.WriteBoolValue("primary", m.GetPrimary())
         if err != nil {
             return err
         }
     }
     {
-        err := writer.WriteStringValue("object_type", m.GetObjectType())
+        err := writer.WriteStringValue("type", m.GetTypeEscaped())
         if err != nil {
             return err
         }
     }
     {
-        err := writer.WriteStringValue("object_url", m.GetObjectUrl())
-        if err != nil {
-            return err
-        }
-    }
-    {
-        err := writer.WriteStringValue("property", m.GetProperty())
+        err := writer.WriteStringValue("value", m.GetValue())
         if err != nil {
             return err
         }
@@ -172,37 +114,25 @@ func (m *Users) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c4
 func (m *Users) SetAdditionalData(value map[string]any)() {
     m.additionalData = value
 }
-// SetFragment sets the fragment property value. The fragment property
-func (m *Users) SetFragment(value *string)() {
-    m.fragment = value
+// SetPrimary sets the primary property value. Whether this email address is the primary address.
+func (m *Users) SetPrimary(value *bool)() {
+    m.primary = value
 }
-// SetMatches sets the matches property value. The matches property
-func (m *Users) SetMatches(value []Users_matchesable)() {
-    m.matches = value
+// SetTypeEscaped sets the type property value. The type of email address.
+func (m *Users) SetTypeEscaped(value *string)() {
+    m.typeEscaped = value
 }
-// SetObjectType sets the object_type property value. The object_type property
-func (m *Users) SetObjectType(value *string)() {
-    m.object_type = value
-}
-// SetObjectUrl sets the object_url property value. The object_url property
-func (m *Users) SetObjectUrl(value *string)() {
-    m.object_url = value
-}
-// SetProperty sets the property property value. The property property
-func (m *Users) SetProperty(value *string)() {
-    m.property = value
+// SetValue sets the value property value. The email address.
+func (m *Users) SetValue(value *string)() {
+    m.value = value
 }
 type Usersable interface {
     i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.AdditionalDataHolder
     i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.Parsable
-    GetFragment()(*string)
-    GetMatches()([]Users_matchesable)
-    GetObjectType()(*string)
-    GetObjectUrl()(*string)
-    GetProperty()(*string)
-    SetFragment(value *string)()
-    SetMatches(value []Users_matchesable)()
-    SetObjectType(value *string)()
-    SetObjectUrl(value *string)()
-    SetProperty(value *string)()
+    GetPrimary()(*bool)
+    GetTypeEscaped()(*string)
+    GetValue()(*string)
+    SetPrimary(value *bool)()
+    SetTypeEscaped(value *string)()
+    SetValue(value *string)()
 }
