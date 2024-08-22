@@ -40,7 +40,6 @@ func NewItemItemGitBlobsRequestBuilder(rawUrl string, requestAdapter i2ae4187f7d
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
 // returns a BasicError error when the service returns a 409 status code
-// returns a ValidationError error when the service returns a 422 status code
 // [API method documentation]
 // 
 // [API method documentation]: https://docs.github.com/enterprise-cloud@latest//rest/git/blobs#create-a-blob
@@ -53,7 +52,6 @@ func (m *ItemItemGitBlobsRequestBuilder) Post(ctx context.Context, body ItemItem
         "403": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
         "404": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
         "409": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
-        "422": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateValidationErrorFromDiscriminatorValue,
     }
     res, err := m.BaseRequestBuilder.RequestAdapter.Send(ctx, requestInfo, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateShortBlobFromDiscriminatorValue, errorMapping)
     if err != nil {
