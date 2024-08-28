@@ -1,7 +1,4 @@
 package item
-import (
-    "errors"
-)
 // Visibility of a runner group. You can select all repositories, select individual repositories, or all private repositories.
 type WithRunner_group_PatchRequestBody_visibility int
 
@@ -24,7 +21,7 @@ func ParseWithRunner_group_PatchRequestBody_visibility(v string) (any, error) {
         case "private":
             result = PRIVATE_WITHRUNNER_GROUP_PATCHREQUESTBODY_VISIBILITY
         default:
-            return 0, errors.New("Unknown WithRunner_group_PatchRequestBody_visibility value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

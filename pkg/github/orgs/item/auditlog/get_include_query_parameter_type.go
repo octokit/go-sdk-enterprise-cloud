@@ -1,7 +1,4 @@
 package auditlog
-import (
-    "errors"
-)
 type GetIncludeQueryParameterType int
 
 const (
@@ -23,7 +20,7 @@ func ParseGetIncludeQueryParameterType(v string) (any, error) {
         case "all":
             result = ALL_GETINCLUDEQUERYPARAMETERTYPE
         default:
-            return 0, errors.New("Unknown GetIncludeQueryParameterType value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

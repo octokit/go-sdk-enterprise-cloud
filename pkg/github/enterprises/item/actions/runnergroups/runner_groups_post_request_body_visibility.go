@@ -1,7 +1,4 @@
 package runnergroups
-import (
-    "errors"
-)
 // Visibility of a runner group. You can select all organizations or select individual organization.
 type RunnerGroupsPostRequestBody_visibility int
 
@@ -21,7 +18,7 @@ func ParseRunnerGroupsPostRequestBody_visibility(v string) (any, error) {
         case "all":
             result = ALL_RUNNERGROUPSPOSTREQUESTBODY_VISIBILITY
         default:
-            return 0, errors.New("Unknown RunnerGroupsPostRequestBody_visibility value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

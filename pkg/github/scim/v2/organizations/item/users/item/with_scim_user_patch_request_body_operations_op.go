@@ -1,7 +1,4 @@
 package item
-import (
-    "errors"
-)
 type WithScim_user_PatchRequestBody_Operations_op int
 
 const (
@@ -23,7 +20,7 @@ func ParseWithScim_user_PatchRequestBody_Operations_op(v string) (any, error) {
         case "replace":
             result = REPLACE_WITHSCIM_USER_PATCHREQUESTBODY_OPERATIONS_OP
         default:
-            return 0, errors.New("Unknown WithScim_user_PatchRequestBody_Operations_op value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

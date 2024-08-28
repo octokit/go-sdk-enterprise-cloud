@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 type ScimEnterpriseUserList_schemas int
 
 const (
@@ -17,7 +14,7 @@ func ParseScimEnterpriseUserList_schemas(v string) (any, error) {
         case "urn:ietf:params:scim:api:messages:2.0:ListResponse":
             result = URNIETFPARAMSSCIMAPIMESSAGES20LISTRESPONSE_SCIMENTERPRISEUSERLIST_SCHEMAS
         default:
-            return 0, errors.New("Unknown ScimEnterpriseUserList_schemas value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

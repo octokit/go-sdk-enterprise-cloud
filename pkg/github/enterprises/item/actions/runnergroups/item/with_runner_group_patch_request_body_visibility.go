@@ -1,7 +1,4 @@
 package item
-import (
-    "errors"
-)
 // Visibility of a runner group. You can select all organizations or select individual organizations.
 type WithRunner_group_PatchRequestBody_visibility int
 
@@ -21,7 +18,7 @@ func ParseWithRunner_group_PatchRequestBody_visibility(v string) (any, error) {
         case "all":
             result = ALL_WITHRUNNER_GROUP_PATCHREQUESTBODY_VISIBILITY
         default:
-            return 0, errors.New("Unknown WithRunner_group_PatchRequestBody_visibility value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

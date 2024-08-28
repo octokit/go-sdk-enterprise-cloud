@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 // The system role from which this role inherits permissions.
 type OrganizationCustomRepositoryRole_base_role int
 
@@ -27,7 +24,7 @@ func ParseOrganizationCustomRepositoryRole_base_role(v string) (any, error) {
         case "maintain":
             result = MAINTAIN_ORGANIZATIONCUSTOMREPOSITORYROLE_BASE_ROLE
         default:
-            return 0, errors.New("Unknown OrganizationCustomRepositoryRole_base_role value: " + v)
+            return nil, nil
     }
     return &result, nil
 }
