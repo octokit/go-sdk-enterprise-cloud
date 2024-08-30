@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 // The policy that controls the organizations in the enterprise that are allowed to run GitHub Actions.
 type EnabledOrganizations int
 
@@ -24,7 +21,7 @@ func ParseEnabledOrganizations(v string) (any, error) {
         case "selected":
             result = SELECTED_ENABLEDORGANIZATIONS
         default:
-            return 0, errors.New("Unknown EnabledOrganizations value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

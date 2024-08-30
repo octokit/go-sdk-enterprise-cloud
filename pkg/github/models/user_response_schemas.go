@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 type UserResponse_schemas int
 
 const (
@@ -17,7 +14,7 @@ func ParseUserResponse_schemas(v string) (any, error) {
         case "urn:ietf:params:scim:schemas:core:2.0:User":
             result = URNIETFPARAMSSCIMSCHEMASCORE20USER_USERRESPONSE_SCHEMAS
         default:
-            return 0, errors.New("Unknown UserResponse_schemas value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

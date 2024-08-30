@@ -11,7 +11,7 @@ type CredentialAuthorization struct {
     additionalData map[string]any
     // The expiry for the token. This will only be present when the credential is a token.
     authorized_credential_expires_at *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time
-    // The authorized_credential_id property
+    // The ID of the underlying token that was authorized by the user. This will remain unchanged across authorizations of the token.
     authorized_credential_id *int32
     // The note given to the token. This will only be present when the credential is a token.
     authorized_credential_note *string
@@ -21,7 +21,7 @@ type CredentialAuthorization struct {
     credential_accessed_at *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time
     // Date when the credential was authorized for use.
     credential_authorized_at *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time
-    // Unique identifier for the credential.
+    // Unique identifier for the authorization of the credential. Use this to revoke authorization of the underlying token or key.
     credential_id *int32
     // Human-readable description of the credential type.
     credential_type *string
@@ -56,7 +56,7 @@ func (m *CredentialAuthorization) GetAdditionalData()(map[string]any) {
 func (m *CredentialAuthorization) GetAuthorizedCredentialExpiresAt()(*i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time) {
     return m.authorized_credential_expires_at
 }
-// GetAuthorizedCredentialId gets the authorized_credential_id property value. The authorized_credential_id property
+// GetAuthorizedCredentialId gets the authorized_credential_id property value. The ID of the underlying token that was authorized by the user. This will remain unchanged across authorizations of the token.
 // returns a *int32 when successful
 func (m *CredentialAuthorization) GetAuthorizedCredentialId()(*int32) {
     return m.authorized_credential_id
@@ -81,7 +81,7 @@ func (m *CredentialAuthorization) GetCredentialAccessedAt()(*i336074805fc853987a
 func (m *CredentialAuthorization) GetCredentialAuthorizedAt()(*i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time) {
     return m.credential_authorized_at
 }
-// GetCredentialId gets the credential_id property value. Unique identifier for the credential.
+// GetCredentialId gets the credential_id property value. Unique identifier for the authorization of the credential. Use this to revoke authorization of the underlying token or key.
 // returns a *int32 when successful
 func (m *CredentialAuthorization) GetCredentialId()(*int32) {
     return m.credential_id
@@ -333,7 +333,7 @@ func (m *CredentialAuthorization) SetAdditionalData(value map[string]any)() {
 func (m *CredentialAuthorization) SetAuthorizedCredentialExpiresAt(value *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)() {
     m.authorized_credential_expires_at = value
 }
-// SetAuthorizedCredentialId sets the authorized_credential_id property value. The authorized_credential_id property
+// SetAuthorizedCredentialId sets the authorized_credential_id property value. The ID of the underlying token that was authorized by the user. This will remain unchanged across authorizations of the token.
 func (m *CredentialAuthorization) SetAuthorizedCredentialId(value *int32)() {
     m.authorized_credential_id = value
 }
@@ -353,7 +353,7 @@ func (m *CredentialAuthorization) SetCredentialAccessedAt(value *i336074805fc853
 func (m *CredentialAuthorization) SetCredentialAuthorizedAt(value *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)() {
     m.credential_authorized_at = value
 }
-// SetCredentialId sets the credential_id property value. Unique identifier for the credential.
+// SetCredentialId sets the credential_id property value. Unique identifier for the authorization of the credential. Use this to revoke authorization of the underlying token or key.
 func (m *CredentialAuthorization) SetCredentialId(value *int32)() {
     m.credential_id = value
 }

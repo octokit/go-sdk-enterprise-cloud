@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 // The name of the package ecosystem
 type ServerStatisticsPackages_ecosystems_name int
 
@@ -33,7 +30,7 @@ func ParseServerStatisticsPackages_ecosystems_name(v string) (any, error) {
         case "containers":
             result = CONTAINERS_SERVERSTATISTICSPACKAGES_ECOSYSTEMS_NAME
         default:
-            return 0, errors.New("Unknown ServerStatisticsPackages_ecosystems_name value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

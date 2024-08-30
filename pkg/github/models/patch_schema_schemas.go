@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 type PatchSchema_schemas int
 
 const (
@@ -17,7 +14,7 @@ func ParsePatchSchema_schemas(v string) (any, error) {
         case "urn:ietf:params:scim:api:messages:2.0:PatchOp":
             result = URNIETFPARAMSSCIMAPIMESSAGES20PATCHOP_PATCHSCHEMA_SCHEMAS
         default:
-            return 0, errors.New("Unknown PatchSchema_schemas value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

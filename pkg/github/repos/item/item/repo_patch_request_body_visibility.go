@@ -1,7 +1,4 @@
 package item
-import (
-    "errors"
-)
 // The visibility of the repository.
 type RepoPatchRequestBody_visibility int
 
@@ -24,7 +21,7 @@ func ParseRepoPatchRequestBody_visibility(v string) (any, error) {
         case "internal":
             result = INTERNAL_REPOPATCHREQUESTBODY_VISIBILITY
         default:
-            return 0, errors.New("Unknown RepoPatchRequestBody_visibility value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 type Group_schemas int
 
 const (
@@ -17,7 +14,7 @@ func ParseGroup_schemas(v string) (any, error) {
         case "urn:ietf:params:scim:schemas:core:2.0:Group":
             result = URNIETFPARAMSSCIMSCHEMASCORE20GROUP_GROUP_SCHEMAS
         default:
-            return 0, errors.New("Unknown Group_schemas value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

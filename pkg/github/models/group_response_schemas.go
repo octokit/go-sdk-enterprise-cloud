@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 type GroupResponse_schemas int
 
 const (
@@ -20,7 +17,7 @@ func ParseGroupResponse_schemas(v string) (any, error) {
         case "urn:ietf:params:scim:api:messages:2.0:ListResponse":
             result = URNIETFPARAMSSCIMAPIMESSAGES20LISTRESPONSE_GROUPRESPONSE_SCHEMAS
         default:
-            return 0, errors.New("Unknown GroupResponse_schemas value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

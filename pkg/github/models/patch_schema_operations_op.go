@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 type PatchSchema_Operations_op int
 
 const (
@@ -23,7 +20,7 @@ func ParsePatchSchema_Operations_op(v string) (any, error) {
         case "remove":
             result = REMOVE_PATCHSCHEMA_OPERATIONS_OP
         default:
-            return 0, errors.New("Unknown PatchSchema_Operations_op value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

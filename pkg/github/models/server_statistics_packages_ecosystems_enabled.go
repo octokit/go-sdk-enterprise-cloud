@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 // Shows if a package system is enabled, disabled, or read-only in a GHES installation
 type ServerStatisticsPackages_ecosystems_enabled int
 
@@ -24,7 +21,7 @@ func ParseServerStatisticsPackages_ecosystems_enabled(v string) (any, error) {
         case "READONLY":
             result = READONLY_SERVERSTATISTICSPACKAGES_ECOSYSTEMS_ENABLED
         default:
-            return 0, errors.New("Unknown ServerStatisticsPackages_ecosystems_enabled value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

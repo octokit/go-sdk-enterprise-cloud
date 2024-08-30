@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 // A type of a resource
 type Meta_resourceType int
 
@@ -21,7 +18,7 @@ func ParseMeta_resourceType(v string) (any, error) {
         case "Group":
             result = GROUP_META_RESOURCETYPE
         default:
-            return 0, errors.New("Unknown Meta_resourceType value: " + v)
+            return nil, nil
     }
     return &result, nil
 }

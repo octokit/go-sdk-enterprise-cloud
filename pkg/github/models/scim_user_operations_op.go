@@ -1,7 +1,4 @@
 package models
-import (
-    "errors"
-)
 type ScimUser_operations_op int
 
 const (
@@ -23,7 +20,7 @@ func ParseScimUser_operations_op(v string) (any, error) {
         case "replace":
             result = REPLACE_SCIMUSER_OPERATIONS_OP
         default:
-            return 0, errors.New("Unknown ScimUser_operations_op value: " + v)
+            return nil, nil
     }
     return &result, nil
 }
