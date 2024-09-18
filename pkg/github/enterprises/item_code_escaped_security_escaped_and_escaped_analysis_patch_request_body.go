@@ -15,6 +15,8 @@ type ItemCode_security_and_analysisPatchRequestBody struct {
     dependabot_alerts_enabled_for_new_repositories *bool
     // Whether secret scanning is automatically enabled for new repositories. For more information, see "[About secret scanning](https://docs.github.com/enterprise-cloud@latest//code-security/secret-scanning/about-secret-scanning)."
     secret_scanning_enabled_for_new_repositories *bool
+    // Whether secret scanning of non-provider patterns is enabled for new repositories under this enterprise.
+    secret_scanning_non_provider_patterns_enabled_for_new_repositories *bool
     // The URL that will be displayed to contributors who are blocked from pushing a secret. For more information, see "[Protecting pushes with secret scanning](https://docs.github.com/enterprise-cloud@latest//code-security/secret-scanning/protecting-pushes-with-secret-scanning)."To disable this functionality, set this field to `null`.
     secret_scanning_push_protection_custom_link *string
     // Whether secret scanning push protection is automatically enabled for new repositories. For more information, see "[Protecting pushes with secret scanning](https://docs.github.com/enterprise-cloud@latest//code-security/secret-scanning/protecting-pushes-with-secret-scanning)."
@@ -96,6 +98,16 @@ func (m *ItemCode_security_and_analysisPatchRequestBody) GetFieldDeserializers()
         }
         return nil
     }
+    res["secret_scanning_non_provider_patterns_enabled_for_new_repositories"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetBoolValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetSecretScanningNonProviderPatternsEnabledForNewRepositories(val)
+        }
+        return nil
+    }
     res["secret_scanning_push_protection_custom_link"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
         val, err := n.GetStringValue()
         if err != nil {
@@ -122,6 +134,11 @@ func (m *ItemCode_security_and_analysisPatchRequestBody) GetFieldDeserializers()
 // returns a *bool when successful
 func (m *ItemCode_security_and_analysisPatchRequestBody) GetSecretScanningEnabledForNewRepositories()(*bool) {
     return m.secret_scanning_enabled_for_new_repositories
+}
+// GetSecretScanningNonProviderPatternsEnabledForNewRepositories gets the secret_scanning_non_provider_patterns_enabled_for_new_repositories property value. Whether secret scanning of non-provider patterns is enabled for new repositories under this enterprise.
+// returns a *bool when successful
+func (m *ItemCode_security_and_analysisPatchRequestBody) GetSecretScanningNonProviderPatternsEnabledForNewRepositories()(*bool) {
+    return m.secret_scanning_non_provider_patterns_enabled_for_new_repositories
 }
 // GetSecretScanningPushProtectionCustomLink gets the secret_scanning_push_protection_custom_link property value. The URL that will be displayed to contributors who are blocked from pushing a secret. For more information, see "[Protecting pushes with secret scanning](https://docs.github.com/enterprise-cloud@latest//code-security/secret-scanning/protecting-pushes-with-secret-scanning)."To disable this functionality, set this field to `null`.
 // returns a *string when successful
@@ -155,6 +172,12 @@ func (m *ItemCode_security_and_analysisPatchRequestBody) Serialize(writer i878a8
     }
     {
         err := writer.WriteBoolValue("secret_scanning_enabled_for_new_repositories", m.GetSecretScanningEnabledForNewRepositories())
+        if err != nil {
+            return err
+        }
+    }
+    {
+        err := writer.WriteBoolValue("secret_scanning_non_provider_patterns_enabled_for_new_repositories", m.GetSecretScanningNonProviderPatternsEnabledForNewRepositories())
         if err != nil {
             return err
         }
@@ -199,6 +222,10 @@ func (m *ItemCode_security_and_analysisPatchRequestBody) SetDependabotAlertsEnab
 func (m *ItemCode_security_and_analysisPatchRequestBody) SetSecretScanningEnabledForNewRepositories(value *bool)() {
     m.secret_scanning_enabled_for_new_repositories = value
 }
+// SetSecretScanningNonProviderPatternsEnabledForNewRepositories sets the secret_scanning_non_provider_patterns_enabled_for_new_repositories property value. Whether secret scanning of non-provider patterns is enabled for new repositories under this enterprise.
+func (m *ItemCode_security_and_analysisPatchRequestBody) SetSecretScanningNonProviderPatternsEnabledForNewRepositories(value *bool)() {
+    m.secret_scanning_non_provider_patterns_enabled_for_new_repositories = value
+}
 // SetSecretScanningPushProtectionCustomLink sets the secret_scanning_push_protection_custom_link property value. The URL that will be displayed to contributors who are blocked from pushing a secret. For more information, see "[Protecting pushes with secret scanning](https://docs.github.com/enterprise-cloud@latest//code-security/secret-scanning/protecting-pushes-with-secret-scanning)."To disable this functionality, set this field to `null`.
 func (m *ItemCode_security_and_analysisPatchRequestBody) SetSecretScanningPushProtectionCustomLink(value *string)() {
     m.secret_scanning_push_protection_custom_link = value
@@ -214,12 +241,14 @@ type ItemCode_security_and_analysisPatchRequestBodyable interface {
     GetAdvancedSecurityEnabledNewUserNamespaceRepos()(*bool)
     GetDependabotAlertsEnabledForNewRepositories()(*bool)
     GetSecretScanningEnabledForNewRepositories()(*bool)
+    GetSecretScanningNonProviderPatternsEnabledForNewRepositories()(*bool)
     GetSecretScanningPushProtectionCustomLink()(*string)
     GetSecretScanningPushProtectionEnabledForNewRepositories()(*bool)
     SetAdvancedSecurityEnabledForNewRepositories(value *bool)()
     SetAdvancedSecurityEnabledNewUserNamespaceRepos(value *bool)()
     SetDependabotAlertsEnabledForNewRepositories(value *bool)()
     SetSecretScanningEnabledForNewRepositories(value *bool)()
+    SetSecretScanningNonProviderPatternsEnabledForNewRepositories(value *bool)()
     SetSecretScanningPushProtectionCustomLink(value *string)()
     SetSecretScanningPushProtectionEnabledForNewRepositories(value *bool)()
 }
