@@ -15,6 +15,8 @@ type EnterpriseSecurityAnalysisSettings struct {
     dependabot_alerts_enabled_for_new_repositories *bool
     // Whether secret scanning is automatically enabled for new repositories and repositories transferred to thisenterprise.
     secret_scanning_enabled_for_new_repositories *bool
+    // Whether secret scanning of non-provider patterns is enabled for new repositories under this enterprise.
+    secret_scanning_non_provider_patterns_enabled_for_new_repositories *bool
     // An optional URL string to display to contributors who are blocked from pushing a secret.
     secret_scanning_push_protection_custom_link *string
     // Whether secret scanning push protection is automatically enabled for new repositories and repositoriestransferred to this enterprise.
@@ -98,6 +100,16 @@ func (m *EnterpriseSecurityAnalysisSettings) GetFieldDeserializers()(map[string]
         }
         return nil
     }
+    res["secret_scanning_non_provider_patterns_enabled_for_new_repositories"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetBoolValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetSecretScanningNonProviderPatternsEnabledForNewRepositories(val)
+        }
+        return nil
+    }
     res["secret_scanning_push_protection_custom_link"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
         val, err := n.GetStringValue()
         if err != nil {
@@ -134,6 +146,11 @@ func (m *EnterpriseSecurityAnalysisSettings) GetFieldDeserializers()(map[string]
 // returns a *bool when successful
 func (m *EnterpriseSecurityAnalysisSettings) GetSecretScanningEnabledForNewRepositories()(*bool) {
     return m.secret_scanning_enabled_for_new_repositories
+}
+// GetSecretScanningNonProviderPatternsEnabledForNewRepositories gets the secret_scanning_non_provider_patterns_enabled_for_new_repositories property value. Whether secret scanning of non-provider patterns is enabled for new repositories under this enterprise.
+// returns a *bool when successful
+func (m *EnterpriseSecurityAnalysisSettings) GetSecretScanningNonProviderPatternsEnabledForNewRepositories()(*bool) {
+    return m.secret_scanning_non_provider_patterns_enabled_for_new_repositories
 }
 // GetSecretScanningPushProtectionCustomLink gets the secret_scanning_push_protection_custom_link property value. An optional URL string to display to contributors who are blocked from pushing a secret.
 // returns a *string when successful
@@ -172,6 +189,12 @@ func (m *EnterpriseSecurityAnalysisSettings) Serialize(writer i878a80d2330e89d26
     }
     {
         err := writer.WriteBoolValue("secret_scanning_enabled_for_new_repositories", m.GetSecretScanningEnabledForNewRepositories())
+        if err != nil {
+            return err
+        }
+    }
+    {
+        err := writer.WriteBoolValue("secret_scanning_non_provider_patterns_enabled_for_new_repositories", m.GetSecretScanningNonProviderPatternsEnabledForNewRepositories())
         if err != nil {
             return err
         }
@@ -222,6 +245,10 @@ func (m *EnterpriseSecurityAnalysisSettings) SetDependabotAlertsEnabledForNewRep
 func (m *EnterpriseSecurityAnalysisSettings) SetSecretScanningEnabledForNewRepositories(value *bool)() {
     m.secret_scanning_enabled_for_new_repositories = value
 }
+// SetSecretScanningNonProviderPatternsEnabledForNewRepositories sets the secret_scanning_non_provider_patterns_enabled_for_new_repositories property value. Whether secret scanning of non-provider patterns is enabled for new repositories under this enterprise.
+func (m *EnterpriseSecurityAnalysisSettings) SetSecretScanningNonProviderPatternsEnabledForNewRepositories(value *bool)() {
+    m.secret_scanning_non_provider_patterns_enabled_for_new_repositories = value
+}
 // SetSecretScanningPushProtectionCustomLink sets the secret_scanning_push_protection_custom_link property value. An optional URL string to display to contributors who are blocked from pushing a secret.
 func (m *EnterpriseSecurityAnalysisSettings) SetSecretScanningPushProtectionCustomLink(value *string)() {
     m.secret_scanning_push_protection_custom_link = value
@@ -241,6 +268,7 @@ type EnterpriseSecurityAnalysisSettingsable interface {
     GetAdvancedSecurityEnabledForNewUserNamespaceRepositories()(*bool)
     GetDependabotAlertsEnabledForNewRepositories()(*bool)
     GetSecretScanningEnabledForNewRepositories()(*bool)
+    GetSecretScanningNonProviderPatternsEnabledForNewRepositories()(*bool)
     GetSecretScanningPushProtectionCustomLink()(*string)
     GetSecretScanningPushProtectionEnabledForNewRepositories()(*bool)
     GetSecretScanningValidityChecksEnabled()(*bool)
@@ -248,6 +276,7 @@ type EnterpriseSecurityAnalysisSettingsable interface {
     SetAdvancedSecurityEnabledForNewUserNamespaceRepositories(value *bool)()
     SetDependabotAlertsEnabledForNewRepositories(value *bool)()
     SetSecretScanningEnabledForNewRepositories(value *bool)()
+    SetSecretScanningNonProviderPatternsEnabledForNewRepositories(value *bool)()
     SetSecretScanningPushProtectionCustomLink(value *string)()
     SetSecretScanningPushProtectionEnabledForNewRepositories(value *bool)()
     SetSecretScanningValidityChecksEnabled(value *bool)()
