@@ -23,7 +23,8 @@ func NewItemCode_security_and_analysisRequestBuilder(rawUrl string, requestAdapt
     urlParams["request-raw-url"] = rawUrl
     return NewItemCode_security_and_analysisRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Get gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
+// Get > [!WARNING]> **Deprecation notice:** The ability to fetch code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
+// Deprecated: 
 // returns a EnterpriseSecurityAnalysisSettingsable when successful
 // returns a BasicError error when the service returns a 404 status code
 // [API method documentation]
@@ -46,7 +47,8 @@ func (m *ItemCode_security_and_analysisRequestBuilder) Get(ctx context.Context, 
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.EnterpriseSecurityAnalysisSettingsable), nil
 }
-// Patch updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+// Patch > [!WARNING]> **Deprecation notice:** The ability to update code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+// Deprecated: 
 // returns a BasicError error when the service returns a 404 status code
 // [API method documentation]
 // 
@@ -65,7 +67,8 @@ func (m *ItemCode_security_and_analysisRequestBuilder) Patch(ctx context.Context
     }
     return nil
 }
-// ToGetRequestInformation gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
+// ToGetRequestInformation > [!WARNING]> **Deprecation notice:** The ability to fetch code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
+// Deprecated: 
 // returns a *RequestInformation when successful
 func (m *ItemCode_security_and_analysisRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -73,7 +76,8 @@ func (m *ItemCode_security_and_analysisRequestBuilder) ToGetRequestInformation(c
     requestInfo.Headers.TryAdd("Accept", "application/json")
     return requestInfo, nil
 }
-// ToPatchRequestInformation updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+// ToPatchRequestInformation > [!WARNING]> **Deprecation notice:** The ability to update code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+// Deprecated: 
 // returns a *RequestInformation when successful
 func (m *ItemCode_security_and_analysisRequestBuilder) ToPatchRequestInformation(ctx context.Context, body ItemCode_security_and_analysisPatchRequestBodyable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PATCH, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -86,6 +90,7 @@ func (m *ItemCode_security_and_analysisRequestBuilder) ToPatchRequestInformation
     return requestInfo, nil
 }
 // WithUrl returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
+// Deprecated: 
 // returns a *ItemCode_security_and_analysisRequestBuilder when successful
 func (m *ItemCode_security_and_analysisRequestBuilder) WithUrl(rawUrl string)(*ItemCode_security_and_analysisRequestBuilder) {
     return NewItemCode_security_and_analysisRequestBuilder(rawUrl, m.BaseRequestBuilder.RequestAdapter);

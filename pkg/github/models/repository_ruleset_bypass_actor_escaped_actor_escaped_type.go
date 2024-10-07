@@ -1,5 +1,5 @@
 package models
-// The type of actor that can bypass a ruleset.
+// The type of actor that can bypass a ruleset
 type RepositoryRulesetBypassActor_actor_type int
 
 const (
@@ -8,10 +8,11 @@ const (
     REPOSITORYROLE_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
     TEAM_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
     DEPLOYKEY_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
+    ENTERPRISEOWNER_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
 )
 
 func (i RepositoryRulesetBypassActor_actor_type) String() string {
-    return []string{"Integration", "OrganizationAdmin", "RepositoryRole", "Team", "DeployKey"}[i]
+    return []string{"Integration", "OrganizationAdmin", "RepositoryRole", "Team", "DeployKey", "EnterpriseOwner"}[i]
 }
 func ParseRepositoryRulesetBypassActor_actor_type(v string) (any, error) {
     result := INTEGRATION_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
@@ -26,6 +27,8 @@ func ParseRepositoryRulesetBypassActor_actor_type(v string) (any, error) {
             result = TEAM_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
         case "DeployKey":
             result = DEPLOYKEY_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
+        case "EnterpriseOwner":
+            result = ENTERPRISEOWNER_REPOSITORYRULESETBYPASSACTOR_ACTOR_TYPE
         default:
             return nil, nil
     }
