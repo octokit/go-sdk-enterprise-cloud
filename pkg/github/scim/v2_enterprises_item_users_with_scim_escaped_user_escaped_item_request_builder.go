@@ -23,7 +23,7 @@ func NewV2EnterprisesItemUsersWithScim_user_ItemRequestBuilder(rawUrl string, re
     urlParams["request-raw-url"] = rawUrl
     return NewV2EnterprisesItemUsersWithScim_user_ItemRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Delete > [!NOTE]> SCIM provisioning using the REST API is in public beta and subject to change.Suspends a SCIM user permanently from an enterprise. This action will: remove all the user's data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user's emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
+// Delete > [!NOTE]> SCIM provisioning using the REST API is in public preview and subject to change.Suspends a SCIM user permanently from an enterprise. This action will: remove all the user's data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user's emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
 // returns a ScimError error when the service returns a 429 status code
@@ -48,7 +48,7 @@ func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) Delete(ctx cont
     }
     return nil
 }
-// Get > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Gets information about a SCIM user.
+// Get > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM user.
 // returns a ScimEnterpriseUserResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -77,7 +77,7 @@ func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) Get(ctx context
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseUserResponseable), nil
 }
-// Patch > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Update a provisioned user's individual attributes.To modify a user's attributes, you'll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).> [!NOTE]> Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will be ineffective.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.> ```> {>   "Operations":[{>     "op":"replace",>     "value":{>       "active":false>     }>   }]> }> ```
+// Patch > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned user's individual attributes.To modify a user's attributes, you'll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).> [!NOTE]> Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will be ineffective.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.> ```> {>   "Operations":[{>     "op":"replace",>     "value":{>       "active":false>     }>   }]> }> ```
 // returns a ScimEnterpriseUserResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -106,7 +106,7 @@ func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) Patch(ctx conte
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseUserResponseable), nil
 }
-// Put > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Replaces an existing provisioned user's information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
+// Put > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned user's information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
 // returns a ScimEnterpriseUserResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -135,7 +135,7 @@ func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) Put(ctx context
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseUserResponseable), nil
 }
-// ToDeleteRequestInformation > [!NOTE]> SCIM provisioning using the REST API is in public beta and subject to change.Suspends a SCIM user permanently from an enterprise. This action will: remove all the user's data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user's emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
+// ToDeleteRequestInformation > [!NOTE]> SCIM provisioning using the REST API is in public preview and subject to change.Suspends a SCIM user permanently from an enterprise. This action will: remove all the user's data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user's emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) ToDeleteRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DELETE, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -143,7 +143,7 @@ func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) ToDeleteRequest
     requestInfo.Headers.TryAdd("Accept", "application/json, application/scim+json")
     return requestInfo, nil
 }
-// ToGetRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Gets information about a SCIM user.
+// ToGetRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM user.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -151,7 +151,7 @@ func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) ToGetRequestInf
     requestInfo.Headers.TryAdd("Accept", "application/scim+json")
     return requestInfo, nil
 }
-// ToPatchRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Update a provisioned user's individual attributes.To modify a user's attributes, you'll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).> [!NOTE]> Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will be ineffective.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.> ```> {>   "Operations":[{>     "op":"replace",>     "value":{>       "active":false>     }>   }]> }> ```
+// ToPatchRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned user's individual attributes.To modify a user's attributes, you'll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).> [!NOTE]> Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will be ineffective.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.> ```> {>   "Operations":[{>     "op":"replace",>     "value":{>       "active":false>     }>   }]> }> ```
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) ToPatchRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.PatchSchemaable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PATCH, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -163,7 +163,7 @@ func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) ToPatchRequestI
     }
     return requestInfo, nil
 }
-// ToPutRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Replaces an existing provisioned user's information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
+// ToPutRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned user's information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.> [!WARNING]> Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemUsersWithScim_user_ItemRequestBuilder) ToPutRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.Userable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PUT, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
