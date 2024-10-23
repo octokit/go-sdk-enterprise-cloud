@@ -20,6 +20,10 @@ type ItemItemSecretScanningAlertsRequestBuilderGetQueryParameters struct {
     Before *string `uriparametername:"before"`
     // The direction to sort the results by.
     Direction *i8c1d6b64f2513a548228c82e3fd4419e0cd0179685919cf2f705eb427004e7dc.GetDirectionQueryParameterType `uriparametername:"direction"`
+    // A boolean value representing whether or not to filter alerts by the multi-repo tag being present.
+    Is_multi_repo *bool `uriparametername:"is_multi_repo"`
+    // A boolean value representing whether or not to filter alerts by the publicly-leaked tag being present.
+    Is_publicly_leaked *bool `uriparametername:"is_publicly_leaked"`
     // The page number of the results to fetch. For more information, see "[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api)."
     Page *int32 `uriparametername:"page"`
     // The number of results per page (max 100). For more information, see "[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api)."
@@ -48,7 +52,7 @@ func (m *ItemItemSecretScanningAlertsRequestBuilder) ByAlert_number(alert_number
 // NewItemItemSecretScanningAlertsRequestBuilderInternal instantiates a new ItemItemSecretScanningAlertsRequestBuilder and sets the default values.
 func NewItemItemSecretScanningAlertsRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*ItemItemSecretScanningAlertsRequestBuilder) {
     m := &ItemItemSecretScanningAlertsRequestBuilder{
-        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/repos/{owner%2Did}/{repo%2Did}/secret-scanning/alerts{?after*,before*,direction*,page*,per_page*,resolution*,secret_type*,sort*,state*,validity*}", pathParameters),
+        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/repos/{owner%2Did}/{repo%2Did}/secret-scanning/alerts{?after*,before*,direction*,is_multi_repo*,is_publicly_leaked*,page*,per_page*,resolution*,secret_type*,sort*,state*,validity*}", pathParameters),
     }
     return m
 }
