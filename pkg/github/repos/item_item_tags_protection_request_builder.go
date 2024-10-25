@@ -35,14 +35,14 @@ func NewItemItemTagsProtectionRequestBuilder(rawUrl string, requestAdapter i2ae4
     urlParams["request-raw-url"] = rawUrl
     return NewItemItemTagsProtectionRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Get > [!WARNING]> **Deprecation notice:** This operation is deprecated and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#get-all-repository-rulesets)" endpoint instead.This returns the tag protection states of a repository.This information is only available to repository administrators.
+// Get > [!WARNING]> **Closing down notice:** This operation is closing down and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#get-all-repository-rulesets)" endpoint instead.This returns the tag protection states of a repository.This information is only available to repository administrators.
 // Deprecated: 
 // returns a []TagProtectionable when successful
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
 // [API method documentation]
 // 
-// [API method documentation]: https://docs.github.com/enterprise-cloud@latest//rest/repos/tags#deprecated---list-tag-protection-states-for-a-repository
+// [API method documentation]: https://docs.github.com/enterprise-cloud@latest//rest/repos/tags#closing-down---list-tag-protection-states-for-a-repository
 func (m *ItemItemTagsProtectionRequestBuilder) Get(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])([]i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.TagProtectionable, error) {
     requestInfo, err := m.ToGetRequestInformation(ctx, requestConfiguration);
     if err != nil {
@@ -64,14 +64,14 @@ func (m *ItemItemTagsProtectionRequestBuilder) Get(ctx context.Context, requestC
     }
     return val, nil
 }
-// Post > [!WARNING]> **Deprecation notice:** This operation is deprecated and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#create-a-repository-ruleset)" endpoint instead.This creates a tag protection state for a repository.This endpoint is only available to repository administrators.
+// Post > [!WARNING]> **Closing down notice:** This operation is closing down and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#create-a-repository-ruleset)" endpoint instead.This creates a tag protection state for a repository.This endpoint is only available to repository administrators.
 // Deprecated: 
 // returns a TagProtectionable when successful
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
 // [API method documentation]
 // 
-// [API method documentation]: https://docs.github.com/enterprise-cloud@latest//rest/repos/tags#deprecated---create-a-tag-protection-state-for-a-repository
+// [API method documentation]: https://docs.github.com/enterprise-cloud@latest//rest/repos/tags#closing-down---create-a-tag-protection-state-for-a-repository
 func (m *ItemItemTagsProtectionRequestBuilder) Post(ctx context.Context, body ItemItemTagsProtectionPostRequestBodyable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.TagProtectionable, error) {
     requestInfo, err := m.ToPostRequestInformation(ctx, body, requestConfiguration);
     if err != nil {
@@ -90,7 +90,7 @@ func (m *ItemItemTagsProtectionRequestBuilder) Post(ctx context.Context, body It
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.TagProtectionable), nil
 }
-// ToGetRequestInformation > [!WARNING]> **Deprecation notice:** This operation is deprecated and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#get-all-repository-rulesets)" endpoint instead.This returns the tag protection states of a repository.This information is only available to repository administrators.
+// ToGetRequestInformation > [!WARNING]> **Closing down notice:** This operation is closing down and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#get-all-repository-rulesets)" endpoint instead.This returns the tag protection states of a repository.This information is only available to repository administrators.
 // Deprecated: 
 // returns a *RequestInformation when successful
 func (m *ItemItemTagsProtectionRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
@@ -99,7 +99,7 @@ func (m *ItemItemTagsProtectionRequestBuilder) ToGetRequestInformation(ctx conte
     requestInfo.Headers.TryAdd("Accept", "application/json")
     return requestInfo, nil
 }
-// ToPostRequestInformation > [!WARNING]> **Deprecation notice:** This operation is deprecated and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#create-a-repository-ruleset)" endpoint instead.This creates a tag protection state for a repository.This endpoint is only available to repository administrators.
+// ToPostRequestInformation > [!WARNING]> **Closing down notice:** This operation is closing down and will be removed after August 30, 2024. Use the "[Repository Rulesets](https://docs.github.com/enterprise-cloud@latest//rest/repos/rules#create-a-repository-ruleset)" endpoint instead.This creates a tag protection state for a repository.This endpoint is only available to repository administrators.
 // Deprecated: 
 // returns a *RequestInformation when successful
 func (m *ItemItemTagsProtectionRequestBuilder) ToPostRequestInformation(ctx context.Context, body ItemItemTagsProtectionPostRequestBodyable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
