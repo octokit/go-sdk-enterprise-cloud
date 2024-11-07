@@ -5,7 +5,7 @@ import (
     i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91 "github.com/microsoft/kiota-abstractions-go/serialization"
 )
 
-// OrganizationFull prevents users in the organization from using insecure methods of two-factor authentication to fulfill a two-factor requirement.GitHub currently defines SMS as an insecure method of two-factor authentication.If your users are managed by the enterprise this policy will not affect them. The first admin account of the enterprise will still be affected.
+// OrganizationFull prevents users in the organization from using insecure methods of two-factor authentication to fulfill a two-factor requirement.Removes non-compliant outside collaborators from the organization and its repositories.GitHub currently defines SMS as an insecure method of two-factor authentication.If your users are managed by the enterprise this policy will not affect them. The first admin account of the enterprise will still be affected.
 type OrganizationFull struct {
     // Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.
     additionalData map[string]any
