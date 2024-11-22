@@ -63,6 +63,16 @@ func (m *ItemAuditLogRequestBuilder) Get(ctx context.Context, requestConfigurati
     }
     return val, nil
 }
+// StreamKey the streamKey property
+// returns a *ItemAuditLogStreamKeyRequestBuilder when successful
+func (m *ItemAuditLogRequestBuilder) StreamKey()(*ItemAuditLogStreamKeyRequestBuilder) {
+    return NewItemAuditLogStreamKeyRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
+// Streams the streams property
+// returns a *ItemAuditLogStreamsRequestBuilder when successful
+func (m *ItemAuditLogRequestBuilder) Streams()(*ItemAuditLogStreamsRequestBuilder) {
+    return NewItemAuditLogStreamsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // ToGetRequestInformation gets the audit log for an enterprise.This endpoint has a rate limit of 1,750 queries per hour per user and IP address. If your integration receives a rate limit error (typically a 403 or 429 response), it should wait before making another request to the GitHub API. For more information, see "[Rate limits for the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/rate-limits-for-the-rest-api)" and "[Best practices for integrators](https://docs.github.com/enterprise-cloud@latest//rest/guides/best-practices-for-integrators)."The authenticated user must be an enterprise admin to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:audit_log` scope to use this endpoint.
 // returns a *RequestInformation when successful
 func (m *ItemAuditLogRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[ItemAuditLogRequestBuilderGetQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
