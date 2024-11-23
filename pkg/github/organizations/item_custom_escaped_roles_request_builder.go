@@ -5,14 +5,14 @@ import (
     i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f "github.com/microsoft/kiota-abstractions-go"
 )
 
-// ItemCustom_rolesRequestBuilder builds and executes requests for operations under \organizations\{organization_id}\custom_roles
+// ItemCustom_rolesRequestBuilder builds and executes requests for operations under \organizations\{organization_-id}\custom_roles
 type ItemCustom_rolesRequestBuilder struct {
     i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.BaseRequestBuilder
 }
 // NewItemCustom_rolesRequestBuilderInternal instantiates a new ItemCustom_rolesRequestBuilder and sets the default values.
 func NewItemCustom_rolesRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*ItemCustom_rolesRequestBuilder) {
     m := &ItemCustom_rolesRequestBuilder{
-        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/organizations/{organization_id}/custom_roles", pathParameters),
+        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/organizations/{organization_%2Did}/custom_roles", pathParameters),
     }
     return m
 }
