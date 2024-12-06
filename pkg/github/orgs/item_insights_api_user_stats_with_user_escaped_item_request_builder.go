@@ -13,6 +13,8 @@ type ItemInsightsApiUserStatsWithUser_ItemRequestBuilder struct {
 }
 // ItemInsightsApiUserStatsWithUser_ItemRequestBuilderGetQueryParameters get API usage statistics within an organization for a user broken down by the type of access.
 type ItemInsightsApiUserStatsWithUser_ItemRequestBuilderGetQueryParameters struct {
+    // Providing a substring will filter results where the actor name contains the substring. This is a case-insensitive search.
+    Actor_name_substring *string `uriparametername:"actor_name_substring"`
     // The direction to sort the results by.
     Direction *if20ae0ea9c2b44f635a16d34c4ee44de4452c03dd7a90d8456f97773cba6237e.GetDirectionQueryParameterType `uriparametername:"direction"`
     // The maximum timestamp to query for stats. Defaults to the time 30 days ago. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
@@ -29,7 +31,7 @@ type ItemInsightsApiUserStatsWithUser_ItemRequestBuilderGetQueryParameters struc
 // NewItemInsightsApiUserStatsWithUser_ItemRequestBuilderInternal instantiates a new ItemInsightsApiUserStatsWithUser_ItemRequestBuilder and sets the default values.
 func NewItemInsightsApiUserStatsWithUser_ItemRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*ItemInsightsApiUserStatsWithUser_ItemRequestBuilder) {
     m := &ItemInsightsApiUserStatsWithUser_ItemRequestBuilder{
-        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/orgs/{org}/insights/api/user-stats/{user_id}?min_timestamp={min_timestamp}{&direction*,max_timestamp*,page*,per_page*,sort*}", pathParameters),
+        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/orgs/{org}/insights/api/user-stats/{user_id}?min_timestamp={min_timestamp}{&actor_name_substring*,direction*,max_timestamp*,page*,per_page*,sort*}", pathParameters),
     }
     return m
 }
