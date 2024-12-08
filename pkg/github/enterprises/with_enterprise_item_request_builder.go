@@ -78,6 +78,11 @@ func (m *WithEnterpriseItemRequestBuilder) Dependabot()(*ItemDependabotRequestBu
 func (m *WithEnterpriseItemRequestBuilder) LicenseSyncStatus()(*ItemLicenseSyncStatusRequestBuilder) {
     return NewItemLicenseSyncStatusRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// Properties the properties property
+// returns a *ItemPropertiesRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) Properties()(*ItemPropertiesRequestBuilder) {
+    return NewItemPropertiesRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // SecretScanning the secretScanning property
 // returns a *ItemSecretScanningRequestBuilder when successful
 func (m *WithEnterpriseItemRequestBuilder) SecretScanning()(*ItemSecretScanningRequestBuilder) {

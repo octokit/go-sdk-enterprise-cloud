@@ -17,17 +17,17 @@ type OrganizationsRequestBuilderGetQueryParameters struct {
     // An organization ID. Only return organizations with an ID greater than this ID.
     Since *int32 `uriparametername:"since"`
 }
-// ByOrganization_id gets an item from the github.com/octokit/go-sdk-enterprise-cloud/pkg/github.organizations.item collection
-// returns a *WithOrganization_ItemRequestBuilder when successful
-func (m *OrganizationsRequestBuilder) ByOrganization_id(organization_id string)(*WithOrganization_ItemRequestBuilder) {
+// ByOrganization_Id gets an item from the github.com/octokit/go-sdk-enterprise-cloud/pkg/github.organizations.item collection
+// returns a *Organization_ItemRequestBuilder when successful
+func (m *OrganizationsRequestBuilder) ByOrganization_Id(organization_Id string)(*Organization_ItemRequestBuilder) {
     urlTplParams := make(map[string]string)
     for idx, item := range m.BaseRequestBuilder.PathParameters {
         urlTplParams[idx] = item
     }
-    if organization_id != "" {
-        urlTplParams["organization_id"] = organization_id
+    if organization_Id != "" {
+        urlTplParams["organization_%2Did"] = organization_Id
     }
-    return NewWithOrganization_ItemRequestBuilderInternal(urlTplParams, m.BaseRequestBuilder.RequestAdapter)
+    return NewOrganization_ItemRequestBuilderInternal(urlTplParams, m.BaseRequestBuilder.RequestAdapter)
 }
 // NewOrganizationsRequestBuilderInternal instantiates a new OrganizationsRequestBuilder and sets the default values.
 func NewOrganizationsRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*OrganizationsRequestBuilder) {
