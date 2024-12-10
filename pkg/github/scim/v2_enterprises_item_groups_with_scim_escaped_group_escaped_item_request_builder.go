@@ -10,7 +10,7 @@ import (
 type V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder struct {
     i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.BaseRequestBuilder
 }
-// V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilderGetQueryParameters > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM group.
+// V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilderGetQueryParameters gets information about a SCIM group.
 type V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilderGetQueryParameters struct {
     // Excludes the specified attribute from being returned in the results. Using this parameter can speed up response time.
     ExcludedAttributes *string `uriparametername:"excludedAttributes"`
@@ -28,7 +28,7 @@ func NewV2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder(rawUrl string, 
     urlParams["request-raw-url"] = rawUrl
     return NewV2EnterprisesItemGroupsWithScim_group_ItemRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Delete > [!NOTE]> SCIM provisioning using the REST API is in public preview and subject to change.Deletes a SCIM group from an enterprise.
+// Delete deletes a SCIM group from an enterprise.
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
 // returns a ScimError error when the service returns a 429 status code
@@ -53,7 +53,7 @@ func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) Delete(ctx co
     }
     return nil
 }
-// Get > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM group.
+// Get gets information about a SCIM group.
 // returns a ScimEnterpriseGroupResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -82,7 +82,7 @@ func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) Get(ctx conte
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseGroupResponseable), nil
 }
-// Patch > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned group’s individual attributes.To modify a group's values, you'll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.> [!NOTE]> Memberships are referenced via a local user id. Ensure users are created before referencing them here.
+// Patch update a provisioned group’s individual attributes.To modify a group's values, you'll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.> [!NOTE]> Memberships are referenced via a local user id. Ensure users are created before referencing them here.
 // returns a ScimEnterpriseGroupResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -111,7 +111,7 @@ func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) Patch(ctx con
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseGroupResponseable), nil
 }
-// Put > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don't provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
+// Put replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don't provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
 // returns a ScimEnterpriseGroupResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -140,7 +140,7 @@ func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) Put(ctx conte
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseGroupResponseable), nil
 }
-// ToDeleteRequestInformation > [!NOTE]> SCIM provisioning using the REST API is in public preview and subject to change.Deletes a SCIM group from an enterprise.
+// ToDeleteRequestInformation deletes a SCIM group from an enterprise.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) ToDeleteRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DELETE, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -148,7 +148,7 @@ func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) ToDeleteReque
     requestInfo.Headers.TryAdd("Accept", "application/json, application/scim+json")
     return requestInfo, nil
 }
-// ToGetRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM group.
+// ToGetRequestInformation gets information about a SCIM group.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilderGetQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -156,7 +156,7 @@ func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) ToGetRequestI
     requestInfo.Headers.TryAdd("Accept", "application/scim+json")
     return requestInfo, nil
 }
-// ToPatchRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned group’s individual attributes.To modify a group's values, you'll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.> [!NOTE]> Memberships are referenced via a local user id. Ensure users are created before referencing them here.
+// ToPatchRequestInformation update a provisioned group’s individual attributes.To modify a group's values, you'll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.> [!NOTE]> Memberships are referenced via a local user id. Ensure users are created before referencing them here.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) ToPatchRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.PatchSchemaable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PATCH, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -168,7 +168,7 @@ func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) ToPatchReques
     }
     return requestInfo, nil
 }
-// ToPutRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don't provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
+// ToPutRequestInformation replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don't provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemGroupsWithScim_group_ItemRequestBuilder) ToPutRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.Groupable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PUT, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
