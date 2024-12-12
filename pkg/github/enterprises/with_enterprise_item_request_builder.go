@@ -83,6 +83,11 @@ func (m *WithEnterpriseItemRequestBuilder) LicenseSyncStatus()(*ItemLicenseSyncS
 func (m *WithEnterpriseItemRequestBuilder) Properties()(*ItemPropertiesRequestBuilder) {
     return NewItemPropertiesRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// Rulesets the rulesets property
+// returns a *ItemRulesetsRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) Rulesets()(*ItemRulesetsRequestBuilder) {
+    return NewItemRulesetsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // SecretScanning the secretScanning property
 // returns a *ItemSecretScanningRequestBuilder when successful
 func (m *WithEnterpriseItemRequestBuilder) SecretScanning()(*ItemSecretScanningRequestBuilder) {

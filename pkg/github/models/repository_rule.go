@@ -42,6 +42,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleBranchNamePattern1 RepositoryRuleBranchNamePatternable
     // Composed type representation for type RepositoryRuleBranchNamePatternable
     repositoryRuleRepositoryRuleBranchNamePattern2 RepositoryRuleBranchNamePatternable
+    // Composed type representation for type RepositoryRuleBranchNamePatternable
+    repositoryRuleRepositoryRuleBranchNamePattern3 RepositoryRuleBranchNamePatternable
+    // Composed type representation for type RepositoryRuleBranchNamePatternable
+    repositoryRuleRepositoryRuleBranchNamePattern4 RepositoryRuleBranchNamePatternable
     // Composed type representation for type RepositoryRuleCodeScanningable
     repositoryRuleRepositoryRuleCodeScanning RepositoryRuleCodeScanningable
     // Composed type representation for type RepositoryRuleCodeScanningable
@@ -50,6 +54,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleCodeScanning1 RepositoryRuleCodeScanningable
     // Composed type representation for type RepositoryRuleCodeScanningable
     repositoryRuleRepositoryRuleCodeScanning2 RepositoryRuleCodeScanningable
+    // Composed type representation for type RepositoryRuleCodeScanningable
+    repositoryRuleRepositoryRuleCodeScanning3 RepositoryRuleCodeScanningable
+    // Composed type representation for type RepositoryRuleCodeScanningable
+    repositoryRuleRepositoryRuleCodeScanning4 RepositoryRuleCodeScanningable
     // Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
     repositoryRuleRepositoryRuleCommitAuthorEmailPattern RepositoryRuleCommitAuthorEmailPatternable
     // Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
@@ -58,6 +66,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleCommitAuthorEmailPattern1 RepositoryRuleCommitAuthorEmailPatternable
     // Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
     repositoryRuleRepositoryRuleCommitAuthorEmailPattern2 RepositoryRuleCommitAuthorEmailPatternable
+    // Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
+    repositoryRuleRepositoryRuleCommitAuthorEmailPattern3 RepositoryRuleCommitAuthorEmailPatternable
+    // Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
+    repositoryRuleRepositoryRuleCommitAuthorEmailPattern4 RepositoryRuleCommitAuthorEmailPatternable
     // Composed type representation for type RepositoryRuleCommitMessagePatternable
     repositoryRuleRepositoryRuleCommitMessagePattern RepositoryRuleCommitMessagePatternable
     // Composed type representation for type RepositoryRuleCommitMessagePatternable
@@ -66,6 +78,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleCommitMessagePattern1 RepositoryRuleCommitMessagePatternable
     // Composed type representation for type RepositoryRuleCommitMessagePatternable
     repositoryRuleRepositoryRuleCommitMessagePattern2 RepositoryRuleCommitMessagePatternable
+    // Composed type representation for type RepositoryRuleCommitMessagePatternable
+    repositoryRuleRepositoryRuleCommitMessagePattern3 RepositoryRuleCommitMessagePatternable
+    // Composed type representation for type RepositoryRuleCommitMessagePatternable
+    repositoryRuleRepositoryRuleCommitMessagePattern4 RepositoryRuleCommitMessagePatternable
     // Composed type representation for type RepositoryRuleCommitterEmailPatternable
     repositoryRuleRepositoryRuleCommitterEmailPattern RepositoryRuleCommitterEmailPatternable
     // Composed type representation for type RepositoryRuleCommitterEmailPatternable
@@ -74,6 +90,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleCommitterEmailPattern1 RepositoryRuleCommitterEmailPatternable
     // Composed type representation for type RepositoryRuleCommitterEmailPatternable
     repositoryRuleRepositoryRuleCommitterEmailPattern2 RepositoryRuleCommitterEmailPatternable
+    // Composed type representation for type RepositoryRuleCommitterEmailPatternable
+    repositoryRuleRepositoryRuleCommitterEmailPattern3 RepositoryRuleCommitterEmailPatternable
+    // Composed type representation for type RepositoryRuleCommitterEmailPatternable
+    repositoryRuleRepositoryRuleCommitterEmailPattern4 RepositoryRuleCommitterEmailPatternable
     // Composed type representation for type RepositoryRuleCreationable
     repositoryRuleRepositoryRuleCreation RepositoryRuleCreationable
     // Composed type representation for type RepositoryRuleCreationable
@@ -82,6 +102,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleCreation1 RepositoryRuleCreationable
     // Composed type representation for type RepositoryRuleCreationable
     repositoryRuleRepositoryRuleCreation2 RepositoryRuleCreationable
+    // Composed type representation for type RepositoryRuleCreationable
+    repositoryRuleRepositoryRuleCreation3 RepositoryRuleCreationable
+    // Composed type representation for type RepositoryRuleCreationable
+    repositoryRuleRepositoryRuleCreation4 RepositoryRuleCreationable
     // Composed type representation for type RepositoryRuleDeletionable
     repositoryRuleRepositoryRuleDeletion RepositoryRuleDeletionable
     // Composed type representation for type RepositoryRuleDeletionable
@@ -90,6 +114,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleDeletion1 RepositoryRuleDeletionable
     // Composed type representation for type RepositoryRuleDeletionable
     repositoryRuleRepositoryRuleDeletion2 RepositoryRuleDeletionable
+    // Composed type representation for type RepositoryRuleDeletionable
+    repositoryRuleRepositoryRuleDeletion3 RepositoryRuleDeletionable
+    // Composed type representation for type RepositoryRuleDeletionable
+    repositoryRuleRepositoryRuleDeletion4 RepositoryRuleDeletionable
     // Composed type representation for type RepositoryRuleMember1able
     repositoryRuleRepositoryRuleMember1 RepositoryRuleMember1able
     // Composed type representation for type RepositoryRuleMember1able
@@ -98,6 +126,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleMember11 RepositoryRuleMember1able
     // Composed type representation for type RepositoryRuleMember1able
     repositoryRuleRepositoryRuleMember12 RepositoryRuleMember1able
+    // Composed type representation for type RepositoryRuleMember1able
+    repositoryRuleRepositoryRuleMember13 RepositoryRuleMember1able
+    // Composed type representation for type RepositoryRuleMember1able
+    repositoryRuleRepositoryRuleMember14 RepositoryRuleMember1able
     // Composed type representation for type RepositoryRuleMember2able
     repositoryRuleRepositoryRuleMember2 RepositoryRuleMember2able
     // Composed type representation for type RepositoryRuleMember2able
@@ -106,6 +138,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleMember21 RepositoryRuleMember2able
     // Composed type representation for type RepositoryRuleMember2able
     repositoryRuleRepositoryRuleMember22 RepositoryRuleMember2able
+    // Composed type representation for type RepositoryRuleMember2able
+    repositoryRuleRepositoryRuleMember23 RepositoryRuleMember2able
+    // Composed type representation for type RepositoryRuleMember2able
+    repositoryRuleRepositoryRuleMember24 RepositoryRuleMember2able
     // Composed type representation for type RepositoryRuleMember3able
     repositoryRuleRepositoryRuleMember3 RepositoryRuleMember3able
     // Composed type representation for type RepositoryRuleMember3able
@@ -114,6 +150,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleMember31 RepositoryRuleMember3able
     // Composed type representation for type RepositoryRuleMember3able
     repositoryRuleRepositoryRuleMember32 RepositoryRuleMember3able
+    // Composed type representation for type RepositoryRuleMember3able
+    repositoryRuleRepositoryRuleMember33 RepositoryRuleMember3able
+    // Composed type representation for type RepositoryRuleMember3able
+    repositoryRuleRepositoryRuleMember34 RepositoryRuleMember3able
     // Composed type representation for type RepositoryRuleMember4able
     repositoryRuleRepositoryRuleMember4 RepositoryRuleMember4able
     // Composed type representation for type RepositoryRuleMember4able
@@ -122,6 +162,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleMember41 RepositoryRuleMember4able
     // Composed type representation for type RepositoryRuleMember4able
     repositoryRuleRepositoryRuleMember42 RepositoryRuleMember4able
+    // Composed type representation for type RepositoryRuleMember4able
+    repositoryRuleRepositoryRuleMember43 RepositoryRuleMember4able
+    // Composed type representation for type RepositoryRuleMember4able
+    repositoryRuleRepositoryRuleMember44 RepositoryRuleMember4able
     // Composed type representation for type RepositoryRuleMergeQueueable
     repositoryRuleRepositoryRuleMergeQueue RepositoryRuleMergeQueueable
     // Composed type representation for type RepositoryRuleMergeQueueable
@@ -130,6 +174,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleMergeQueue1 RepositoryRuleMergeQueueable
     // Composed type representation for type RepositoryRuleMergeQueueable
     repositoryRuleRepositoryRuleMergeQueue2 RepositoryRuleMergeQueueable
+    // Composed type representation for type RepositoryRuleMergeQueueable
+    repositoryRuleRepositoryRuleMergeQueue3 RepositoryRuleMergeQueueable
+    // Composed type representation for type RepositoryRuleMergeQueueable
+    repositoryRuleRepositoryRuleMergeQueue4 RepositoryRuleMergeQueueable
     // Composed type representation for type RepositoryRuleNonFastForwardable
     repositoryRuleRepositoryRuleNonFastForward RepositoryRuleNonFastForwardable
     // Composed type representation for type RepositoryRuleNonFastForwardable
@@ -138,6 +186,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleNonFastForward1 RepositoryRuleNonFastForwardable
     // Composed type representation for type RepositoryRuleNonFastForwardable
     repositoryRuleRepositoryRuleNonFastForward2 RepositoryRuleNonFastForwardable
+    // Composed type representation for type RepositoryRuleNonFastForwardable
+    repositoryRuleRepositoryRuleNonFastForward3 RepositoryRuleNonFastForwardable
+    // Composed type representation for type RepositoryRuleNonFastForwardable
+    repositoryRuleRepositoryRuleNonFastForward4 RepositoryRuleNonFastForwardable
     // Composed type representation for type RepositoryRulePullRequestable
     repositoryRuleRepositoryRulePullRequest RepositoryRulePullRequestable
     // Composed type representation for type RepositoryRulePullRequestable
@@ -146,6 +198,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRulePullRequest1 RepositoryRulePullRequestable
     // Composed type representation for type RepositoryRulePullRequestable
     repositoryRuleRepositoryRulePullRequest2 RepositoryRulePullRequestable
+    // Composed type representation for type RepositoryRulePullRequestable
+    repositoryRuleRepositoryRulePullRequest3 RepositoryRulePullRequestable
+    // Composed type representation for type RepositoryRulePullRequestable
+    repositoryRuleRepositoryRulePullRequest4 RepositoryRulePullRequestable
     // Composed type representation for type RepositoryRuleRequiredDeploymentsable
     repositoryRuleRepositoryRuleRequiredDeployments RepositoryRuleRequiredDeploymentsable
     // Composed type representation for type RepositoryRuleRequiredDeploymentsable
@@ -154,6 +210,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleRequiredDeployments1 RepositoryRuleRequiredDeploymentsable
     // Composed type representation for type RepositoryRuleRequiredDeploymentsable
     repositoryRuleRepositoryRuleRequiredDeployments2 RepositoryRuleRequiredDeploymentsable
+    // Composed type representation for type RepositoryRuleRequiredDeploymentsable
+    repositoryRuleRepositoryRuleRequiredDeployments3 RepositoryRuleRequiredDeploymentsable
+    // Composed type representation for type RepositoryRuleRequiredDeploymentsable
+    repositoryRuleRepositoryRuleRequiredDeployments4 RepositoryRuleRequiredDeploymentsable
     // Composed type representation for type RepositoryRuleRequiredLinearHistoryable
     repositoryRuleRepositoryRuleRequiredLinearHistory RepositoryRuleRequiredLinearHistoryable
     // Composed type representation for type RepositoryRuleRequiredLinearHistoryable
@@ -162,6 +222,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleRequiredLinearHistory1 RepositoryRuleRequiredLinearHistoryable
     // Composed type representation for type RepositoryRuleRequiredLinearHistoryable
     repositoryRuleRepositoryRuleRequiredLinearHistory2 RepositoryRuleRequiredLinearHistoryable
+    // Composed type representation for type RepositoryRuleRequiredLinearHistoryable
+    repositoryRuleRepositoryRuleRequiredLinearHistory3 RepositoryRuleRequiredLinearHistoryable
+    // Composed type representation for type RepositoryRuleRequiredLinearHistoryable
+    repositoryRuleRepositoryRuleRequiredLinearHistory4 RepositoryRuleRequiredLinearHistoryable
     // Composed type representation for type RepositoryRuleRequiredSignaturesable
     repositoryRuleRepositoryRuleRequiredSignatures RepositoryRuleRequiredSignaturesable
     // Composed type representation for type RepositoryRuleRequiredSignaturesable
@@ -170,6 +234,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleRequiredSignatures1 RepositoryRuleRequiredSignaturesable
     // Composed type representation for type RepositoryRuleRequiredSignaturesable
     repositoryRuleRepositoryRuleRequiredSignatures2 RepositoryRuleRequiredSignaturesable
+    // Composed type representation for type RepositoryRuleRequiredSignaturesable
+    repositoryRuleRepositoryRuleRequiredSignatures3 RepositoryRuleRequiredSignaturesable
+    // Composed type representation for type RepositoryRuleRequiredSignaturesable
+    repositoryRuleRepositoryRuleRequiredSignatures4 RepositoryRuleRequiredSignaturesable
     // Composed type representation for type RepositoryRuleRequiredStatusChecksable
     repositoryRuleRepositoryRuleRequiredStatusChecks RepositoryRuleRequiredStatusChecksable
     // Composed type representation for type RepositoryRuleRequiredStatusChecksable
@@ -178,6 +246,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleRequiredStatusChecks1 RepositoryRuleRequiredStatusChecksable
     // Composed type representation for type RepositoryRuleRequiredStatusChecksable
     repositoryRuleRepositoryRuleRequiredStatusChecks2 RepositoryRuleRequiredStatusChecksable
+    // Composed type representation for type RepositoryRuleRequiredStatusChecksable
+    repositoryRuleRepositoryRuleRequiredStatusChecks3 RepositoryRuleRequiredStatusChecksable
+    // Composed type representation for type RepositoryRuleRequiredStatusChecksable
+    repositoryRuleRepositoryRuleRequiredStatusChecks4 RepositoryRuleRequiredStatusChecksable
     // Composed type representation for type RepositoryRuleTagNamePatternable
     repositoryRuleRepositoryRuleTagNamePattern RepositoryRuleTagNamePatternable
     // Composed type representation for type RepositoryRuleTagNamePatternable
@@ -186,6 +258,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleTagNamePattern1 RepositoryRuleTagNamePatternable
     // Composed type representation for type RepositoryRuleTagNamePatternable
     repositoryRuleRepositoryRuleTagNamePattern2 RepositoryRuleTagNamePatternable
+    // Composed type representation for type RepositoryRuleTagNamePatternable
+    repositoryRuleRepositoryRuleTagNamePattern3 RepositoryRuleTagNamePatternable
+    // Composed type representation for type RepositoryRuleTagNamePatternable
+    repositoryRuleRepositoryRuleTagNamePattern4 RepositoryRuleTagNamePatternable
     // Composed type representation for type RepositoryRuleUpdateable
     repositoryRuleRepositoryRuleUpdate RepositoryRuleUpdateable
     // Composed type representation for type RepositoryRuleUpdateable
@@ -194,6 +270,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleUpdate1 RepositoryRuleUpdateable
     // Composed type representation for type RepositoryRuleUpdateable
     repositoryRuleRepositoryRuleUpdate2 RepositoryRuleUpdateable
+    // Composed type representation for type RepositoryRuleUpdateable
+    repositoryRuleRepositoryRuleUpdate3 RepositoryRuleUpdateable
+    // Composed type representation for type RepositoryRuleUpdateable
+    repositoryRuleRepositoryRuleUpdate4 RepositoryRuleUpdateable
     // Composed type representation for type RepositoryRuleWorkflowsable
     repositoryRuleRepositoryRuleWorkflows RepositoryRuleWorkflowsable
     // Composed type representation for type RepositoryRuleWorkflowsable
@@ -202,6 +282,10 @@ type RepositoryRule struct {
     repositoryRuleRepositoryRuleWorkflows1 RepositoryRuleWorkflowsable
     // Composed type representation for type RepositoryRuleWorkflowsable
     repositoryRuleRepositoryRuleWorkflows2 RepositoryRuleWorkflowsable
+    // Composed type representation for type RepositoryRuleWorkflowsable
+    repositoryRuleRepositoryRuleWorkflows3 RepositoryRuleWorkflowsable
+    // Composed type representation for type RepositoryRuleWorkflowsable
+    repositoryRuleRepositoryRuleWorkflows4 RepositoryRuleWorkflowsable
     // Composed type representation for type RepositoryRuleRequiredDeploymentsable
     repositoryRuleRequiredDeployments RepositoryRuleRequiredDeploymentsable
     // Composed type representation for type RepositoryRuleRequiredLinearHistoryable
@@ -343,6 +427,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleBranchNamePattern1()(Rep
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleBranchNamePattern2()(RepositoryRuleBranchNamePatternable) {
     return m.repositoryRuleRepositoryRuleBranchNamePattern2
 }
+// GetRepositoryRuleRepositoryRuleBranchNamePattern3 gets the repositoryRuleBranchNamePattern property value. Composed type representation for type RepositoryRuleBranchNamePatternable
+// returns a RepositoryRuleBranchNamePatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleBranchNamePattern3()(RepositoryRuleBranchNamePatternable) {
+    return m.repositoryRuleRepositoryRuleBranchNamePattern3
+}
+// GetRepositoryRuleRepositoryRuleBranchNamePattern4 gets the repositoryRuleBranchNamePattern property value. Composed type representation for type RepositoryRuleBranchNamePatternable
+// returns a RepositoryRuleBranchNamePatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleBranchNamePattern4()(RepositoryRuleBranchNamePatternable) {
+    return m.repositoryRuleRepositoryRuleBranchNamePattern4
+}
 // GetRepositoryRuleRepositoryRuleCodeScanning gets the repositoryRuleCodeScanning property value. Composed type representation for type RepositoryRuleCodeScanningable
 // returns a RepositoryRuleCodeScanningable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCodeScanning()(RepositoryRuleCodeScanningable) {
@@ -362,6 +456,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCodeScanning1()(Reposito
 // returns a RepositoryRuleCodeScanningable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCodeScanning2()(RepositoryRuleCodeScanningable) {
     return m.repositoryRuleRepositoryRuleCodeScanning2
+}
+// GetRepositoryRuleRepositoryRuleCodeScanning3 gets the repositoryRuleCodeScanning property value. Composed type representation for type RepositoryRuleCodeScanningable
+// returns a RepositoryRuleCodeScanningable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCodeScanning3()(RepositoryRuleCodeScanningable) {
+    return m.repositoryRuleRepositoryRuleCodeScanning3
+}
+// GetRepositoryRuleRepositoryRuleCodeScanning4 gets the repositoryRuleCodeScanning property value. Composed type representation for type RepositoryRuleCodeScanningable
+// returns a RepositoryRuleCodeScanningable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCodeScanning4()(RepositoryRuleCodeScanningable) {
+    return m.repositoryRuleRepositoryRuleCodeScanning4
 }
 // GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern gets the repositoryRuleCommitAuthorEmailPattern property value. Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
 // returns a RepositoryRuleCommitAuthorEmailPatternable when successful
@@ -383,6 +487,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern2()(RepositoryRuleCommitAuthorEmailPatternable) {
     return m.repositoryRuleRepositoryRuleCommitAuthorEmailPattern2
 }
+// GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3 gets the repositoryRuleCommitAuthorEmailPattern property value. Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
+// returns a RepositoryRuleCommitAuthorEmailPatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3()(RepositoryRuleCommitAuthorEmailPatternable) {
+    return m.repositoryRuleRepositoryRuleCommitAuthorEmailPattern3
+}
+// GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4 gets the repositoryRuleCommitAuthorEmailPattern property value. Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
+// returns a RepositoryRuleCommitAuthorEmailPatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4()(RepositoryRuleCommitAuthorEmailPatternable) {
+    return m.repositoryRuleRepositoryRuleCommitAuthorEmailPattern4
+}
 // GetRepositoryRuleRepositoryRuleCommitMessagePattern gets the repositoryRuleCommitMessagePattern property value. Composed type representation for type RepositoryRuleCommitMessagePatternable
 // returns a RepositoryRuleCommitMessagePatternable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitMessagePattern()(RepositoryRuleCommitMessagePatternable) {
@@ -402,6 +516,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitMessagePattern1()(
 // returns a RepositoryRuleCommitMessagePatternable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitMessagePattern2()(RepositoryRuleCommitMessagePatternable) {
     return m.repositoryRuleRepositoryRuleCommitMessagePattern2
+}
+// GetRepositoryRuleRepositoryRuleCommitMessagePattern3 gets the repositoryRuleCommitMessagePattern property value. Composed type representation for type RepositoryRuleCommitMessagePatternable
+// returns a RepositoryRuleCommitMessagePatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitMessagePattern3()(RepositoryRuleCommitMessagePatternable) {
+    return m.repositoryRuleRepositoryRuleCommitMessagePattern3
+}
+// GetRepositoryRuleRepositoryRuleCommitMessagePattern4 gets the repositoryRuleCommitMessagePattern property value. Composed type representation for type RepositoryRuleCommitMessagePatternable
+// returns a RepositoryRuleCommitMessagePatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitMessagePattern4()(RepositoryRuleCommitMessagePatternable) {
+    return m.repositoryRuleRepositoryRuleCommitMessagePattern4
 }
 // GetRepositoryRuleRepositoryRuleCommitterEmailPattern gets the repositoryRuleCommitterEmailPattern property value. Composed type representation for type RepositoryRuleCommitterEmailPatternable
 // returns a RepositoryRuleCommitterEmailPatternable when successful
@@ -423,6 +547,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitterEmailPattern1()
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitterEmailPattern2()(RepositoryRuleCommitterEmailPatternable) {
     return m.repositoryRuleRepositoryRuleCommitterEmailPattern2
 }
+// GetRepositoryRuleRepositoryRuleCommitterEmailPattern3 gets the repositoryRuleCommitterEmailPattern property value. Composed type representation for type RepositoryRuleCommitterEmailPatternable
+// returns a RepositoryRuleCommitterEmailPatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitterEmailPattern3()(RepositoryRuleCommitterEmailPatternable) {
+    return m.repositoryRuleRepositoryRuleCommitterEmailPattern3
+}
+// GetRepositoryRuleRepositoryRuleCommitterEmailPattern4 gets the repositoryRuleCommitterEmailPattern property value. Composed type representation for type RepositoryRuleCommitterEmailPatternable
+// returns a RepositoryRuleCommitterEmailPatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCommitterEmailPattern4()(RepositoryRuleCommitterEmailPatternable) {
+    return m.repositoryRuleRepositoryRuleCommitterEmailPattern4
+}
 // GetRepositoryRuleRepositoryRuleCreation gets the repositoryRuleCreation property value. Composed type representation for type RepositoryRuleCreationable
 // returns a RepositoryRuleCreationable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCreation()(RepositoryRuleCreationable) {
@@ -442,6 +576,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCreation1()(RepositoryRu
 // returns a RepositoryRuleCreationable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCreation2()(RepositoryRuleCreationable) {
     return m.repositoryRuleRepositoryRuleCreation2
+}
+// GetRepositoryRuleRepositoryRuleCreation3 gets the repositoryRuleCreation property value. Composed type representation for type RepositoryRuleCreationable
+// returns a RepositoryRuleCreationable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCreation3()(RepositoryRuleCreationable) {
+    return m.repositoryRuleRepositoryRuleCreation3
+}
+// GetRepositoryRuleRepositoryRuleCreation4 gets the repositoryRuleCreation property value. Composed type representation for type RepositoryRuleCreationable
+// returns a RepositoryRuleCreationable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleCreation4()(RepositoryRuleCreationable) {
+    return m.repositoryRuleRepositoryRuleCreation4
 }
 // GetRepositoryRuleRepositoryRuleDeletion gets the repositoryRuleDeletion property value. Composed type representation for type RepositoryRuleDeletionable
 // returns a RepositoryRuleDeletionable when successful
@@ -463,6 +607,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleDeletion1()(RepositoryRu
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleDeletion2()(RepositoryRuleDeletionable) {
     return m.repositoryRuleRepositoryRuleDeletion2
 }
+// GetRepositoryRuleRepositoryRuleDeletion3 gets the repositoryRuleDeletion property value. Composed type representation for type RepositoryRuleDeletionable
+// returns a RepositoryRuleDeletionable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleDeletion3()(RepositoryRuleDeletionable) {
+    return m.repositoryRuleRepositoryRuleDeletion3
+}
+// GetRepositoryRuleRepositoryRuleDeletion4 gets the repositoryRuleDeletion property value. Composed type representation for type RepositoryRuleDeletionable
+// returns a RepositoryRuleDeletionable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleDeletion4()(RepositoryRuleDeletionable) {
+    return m.repositoryRuleRepositoryRuleDeletion4
+}
 // GetRepositoryRuleRepositoryRuleMember1 gets the repositoryRuleMember1 property value. Composed type representation for type RepositoryRuleMember1able
 // returns a RepositoryRuleMember1able when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember1()(RepositoryRuleMember1able) {
@@ -482,6 +636,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember11()(RepositoryRul
 // returns a RepositoryRuleMember1able when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember12()(RepositoryRuleMember1able) {
     return m.repositoryRuleRepositoryRuleMember12
+}
+// GetRepositoryRuleRepositoryRuleMember13 gets the repositoryRuleMember1 property value. Composed type representation for type RepositoryRuleMember1able
+// returns a RepositoryRuleMember1able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember13()(RepositoryRuleMember1able) {
+    return m.repositoryRuleRepositoryRuleMember13
+}
+// GetRepositoryRuleRepositoryRuleMember14 gets the repositoryRuleMember1 property value. Composed type representation for type RepositoryRuleMember1able
+// returns a RepositoryRuleMember1able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember14()(RepositoryRuleMember1able) {
+    return m.repositoryRuleRepositoryRuleMember14
 }
 // GetRepositoryRuleRepositoryRuleMember2 gets the repositoryRuleMember2 property value. Composed type representation for type RepositoryRuleMember2able
 // returns a RepositoryRuleMember2able when successful
@@ -503,6 +667,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember21()(RepositoryRul
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember22()(RepositoryRuleMember2able) {
     return m.repositoryRuleRepositoryRuleMember22
 }
+// GetRepositoryRuleRepositoryRuleMember23 gets the repositoryRuleMember2 property value. Composed type representation for type RepositoryRuleMember2able
+// returns a RepositoryRuleMember2able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember23()(RepositoryRuleMember2able) {
+    return m.repositoryRuleRepositoryRuleMember23
+}
+// GetRepositoryRuleRepositoryRuleMember24 gets the repositoryRuleMember2 property value. Composed type representation for type RepositoryRuleMember2able
+// returns a RepositoryRuleMember2able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember24()(RepositoryRuleMember2able) {
+    return m.repositoryRuleRepositoryRuleMember24
+}
 // GetRepositoryRuleRepositoryRuleMember3 gets the repositoryRuleMember3 property value. Composed type representation for type RepositoryRuleMember3able
 // returns a RepositoryRuleMember3able when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember3()(RepositoryRuleMember3able) {
@@ -522,6 +696,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember31()(RepositoryRul
 // returns a RepositoryRuleMember3able when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember32()(RepositoryRuleMember3able) {
     return m.repositoryRuleRepositoryRuleMember32
+}
+// GetRepositoryRuleRepositoryRuleMember33 gets the repositoryRuleMember3 property value. Composed type representation for type RepositoryRuleMember3able
+// returns a RepositoryRuleMember3able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember33()(RepositoryRuleMember3able) {
+    return m.repositoryRuleRepositoryRuleMember33
+}
+// GetRepositoryRuleRepositoryRuleMember34 gets the repositoryRuleMember3 property value. Composed type representation for type RepositoryRuleMember3able
+// returns a RepositoryRuleMember3able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember34()(RepositoryRuleMember3able) {
+    return m.repositoryRuleRepositoryRuleMember34
 }
 // GetRepositoryRuleRepositoryRuleMember4 gets the repositoryRuleMember4 property value. Composed type representation for type RepositoryRuleMember4able
 // returns a RepositoryRuleMember4able when successful
@@ -543,6 +727,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember41()(RepositoryRul
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember42()(RepositoryRuleMember4able) {
     return m.repositoryRuleRepositoryRuleMember42
 }
+// GetRepositoryRuleRepositoryRuleMember43 gets the repositoryRuleMember4 property value. Composed type representation for type RepositoryRuleMember4able
+// returns a RepositoryRuleMember4able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember43()(RepositoryRuleMember4able) {
+    return m.repositoryRuleRepositoryRuleMember43
+}
+// GetRepositoryRuleRepositoryRuleMember44 gets the repositoryRuleMember4 property value. Composed type representation for type RepositoryRuleMember4able
+// returns a RepositoryRuleMember4able when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMember44()(RepositoryRuleMember4able) {
+    return m.repositoryRuleRepositoryRuleMember44
+}
 // GetRepositoryRuleRepositoryRuleMergeQueue gets the repositoryRuleMergeQueue property value. Composed type representation for type RepositoryRuleMergeQueueable
 // returns a RepositoryRuleMergeQueueable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMergeQueue()(RepositoryRuleMergeQueueable) {
@@ -562,6 +756,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMergeQueue1()(Repository
 // returns a RepositoryRuleMergeQueueable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMergeQueue2()(RepositoryRuleMergeQueueable) {
     return m.repositoryRuleRepositoryRuleMergeQueue2
+}
+// GetRepositoryRuleRepositoryRuleMergeQueue3 gets the repositoryRuleMergeQueue property value. Composed type representation for type RepositoryRuleMergeQueueable
+// returns a RepositoryRuleMergeQueueable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMergeQueue3()(RepositoryRuleMergeQueueable) {
+    return m.repositoryRuleRepositoryRuleMergeQueue3
+}
+// GetRepositoryRuleRepositoryRuleMergeQueue4 gets the repositoryRuleMergeQueue property value. Composed type representation for type RepositoryRuleMergeQueueable
+// returns a RepositoryRuleMergeQueueable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleMergeQueue4()(RepositoryRuleMergeQueueable) {
+    return m.repositoryRuleRepositoryRuleMergeQueue4
 }
 // GetRepositoryRuleRepositoryRuleNonFastForward gets the repositoryRuleNonFastForward property value. Composed type representation for type RepositoryRuleNonFastForwardable
 // returns a RepositoryRuleNonFastForwardable when successful
@@ -583,6 +787,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleNonFastForward1()(Reposi
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleNonFastForward2()(RepositoryRuleNonFastForwardable) {
     return m.repositoryRuleRepositoryRuleNonFastForward2
 }
+// GetRepositoryRuleRepositoryRuleNonFastForward3 gets the repositoryRuleNonFastForward property value. Composed type representation for type RepositoryRuleNonFastForwardable
+// returns a RepositoryRuleNonFastForwardable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleNonFastForward3()(RepositoryRuleNonFastForwardable) {
+    return m.repositoryRuleRepositoryRuleNonFastForward3
+}
+// GetRepositoryRuleRepositoryRuleNonFastForward4 gets the repositoryRuleNonFastForward property value. Composed type representation for type RepositoryRuleNonFastForwardable
+// returns a RepositoryRuleNonFastForwardable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleNonFastForward4()(RepositoryRuleNonFastForwardable) {
+    return m.repositoryRuleRepositoryRuleNonFastForward4
+}
 // GetRepositoryRuleRepositoryRulePullRequest gets the repositoryRulePullRequest property value. Composed type representation for type RepositoryRulePullRequestable
 // returns a RepositoryRulePullRequestable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRulePullRequest()(RepositoryRulePullRequestable) {
@@ -602,6 +816,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRulePullRequest1()(Repositor
 // returns a RepositoryRulePullRequestable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRulePullRequest2()(RepositoryRulePullRequestable) {
     return m.repositoryRuleRepositoryRulePullRequest2
+}
+// GetRepositoryRuleRepositoryRulePullRequest3 gets the repositoryRulePullRequest property value. Composed type representation for type RepositoryRulePullRequestable
+// returns a RepositoryRulePullRequestable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRulePullRequest3()(RepositoryRulePullRequestable) {
+    return m.repositoryRuleRepositoryRulePullRequest3
+}
+// GetRepositoryRuleRepositoryRulePullRequest4 gets the repositoryRulePullRequest property value. Composed type representation for type RepositoryRulePullRequestable
+// returns a RepositoryRulePullRequestable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRulePullRequest4()(RepositoryRulePullRequestable) {
+    return m.repositoryRuleRepositoryRulePullRequest4
 }
 // GetRepositoryRuleRepositoryRuleRequiredDeployments gets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
 // returns a RepositoryRuleRequiredDeploymentsable when successful
@@ -623,6 +847,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredDeployments1()(R
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredDeployments2()(RepositoryRuleRequiredDeploymentsable) {
     return m.repositoryRuleRepositoryRuleRequiredDeployments2
 }
+// GetRepositoryRuleRepositoryRuleRequiredDeployments3 gets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
+// returns a RepositoryRuleRequiredDeploymentsable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredDeployments3()(RepositoryRuleRequiredDeploymentsable) {
+    return m.repositoryRuleRepositoryRuleRequiredDeployments3
+}
+// GetRepositoryRuleRepositoryRuleRequiredDeployments4 gets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
+// returns a RepositoryRuleRequiredDeploymentsable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredDeployments4()(RepositoryRuleRequiredDeploymentsable) {
+    return m.repositoryRuleRepositoryRuleRequiredDeployments4
+}
 // GetRepositoryRuleRepositoryRuleRequiredLinearHistory gets the repositoryRuleRequiredLinearHistory property value. Composed type representation for type RepositoryRuleRequiredLinearHistoryable
 // returns a RepositoryRuleRequiredLinearHistoryable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredLinearHistory()(RepositoryRuleRequiredLinearHistoryable) {
@@ -642,6 +876,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredLinearHistory1()
 // returns a RepositoryRuleRequiredLinearHistoryable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredLinearHistory2()(RepositoryRuleRequiredLinearHistoryable) {
     return m.repositoryRuleRepositoryRuleRequiredLinearHistory2
+}
+// GetRepositoryRuleRepositoryRuleRequiredLinearHistory3 gets the repositoryRuleRequiredLinearHistory property value. Composed type representation for type RepositoryRuleRequiredLinearHistoryable
+// returns a RepositoryRuleRequiredLinearHistoryable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredLinearHistory3()(RepositoryRuleRequiredLinearHistoryable) {
+    return m.repositoryRuleRepositoryRuleRequiredLinearHistory3
+}
+// GetRepositoryRuleRepositoryRuleRequiredLinearHistory4 gets the repositoryRuleRequiredLinearHistory property value. Composed type representation for type RepositoryRuleRequiredLinearHistoryable
+// returns a RepositoryRuleRequiredLinearHistoryable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredLinearHistory4()(RepositoryRuleRequiredLinearHistoryable) {
+    return m.repositoryRuleRepositoryRuleRequiredLinearHistory4
 }
 // GetRepositoryRuleRepositoryRuleRequiredSignatures gets the repositoryRuleRequiredSignatures property value. Composed type representation for type RepositoryRuleRequiredSignaturesable
 // returns a RepositoryRuleRequiredSignaturesable when successful
@@ -663,6 +907,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredSignatures1()(Re
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredSignatures2()(RepositoryRuleRequiredSignaturesable) {
     return m.repositoryRuleRepositoryRuleRequiredSignatures2
 }
+// GetRepositoryRuleRepositoryRuleRequiredSignatures3 gets the repositoryRuleRequiredSignatures property value. Composed type representation for type RepositoryRuleRequiredSignaturesable
+// returns a RepositoryRuleRequiredSignaturesable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredSignatures3()(RepositoryRuleRequiredSignaturesable) {
+    return m.repositoryRuleRepositoryRuleRequiredSignatures3
+}
+// GetRepositoryRuleRepositoryRuleRequiredSignatures4 gets the repositoryRuleRequiredSignatures property value. Composed type representation for type RepositoryRuleRequiredSignaturesable
+// returns a RepositoryRuleRequiredSignaturesable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredSignatures4()(RepositoryRuleRequiredSignaturesable) {
+    return m.repositoryRuleRepositoryRuleRequiredSignatures4
+}
 // GetRepositoryRuleRepositoryRuleRequiredStatusChecks gets the repositoryRuleRequiredStatusChecks property value. Composed type representation for type RepositoryRuleRequiredStatusChecksable
 // returns a RepositoryRuleRequiredStatusChecksable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredStatusChecks()(RepositoryRuleRequiredStatusChecksable) {
@@ -682,6 +936,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredStatusChecks1()(
 // returns a RepositoryRuleRequiredStatusChecksable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredStatusChecks2()(RepositoryRuleRequiredStatusChecksable) {
     return m.repositoryRuleRepositoryRuleRequiredStatusChecks2
+}
+// GetRepositoryRuleRepositoryRuleRequiredStatusChecks3 gets the repositoryRuleRequiredStatusChecks property value. Composed type representation for type RepositoryRuleRequiredStatusChecksable
+// returns a RepositoryRuleRequiredStatusChecksable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredStatusChecks3()(RepositoryRuleRequiredStatusChecksable) {
+    return m.repositoryRuleRepositoryRuleRequiredStatusChecks3
+}
+// GetRepositoryRuleRepositoryRuleRequiredStatusChecks4 gets the repositoryRuleRequiredStatusChecks property value. Composed type representation for type RepositoryRuleRequiredStatusChecksable
+// returns a RepositoryRuleRequiredStatusChecksable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleRequiredStatusChecks4()(RepositoryRuleRequiredStatusChecksable) {
+    return m.repositoryRuleRepositoryRuleRequiredStatusChecks4
 }
 // GetRepositoryRuleRepositoryRuleTagNamePattern gets the repositoryRuleTagNamePattern property value. Composed type representation for type RepositoryRuleTagNamePatternable
 // returns a RepositoryRuleTagNamePatternable when successful
@@ -703,6 +967,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleTagNamePattern1()(Reposi
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleTagNamePattern2()(RepositoryRuleTagNamePatternable) {
     return m.repositoryRuleRepositoryRuleTagNamePattern2
 }
+// GetRepositoryRuleRepositoryRuleTagNamePattern3 gets the repositoryRuleTagNamePattern property value. Composed type representation for type RepositoryRuleTagNamePatternable
+// returns a RepositoryRuleTagNamePatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleTagNamePattern3()(RepositoryRuleTagNamePatternable) {
+    return m.repositoryRuleRepositoryRuleTagNamePattern3
+}
+// GetRepositoryRuleRepositoryRuleTagNamePattern4 gets the repositoryRuleTagNamePattern property value. Composed type representation for type RepositoryRuleTagNamePatternable
+// returns a RepositoryRuleTagNamePatternable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleTagNamePattern4()(RepositoryRuleTagNamePatternable) {
+    return m.repositoryRuleRepositoryRuleTagNamePattern4
+}
 // GetRepositoryRuleRepositoryRuleUpdate gets the repositoryRuleUpdate property value. Composed type representation for type RepositoryRuleUpdateable
 // returns a RepositoryRuleUpdateable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleUpdate()(RepositoryRuleUpdateable) {
@@ -723,6 +997,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleUpdate1()(RepositoryRule
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleUpdate2()(RepositoryRuleUpdateable) {
     return m.repositoryRuleRepositoryRuleUpdate2
 }
+// GetRepositoryRuleRepositoryRuleUpdate3 gets the repositoryRuleUpdate property value. Composed type representation for type RepositoryRuleUpdateable
+// returns a RepositoryRuleUpdateable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleUpdate3()(RepositoryRuleUpdateable) {
+    return m.repositoryRuleRepositoryRuleUpdate3
+}
+// GetRepositoryRuleRepositoryRuleUpdate4 gets the repositoryRuleUpdate property value. Composed type representation for type RepositoryRuleUpdateable
+// returns a RepositoryRuleUpdateable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleUpdate4()(RepositoryRuleUpdateable) {
+    return m.repositoryRuleRepositoryRuleUpdate4
+}
 // GetRepositoryRuleRepositoryRuleWorkflows gets the repositoryRuleWorkflows property value. Composed type representation for type RepositoryRuleWorkflowsable
 // returns a RepositoryRuleWorkflowsable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleWorkflows()(RepositoryRuleWorkflowsable) {
@@ -742,6 +1026,16 @@ func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleWorkflows1()(RepositoryR
 // returns a RepositoryRuleWorkflowsable when successful
 func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleWorkflows2()(RepositoryRuleWorkflowsable) {
     return m.repositoryRuleRepositoryRuleWorkflows2
+}
+// GetRepositoryRuleRepositoryRuleWorkflows3 gets the repositoryRuleWorkflows property value. Composed type representation for type RepositoryRuleWorkflowsable
+// returns a RepositoryRuleWorkflowsable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleWorkflows3()(RepositoryRuleWorkflowsable) {
+    return m.repositoryRuleRepositoryRuleWorkflows3
+}
+// GetRepositoryRuleRepositoryRuleWorkflows4 gets the repositoryRuleWorkflows property value. Composed type representation for type RepositoryRuleWorkflowsable
+// returns a RepositoryRuleWorkflowsable when successful
+func (m *RepositoryRule) GetRepositoryRuleRepositoryRuleWorkflows4()(RepositoryRuleWorkflowsable) {
+    return m.repositoryRuleRepositoryRuleWorkflows4
 }
 // GetRepositoryRuleRequiredDeployments gets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
 // returns a RepositoryRuleRequiredDeploymentsable when successful
@@ -870,6 +1164,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleBranchNamePattern3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleBranchNamePattern3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleBranchNamePattern4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleBranchNamePattern4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleCodeScanning() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCodeScanning())
         if err != nil {
@@ -887,6 +1191,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleCodeScanning2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCodeScanning2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCodeScanning3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCodeScanning3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCodeScanning4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCodeScanning4())
         if err != nil {
             return err
         }
@@ -910,6 +1224,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleCommitMessagePattern() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitMessagePattern())
         if err != nil {
@@ -927,6 +1251,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleCommitMessagePattern2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitMessagePattern2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCommitMessagePattern3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitMessagePattern3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCommitMessagePattern4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitMessagePattern4())
         if err != nil {
             return err
         }
@@ -950,6 +1284,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleCommitterEmailPattern3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitterEmailPattern3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCommitterEmailPattern4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCommitterEmailPattern4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleCreation() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCreation())
         if err != nil {
@@ -967,6 +1311,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleCreation2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCreation2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCreation3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCreation3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleCreation4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleCreation4())
         if err != nil {
             return err
         }
@@ -990,6 +1344,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleDeletion3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleDeletion3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleDeletion4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleDeletion4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleMember1() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember1())
         if err != nil {
@@ -1007,6 +1371,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleMember12() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember12())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMember13() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember13())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMember14() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember14())
         if err != nil {
             return err
         }
@@ -1030,6 +1404,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleMember23() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember23())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMember24() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember24())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleMember3() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember3())
         if err != nil {
@@ -1047,6 +1431,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleMember32() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember32())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMember33() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember33())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMember34() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember34())
         if err != nil {
             return err
         }
@@ -1070,6 +1464,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleMember43() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember43())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMember44() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMember44())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleMergeQueue() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMergeQueue())
         if err != nil {
@@ -1087,6 +1491,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleMergeQueue2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMergeQueue2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMergeQueue3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMergeQueue3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleMergeQueue4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleMergeQueue4())
         if err != nil {
             return err
         }
@@ -1110,6 +1524,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleNonFastForward3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleNonFastForward3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleNonFastForward4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleNonFastForward4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRulePullRequest() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRulePullRequest())
         if err != nil {
@@ -1127,6 +1551,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRulePullRequest2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRulePullRequest2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRulePullRequest3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRulePullRequest3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRulePullRequest4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRulePullRequest4())
         if err != nil {
             return err
         }
@@ -1150,6 +1584,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredDeployments3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredDeployments3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredDeployments4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredDeployments4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory())
         if err != nil {
@@ -1167,6 +1611,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredLinearHistory4())
         if err != nil {
             return err
         }
@@ -1190,6 +1644,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredSignatures3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredSignatures3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredSignatures4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredSignatures4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks())
         if err != nil {
@@ -1207,6 +1671,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleRequiredStatusChecks4())
         if err != nil {
             return err
         }
@@ -1230,6 +1704,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleTagNamePattern3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleTagNamePattern3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleTagNamePattern4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleTagNamePattern4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleUpdate() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleUpdate())
         if err != nil {
@@ -1250,6 +1734,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         if err != nil {
             return err
         }
+    } else if m.GetRepositoryRuleRepositoryRuleUpdate3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleUpdate3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleUpdate4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleUpdate4())
+        if err != nil {
+            return err
+        }
     } else if m.GetRepositoryRuleRepositoryRuleWorkflows() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleWorkflows())
         if err != nil {
@@ -1267,6 +1761,16 @@ func (m *RepositoryRule) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a
         }
     } else if m.GetRepositoryRuleRepositoryRuleWorkflows2() != nil {
         err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleWorkflows2())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleWorkflows3() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleWorkflows3())
+        if err != nil {
+            return err
+        }
+    } else if m.GetRepositoryRuleRepositoryRuleWorkflows4() != nil {
+        err := writer.WriteObjectValue("", m.GetRepositoryRuleRepositoryRuleWorkflows4())
         if err != nil {
             return err
         }
@@ -1380,6 +1884,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleBranchNamePattern1(value
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleBranchNamePattern2(value RepositoryRuleBranchNamePatternable)() {
     m.repositoryRuleRepositoryRuleBranchNamePattern2 = value
 }
+// SetRepositoryRuleRepositoryRuleBranchNamePattern3 sets the repositoryRuleBranchNamePattern property value. Composed type representation for type RepositoryRuleBranchNamePatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleBranchNamePattern3(value RepositoryRuleBranchNamePatternable)() {
+    m.repositoryRuleRepositoryRuleBranchNamePattern3 = value
+}
+// SetRepositoryRuleRepositoryRuleBranchNamePattern4 sets the repositoryRuleBranchNamePattern property value. Composed type representation for type RepositoryRuleBranchNamePatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleBranchNamePattern4(value RepositoryRuleBranchNamePatternable)() {
+    m.repositoryRuleRepositoryRuleBranchNamePattern4 = value
+}
 // SetRepositoryRuleRepositoryRuleCodeScanning sets the repositoryRuleCodeScanning property value. Composed type representation for type RepositoryRuleCodeScanningable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCodeScanning(value RepositoryRuleCodeScanningable)() {
     m.repositoryRuleRepositoryRuleCodeScanning = value
@@ -1395,6 +1907,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCodeScanning1(value Repo
 // SetRepositoryRuleRepositoryRuleCodeScanning2 sets the repositoryRuleCodeScanning property value. Composed type representation for type RepositoryRuleCodeScanningable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCodeScanning2(value RepositoryRuleCodeScanningable)() {
     m.repositoryRuleRepositoryRuleCodeScanning2 = value
+}
+// SetRepositoryRuleRepositoryRuleCodeScanning3 sets the repositoryRuleCodeScanning property value. Composed type representation for type RepositoryRuleCodeScanningable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCodeScanning3(value RepositoryRuleCodeScanningable)() {
+    m.repositoryRuleRepositoryRuleCodeScanning3 = value
+}
+// SetRepositoryRuleRepositoryRuleCodeScanning4 sets the repositoryRuleCodeScanning property value. Composed type representation for type RepositoryRuleCodeScanningable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCodeScanning4(value RepositoryRuleCodeScanningable)() {
+    m.repositoryRuleRepositoryRuleCodeScanning4 = value
 }
 // SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern sets the repositoryRuleCommitAuthorEmailPattern property value. Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern(value RepositoryRuleCommitAuthorEmailPatternable)() {
@@ -1412,6 +1932,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern2(value RepositoryRuleCommitAuthorEmailPatternable)() {
     m.repositoryRuleRepositoryRuleCommitAuthorEmailPattern2 = value
 }
+// SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3 sets the repositoryRuleCommitAuthorEmailPattern property value. Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3(value RepositoryRuleCommitAuthorEmailPatternable)() {
+    m.repositoryRuleRepositoryRuleCommitAuthorEmailPattern3 = value
+}
+// SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4 sets the repositoryRuleCommitAuthorEmailPattern property value. Composed type representation for type RepositoryRuleCommitAuthorEmailPatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4(value RepositoryRuleCommitAuthorEmailPatternable)() {
+    m.repositoryRuleRepositoryRuleCommitAuthorEmailPattern4 = value
+}
 // SetRepositoryRuleRepositoryRuleCommitMessagePattern sets the repositoryRuleCommitMessagePattern property value. Composed type representation for type RepositoryRuleCommitMessagePatternable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitMessagePattern(value RepositoryRuleCommitMessagePatternable)() {
     m.repositoryRuleRepositoryRuleCommitMessagePattern = value
@@ -1427,6 +1955,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitMessagePattern1(va
 // SetRepositoryRuleRepositoryRuleCommitMessagePattern2 sets the repositoryRuleCommitMessagePattern property value. Composed type representation for type RepositoryRuleCommitMessagePatternable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitMessagePattern2(value RepositoryRuleCommitMessagePatternable)() {
     m.repositoryRuleRepositoryRuleCommitMessagePattern2 = value
+}
+// SetRepositoryRuleRepositoryRuleCommitMessagePattern3 sets the repositoryRuleCommitMessagePattern property value. Composed type representation for type RepositoryRuleCommitMessagePatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitMessagePattern3(value RepositoryRuleCommitMessagePatternable)() {
+    m.repositoryRuleRepositoryRuleCommitMessagePattern3 = value
+}
+// SetRepositoryRuleRepositoryRuleCommitMessagePattern4 sets the repositoryRuleCommitMessagePattern property value. Composed type representation for type RepositoryRuleCommitMessagePatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitMessagePattern4(value RepositoryRuleCommitMessagePatternable)() {
+    m.repositoryRuleRepositoryRuleCommitMessagePattern4 = value
 }
 // SetRepositoryRuleRepositoryRuleCommitterEmailPattern sets the repositoryRuleCommitterEmailPattern property value. Composed type representation for type RepositoryRuleCommitterEmailPatternable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitterEmailPattern(value RepositoryRuleCommitterEmailPatternable)() {
@@ -1444,6 +1980,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitterEmailPattern1(v
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitterEmailPattern2(value RepositoryRuleCommitterEmailPatternable)() {
     m.repositoryRuleRepositoryRuleCommitterEmailPattern2 = value
 }
+// SetRepositoryRuleRepositoryRuleCommitterEmailPattern3 sets the repositoryRuleCommitterEmailPattern property value. Composed type representation for type RepositoryRuleCommitterEmailPatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitterEmailPattern3(value RepositoryRuleCommitterEmailPatternable)() {
+    m.repositoryRuleRepositoryRuleCommitterEmailPattern3 = value
+}
+// SetRepositoryRuleRepositoryRuleCommitterEmailPattern4 sets the repositoryRuleCommitterEmailPattern property value. Composed type representation for type RepositoryRuleCommitterEmailPatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCommitterEmailPattern4(value RepositoryRuleCommitterEmailPatternable)() {
+    m.repositoryRuleRepositoryRuleCommitterEmailPattern4 = value
+}
 // SetRepositoryRuleRepositoryRuleCreation sets the repositoryRuleCreation property value. Composed type representation for type RepositoryRuleCreationable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCreation(value RepositoryRuleCreationable)() {
     m.repositoryRuleRepositoryRuleCreation = value
@@ -1459,6 +2003,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCreation1(value Reposito
 // SetRepositoryRuleRepositoryRuleCreation2 sets the repositoryRuleCreation property value. Composed type representation for type RepositoryRuleCreationable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCreation2(value RepositoryRuleCreationable)() {
     m.repositoryRuleRepositoryRuleCreation2 = value
+}
+// SetRepositoryRuleRepositoryRuleCreation3 sets the repositoryRuleCreation property value. Composed type representation for type RepositoryRuleCreationable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCreation3(value RepositoryRuleCreationable)() {
+    m.repositoryRuleRepositoryRuleCreation3 = value
+}
+// SetRepositoryRuleRepositoryRuleCreation4 sets the repositoryRuleCreation property value. Composed type representation for type RepositoryRuleCreationable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleCreation4(value RepositoryRuleCreationable)() {
+    m.repositoryRuleRepositoryRuleCreation4 = value
 }
 // SetRepositoryRuleRepositoryRuleDeletion sets the repositoryRuleDeletion property value. Composed type representation for type RepositoryRuleDeletionable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleDeletion(value RepositoryRuleDeletionable)() {
@@ -1476,6 +2028,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleDeletion1(value Reposito
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleDeletion2(value RepositoryRuleDeletionable)() {
     m.repositoryRuleRepositoryRuleDeletion2 = value
 }
+// SetRepositoryRuleRepositoryRuleDeletion3 sets the repositoryRuleDeletion property value. Composed type representation for type RepositoryRuleDeletionable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleDeletion3(value RepositoryRuleDeletionable)() {
+    m.repositoryRuleRepositoryRuleDeletion3 = value
+}
+// SetRepositoryRuleRepositoryRuleDeletion4 sets the repositoryRuleDeletion property value. Composed type representation for type RepositoryRuleDeletionable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleDeletion4(value RepositoryRuleDeletionable)() {
+    m.repositoryRuleRepositoryRuleDeletion4 = value
+}
 // SetRepositoryRuleRepositoryRuleMember1 sets the repositoryRuleMember1 property value. Composed type representation for type RepositoryRuleMember1able
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember1(value RepositoryRuleMember1able)() {
     m.repositoryRuleRepositoryRuleMember1 = value
@@ -1491,6 +2051,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember11(value Repositor
 // SetRepositoryRuleRepositoryRuleMember12 sets the repositoryRuleMember1 property value. Composed type representation for type RepositoryRuleMember1able
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember12(value RepositoryRuleMember1able)() {
     m.repositoryRuleRepositoryRuleMember12 = value
+}
+// SetRepositoryRuleRepositoryRuleMember13 sets the repositoryRuleMember1 property value. Composed type representation for type RepositoryRuleMember1able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember13(value RepositoryRuleMember1able)() {
+    m.repositoryRuleRepositoryRuleMember13 = value
+}
+// SetRepositoryRuleRepositoryRuleMember14 sets the repositoryRuleMember1 property value. Composed type representation for type RepositoryRuleMember1able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember14(value RepositoryRuleMember1able)() {
+    m.repositoryRuleRepositoryRuleMember14 = value
 }
 // SetRepositoryRuleRepositoryRuleMember2 sets the repositoryRuleMember2 property value. Composed type representation for type RepositoryRuleMember2able
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember2(value RepositoryRuleMember2able)() {
@@ -1508,6 +2076,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember21(value Repositor
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember22(value RepositoryRuleMember2able)() {
     m.repositoryRuleRepositoryRuleMember22 = value
 }
+// SetRepositoryRuleRepositoryRuleMember23 sets the repositoryRuleMember2 property value. Composed type representation for type RepositoryRuleMember2able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember23(value RepositoryRuleMember2able)() {
+    m.repositoryRuleRepositoryRuleMember23 = value
+}
+// SetRepositoryRuleRepositoryRuleMember24 sets the repositoryRuleMember2 property value. Composed type representation for type RepositoryRuleMember2able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember24(value RepositoryRuleMember2able)() {
+    m.repositoryRuleRepositoryRuleMember24 = value
+}
 // SetRepositoryRuleRepositoryRuleMember3 sets the repositoryRuleMember3 property value. Composed type representation for type RepositoryRuleMember3able
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember3(value RepositoryRuleMember3able)() {
     m.repositoryRuleRepositoryRuleMember3 = value
@@ -1523,6 +2099,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember31(value Repositor
 // SetRepositoryRuleRepositoryRuleMember32 sets the repositoryRuleMember3 property value. Composed type representation for type RepositoryRuleMember3able
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember32(value RepositoryRuleMember3able)() {
     m.repositoryRuleRepositoryRuleMember32 = value
+}
+// SetRepositoryRuleRepositoryRuleMember33 sets the repositoryRuleMember3 property value. Composed type representation for type RepositoryRuleMember3able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember33(value RepositoryRuleMember3able)() {
+    m.repositoryRuleRepositoryRuleMember33 = value
+}
+// SetRepositoryRuleRepositoryRuleMember34 sets the repositoryRuleMember3 property value. Composed type representation for type RepositoryRuleMember3able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember34(value RepositoryRuleMember3able)() {
+    m.repositoryRuleRepositoryRuleMember34 = value
 }
 // SetRepositoryRuleRepositoryRuleMember4 sets the repositoryRuleMember4 property value. Composed type representation for type RepositoryRuleMember4able
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember4(value RepositoryRuleMember4able)() {
@@ -1540,6 +2124,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember41(value Repositor
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember42(value RepositoryRuleMember4able)() {
     m.repositoryRuleRepositoryRuleMember42 = value
 }
+// SetRepositoryRuleRepositoryRuleMember43 sets the repositoryRuleMember4 property value. Composed type representation for type RepositoryRuleMember4able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember43(value RepositoryRuleMember4able)() {
+    m.repositoryRuleRepositoryRuleMember43 = value
+}
+// SetRepositoryRuleRepositoryRuleMember44 sets the repositoryRuleMember4 property value. Composed type representation for type RepositoryRuleMember4able
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMember44(value RepositoryRuleMember4able)() {
+    m.repositoryRuleRepositoryRuleMember44 = value
+}
 // SetRepositoryRuleRepositoryRuleMergeQueue sets the repositoryRuleMergeQueue property value. Composed type representation for type RepositoryRuleMergeQueueable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMergeQueue(value RepositoryRuleMergeQueueable)() {
     m.repositoryRuleRepositoryRuleMergeQueue = value
@@ -1555,6 +2147,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMergeQueue1(value Reposi
 // SetRepositoryRuleRepositoryRuleMergeQueue2 sets the repositoryRuleMergeQueue property value. Composed type representation for type RepositoryRuleMergeQueueable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMergeQueue2(value RepositoryRuleMergeQueueable)() {
     m.repositoryRuleRepositoryRuleMergeQueue2 = value
+}
+// SetRepositoryRuleRepositoryRuleMergeQueue3 sets the repositoryRuleMergeQueue property value. Composed type representation for type RepositoryRuleMergeQueueable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMergeQueue3(value RepositoryRuleMergeQueueable)() {
+    m.repositoryRuleRepositoryRuleMergeQueue3 = value
+}
+// SetRepositoryRuleRepositoryRuleMergeQueue4 sets the repositoryRuleMergeQueue property value. Composed type representation for type RepositoryRuleMergeQueueable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleMergeQueue4(value RepositoryRuleMergeQueueable)() {
+    m.repositoryRuleRepositoryRuleMergeQueue4 = value
 }
 // SetRepositoryRuleRepositoryRuleNonFastForward sets the repositoryRuleNonFastForward property value. Composed type representation for type RepositoryRuleNonFastForwardable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleNonFastForward(value RepositoryRuleNonFastForwardable)() {
@@ -1572,6 +2172,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleNonFastForward1(value Re
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleNonFastForward2(value RepositoryRuleNonFastForwardable)() {
     m.repositoryRuleRepositoryRuleNonFastForward2 = value
 }
+// SetRepositoryRuleRepositoryRuleNonFastForward3 sets the repositoryRuleNonFastForward property value. Composed type representation for type RepositoryRuleNonFastForwardable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleNonFastForward3(value RepositoryRuleNonFastForwardable)() {
+    m.repositoryRuleRepositoryRuleNonFastForward3 = value
+}
+// SetRepositoryRuleRepositoryRuleNonFastForward4 sets the repositoryRuleNonFastForward property value. Composed type representation for type RepositoryRuleNonFastForwardable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleNonFastForward4(value RepositoryRuleNonFastForwardable)() {
+    m.repositoryRuleRepositoryRuleNonFastForward4 = value
+}
 // SetRepositoryRuleRepositoryRulePullRequest sets the repositoryRulePullRequest property value. Composed type representation for type RepositoryRulePullRequestable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRulePullRequest(value RepositoryRulePullRequestable)() {
     m.repositoryRuleRepositoryRulePullRequest = value
@@ -1587,6 +2195,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRulePullRequest1(value Repos
 // SetRepositoryRuleRepositoryRulePullRequest2 sets the repositoryRulePullRequest property value. Composed type representation for type RepositoryRulePullRequestable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRulePullRequest2(value RepositoryRulePullRequestable)() {
     m.repositoryRuleRepositoryRulePullRequest2 = value
+}
+// SetRepositoryRuleRepositoryRulePullRequest3 sets the repositoryRulePullRequest property value. Composed type representation for type RepositoryRulePullRequestable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRulePullRequest3(value RepositoryRulePullRequestable)() {
+    m.repositoryRuleRepositoryRulePullRequest3 = value
+}
+// SetRepositoryRuleRepositoryRulePullRequest4 sets the repositoryRulePullRequest property value. Composed type representation for type RepositoryRulePullRequestable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRulePullRequest4(value RepositoryRulePullRequestable)() {
+    m.repositoryRuleRepositoryRulePullRequest4 = value
 }
 // SetRepositoryRuleRepositoryRuleRequiredDeployments sets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredDeployments(value RepositoryRuleRequiredDeploymentsable)() {
@@ -1604,6 +2220,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredDeployments1(val
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredDeployments2(value RepositoryRuleRequiredDeploymentsable)() {
     m.repositoryRuleRepositoryRuleRequiredDeployments2 = value
 }
+// SetRepositoryRuleRepositoryRuleRequiredDeployments3 sets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredDeployments3(value RepositoryRuleRequiredDeploymentsable)() {
+    m.repositoryRuleRepositoryRuleRequiredDeployments3 = value
+}
+// SetRepositoryRuleRepositoryRuleRequiredDeployments4 sets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredDeployments4(value RepositoryRuleRequiredDeploymentsable)() {
+    m.repositoryRuleRepositoryRuleRequiredDeployments4 = value
+}
 // SetRepositoryRuleRepositoryRuleRequiredLinearHistory sets the repositoryRuleRequiredLinearHistory property value. Composed type representation for type RepositoryRuleRequiredLinearHistoryable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredLinearHistory(value RepositoryRuleRequiredLinearHistoryable)() {
     m.repositoryRuleRepositoryRuleRequiredLinearHistory = value
@@ -1619,6 +2243,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredLinearHistory1(v
 // SetRepositoryRuleRepositoryRuleRequiredLinearHistory2 sets the repositoryRuleRequiredLinearHistory property value. Composed type representation for type RepositoryRuleRequiredLinearHistoryable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredLinearHistory2(value RepositoryRuleRequiredLinearHistoryable)() {
     m.repositoryRuleRepositoryRuleRequiredLinearHistory2 = value
+}
+// SetRepositoryRuleRepositoryRuleRequiredLinearHistory3 sets the repositoryRuleRequiredLinearHistory property value. Composed type representation for type RepositoryRuleRequiredLinearHistoryable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredLinearHistory3(value RepositoryRuleRequiredLinearHistoryable)() {
+    m.repositoryRuleRepositoryRuleRequiredLinearHistory3 = value
+}
+// SetRepositoryRuleRepositoryRuleRequiredLinearHistory4 sets the repositoryRuleRequiredLinearHistory property value. Composed type representation for type RepositoryRuleRequiredLinearHistoryable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredLinearHistory4(value RepositoryRuleRequiredLinearHistoryable)() {
+    m.repositoryRuleRepositoryRuleRequiredLinearHistory4 = value
 }
 // SetRepositoryRuleRepositoryRuleRequiredSignatures sets the repositoryRuleRequiredSignatures property value. Composed type representation for type RepositoryRuleRequiredSignaturesable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredSignatures(value RepositoryRuleRequiredSignaturesable)() {
@@ -1636,6 +2268,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredSignatures1(valu
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredSignatures2(value RepositoryRuleRequiredSignaturesable)() {
     m.repositoryRuleRepositoryRuleRequiredSignatures2 = value
 }
+// SetRepositoryRuleRepositoryRuleRequiredSignatures3 sets the repositoryRuleRequiredSignatures property value. Composed type representation for type RepositoryRuleRequiredSignaturesable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredSignatures3(value RepositoryRuleRequiredSignaturesable)() {
+    m.repositoryRuleRepositoryRuleRequiredSignatures3 = value
+}
+// SetRepositoryRuleRepositoryRuleRequiredSignatures4 sets the repositoryRuleRequiredSignatures property value. Composed type representation for type RepositoryRuleRequiredSignaturesable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredSignatures4(value RepositoryRuleRequiredSignaturesable)() {
+    m.repositoryRuleRepositoryRuleRequiredSignatures4 = value
+}
 // SetRepositoryRuleRepositoryRuleRequiredStatusChecks sets the repositoryRuleRequiredStatusChecks property value. Composed type representation for type RepositoryRuleRequiredStatusChecksable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredStatusChecks(value RepositoryRuleRequiredStatusChecksable)() {
     m.repositoryRuleRepositoryRuleRequiredStatusChecks = value
@@ -1651,6 +2291,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredStatusChecks1(va
 // SetRepositoryRuleRepositoryRuleRequiredStatusChecks2 sets the repositoryRuleRequiredStatusChecks property value. Composed type representation for type RepositoryRuleRequiredStatusChecksable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredStatusChecks2(value RepositoryRuleRequiredStatusChecksable)() {
     m.repositoryRuleRepositoryRuleRequiredStatusChecks2 = value
+}
+// SetRepositoryRuleRepositoryRuleRequiredStatusChecks3 sets the repositoryRuleRequiredStatusChecks property value. Composed type representation for type RepositoryRuleRequiredStatusChecksable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredStatusChecks3(value RepositoryRuleRequiredStatusChecksable)() {
+    m.repositoryRuleRepositoryRuleRequiredStatusChecks3 = value
+}
+// SetRepositoryRuleRepositoryRuleRequiredStatusChecks4 sets the repositoryRuleRequiredStatusChecks property value. Composed type representation for type RepositoryRuleRequiredStatusChecksable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleRequiredStatusChecks4(value RepositoryRuleRequiredStatusChecksable)() {
+    m.repositoryRuleRepositoryRuleRequiredStatusChecks4 = value
 }
 // SetRepositoryRuleRepositoryRuleTagNamePattern sets the repositoryRuleTagNamePattern property value. Composed type representation for type RepositoryRuleTagNamePatternable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleTagNamePattern(value RepositoryRuleTagNamePatternable)() {
@@ -1668,6 +2316,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleTagNamePattern1(value Re
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleTagNamePattern2(value RepositoryRuleTagNamePatternable)() {
     m.repositoryRuleRepositoryRuleTagNamePattern2 = value
 }
+// SetRepositoryRuleRepositoryRuleTagNamePattern3 sets the repositoryRuleTagNamePattern property value. Composed type representation for type RepositoryRuleTagNamePatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleTagNamePattern3(value RepositoryRuleTagNamePatternable)() {
+    m.repositoryRuleRepositoryRuleTagNamePattern3 = value
+}
+// SetRepositoryRuleRepositoryRuleTagNamePattern4 sets the repositoryRuleTagNamePattern property value. Composed type representation for type RepositoryRuleTagNamePatternable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleTagNamePattern4(value RepositoryRuleTagNamePatternable)() {
+    m.repositoryRuleRepositoryRuleTagNamePattern4 = value
+}
 // SetRepositoryRuleRepositoryRuleUpdate sets the repositoryRuleUpdate property value. Composed type representation for type RepositoryRuleUpdateable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleUpdate(value RepositoryRuleUpdateable)() {
     m.repositoryRuleRepositoryRuleUpdate = value
@@ -1684,6 +2340,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleUpdate1(value Repository
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleUpdate2(value RepositoryRuleUpdateable)() {
     m.repositoryRuleRepositoryRuleUpdate2 = value
 }
+// SetRepositoryRuleRepositoryRuleUpdate3 sets the repositoryRuleUpdate property value. Composed type representation for type RepositoryRuleUpdateable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleUpdate3(value RepositoryRuleUpdateable)() {
+    m.repositoryRuleRepositoryRuleUpdate3 = value
+}
+// SetRepositoryRuleRepositoryRuleUpdate4 sets the repositoryRuleUpdate property value. Composed type representation for type RepositoryRuleUpdateable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleUpdate4(value RepositoryRuleUpdateable)() {
+    m.repositoryRuleRepositoryRuleUpdate4 = value
+}
 // SetRepositoryRuleRepositoryRuleWorkflows sets the repositoryRuleWorkflows property value. Composed type representation for type RepositoryRuleWorkflowsable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleWorkflows(value RepositoryRuleWorkflowsable)() {
     m.repositoryRuleRepositoryRuleWorkflows = value
@@ -1699,6 +2363,14 @@ func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleWorkflows1(value Reposit
 // SetRepositoryRuleRepositoryRuleWorkflows2 sets the repositoryRuleWorkflows property value. Composed type representation for type RepositoryRuleWorkflowsable
 func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleWorkflows2(value RepositoryRuleWorkflowsable)() {
     m.repositoryRuleRepositoryRuleWorkflows2 = value
+}
+// SetRepositoryRuleRepositoryRuleWorkflows3 sets the repositoryRuleWorkflows property value. Composed type representation for type RepositoryRuleWorkflowsable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleWorkflows3(value RepositoryRuleWorkflowsable)() {
+    m.repositoryRuleRepositoryRuleWorkflows3 = value
+}
+// SetRepositoryRuleRepositoryRuleWorkflows4 sets the repositoryRuleWorkflows property value. Composed type representation for type RepositoryRuleWorkflowsable
+func (m *RepositoryRule) SetRepositoryRuleRepositoryRuleWorkflows4(value RepositoryRuleWorkflowsable)() {
+    m.repositoryRuleRepositoryRuleWorkflows4 = value
 }
 // SetRepositoryRuleRequiredDeployments sets the repositoryRuleRequiredDeployments property value. Composed type representation for type RepositoryRuleRequiredDeploymentsable
 func (m *RepositoryRule) SetRepositoryRuleRequiredDeployments(value RepositoryRuleRequiredDeploymentsable)() {
@@ -1748,86 +2420,128 @@ type RepositoryRuleable interface {
     GetRepositoryRuleRepositoryRuleBranchNamePattern0()(RepositoryRuleBranchNamePatternable)
     GetRepositoryRuleRepositoryRuleBranchNamePattern1()(RepositoryRuleBranchNamePatternable)
     GetRepositoryRuleRepositoryRuleBranchNamePattern2()(RepositoryRuleBranchNamePatternable)
+    GetRepositoryRuleRepositoryRuleBranchNamePattern3()(RepositoryRuleBranchNamePatternable)
+    GetRepositoryRuleRepositoryRuleBranchNamePattern4()(RepositoryRuleBranchNamePatternable)
     GetRepositoryRuleRepositoryRuleCodeScanning()(RepositoryRuleCodeScanningable)
     GetRepositoryRuleRepositoryRuleCodeScanning0()(RepositoryRuleCodeScanningable)
     GetRepositoryRuleRepositoryRuleCodeScanning1()(RepositoryRuleCodeScanningable)
     GetRepositoryRuleRepositoryRuleCodeScanning2()(RepositoryRuleCodeScanningable)
+    GetRepositoryRuleRepositoryRuleCodeScanning3()(RepositoryRuleCodeScanningable)
+    GetRepositoryRuleRepositoryRuleCodeScanning4()(RepositoryRuleCodeScanningable)
     GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern()(RepositoryRuleCommitAuthorEmailPatternable)
     GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern0()(RepositoryRuleCommitAuthorEmailPatternable)
     GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern1()(RepositoryRuleCommitAuthorEmailPatternable)
     GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern2()(RepositoryRuleCommitAuthorEmailPatternable)
+    GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3()(RepositoryRuleCommitAuthorEmailPatternable)
+    GetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4()(RepositoryRuleCommitAuthorEmailPatternable)
     GetRepositoryRuleRepositoryRuleCommitMessagePattern()(RepositoryRuleCommitMessagePatternable)
     GetRepositoryRuleRepositoryRuleCommitMessagePattern0()(RepositoryRuleCommitMessagePatternable)
     GetRepositoryRuleRepositoryRuleCommitMessagePattern1()(RepositoryRuleCommitMessagePatternable)
     GetRepositoryRuleRepositoryRuleCommitMessagePattern2()(RepositoryRuleCommitMessagePatternable)
+    GetRepositoryRuleRepositoryRuleCommitMessagePattern3()(RepositoryRuleCommitMessagePatternable)
+    GetRepositoryRuleRepositoryRuleCommitMessagePattern4()(RepositoryRuleCommitMessagePatternable)
     GetRepositoryRuleRepositoryRuleCommitterEmailPattern()(RepositoryRuleCommitterEmailPatternable)
     GetRepositoryRuleRepositoryRuleCommitterEmailPattern0()(RepositoryRuleCommitterEmailPatternable)
     GetRepositoryRuleRepositoryRuleCommitterEmailPattern1()(RepositoryRuleCommitterEmailPatternable)
     GetRepositoryRuleRepositoryRuleCommitterEmailPattern2()(RepositoryRuleCommitterEmailPatternable)
+    GetRepositoryRuleRepositoryRuleCommitterEmailPattern3()(RepositoryRuleCommitterEmailPatternable)
+    GetRepositoryRuleRepositoryRuleCommitterEmailPattern4()(RepositoryRuleCommitterEmailPatternable)
     GetRepositoryRuleRepositoryRuleCreation()(RepositoryRuleCreationable)
     GetRepositoryRuleRepositoryRuleCreation0()(RepositoryRuleCreationable)
     GetRepositoryRuleRepositoryRuleCreation1()(RepositoryRuleCreationable)
     GetRepositoryRuleRepositoryRuleCreation2()(RepositoryRuleCreationable)
+    GetRepositoryRuleRepositoryRuleCreation3()(RepositoryRuleCreationable)
+    GetRepositoryRuleRepositoryRuleCreation4()(RepositoryRuleCreationable)
     GetRepositoryRuleRepositoryRuleDeletion()(RepositoryRuleDeletionable)
     GetRepositoryRuleRepositoryRuleDeletion0()(RepositoryRuleDeletionable)
     GetRepositoryRuleRepositoryRuleDeletion1()(RepositoryRuleDeletionable)
     GetRepositoryRuleRepositoryRuleDeletion2()(RepositoryRuleDeletionable)
+    GetRepositoryRuleRepositoryRuleDeletion3()(RepositoryRuleDeletionable)
+    GetRepositoryRuleRepositoryRuleDeletion4()(RepositoryRuleDeletionable)
     GetRepositoryRuleRepositoryRuleMember1()(RepositoryRuleMember1able)
     GetRepositoryRuleRepositoryRuleMember10()(RepositoryRuleMember1able)
     GetRepositoryRuleRepositoryRuleMember11()(RepositoryRuleMember1able)
     GetRepositoryRuleRepositoryRuleMember12()(RepositoryRuleMember1able)
+    GetRepositoryRuleRepositoryRuleMember13()(RepositoryRuleMember1able)
+    GetRepositoryRuleRepositoryRuleMember14()(RepositoryRuleMember1able)
     GetRepositoryRuleRepositoryRuleMember2()(RepositoryRuleMember2able)
     GetRepositoryRuleRepositoryRuleMember20()(RepositoryRuleMember2able)
     GetRepositoryRuleRepositoryRuleMember21()(RepositoryRuleMember2able)
     GetRepositoryRuleRepositoryRuleMember22()(RepositoryRuleMember2able)
+    GetRepositoryRuleRepositoryRuleMember23()(RepositoryRuleMember2able)
+    GetRepositoryRuleRepositoryRuleMember24()(RepositoryRuleMember2able)
     GetRepositoryRuleRepositoryRuleMember3()(RepositoryRuleMember3able)
     GetRepositoryRuleRepositoryRuleMember30()(RepositoryRuleMember3able)
     GetRepositoryRuleRepositoryRuleMember31()(RepositoryRuleMember3able)
     GetRepositoryRuleRepositoryRuleMember32()(RepositoryRuleMember3able)
+    GetRepositoryRuleRepositoryRuleMember33()(RepositoryRuleMember3able)
+    GetRepositoryRuleRepositoryRuleMember34()(RepositoryRuleMember3able)
     GetRepositoryRuleRepositoryRuleMember4()(RepositoryRuleMember4able)
     GetRepositoryRuleRepositoryRuleMember40()(RepositoryRuleMember4able)
     GetRepositoryRuleRepositoryRuleMember41()(RepositoryRuleMember4able)
     GetRepositoryRuleRepositoryRuleMember42()(RepositoryRuleMember4able)
+    GetRepositoryRuleRepositoryRuleMember43()(RepositoryRuleMember4able)
+    GetRepositoryRuleRepositoryRuleMember44()(RepositoryRuleMember4able)
     GetRepositoryRuleRepositoryRuleMergeQueue()(RepositoryRuleMergeQueueable)
     GetRepositoryRuleRepositoryRuleMergeQueue0()(RepositoryRuleMergeQueueable)
     GetRepositoryRuleRepositoryRuleMergeQueue1()(RepositoryRuleMergeQueueable)
     GetRepositoryRuleRepositoryRuleMergeQueue2()(RepositoryRuleMergeQueueable)
+    GetRepositoryRuleRepositoryRuleMergeQueue3()(RepositoryRuleMergeQueueable)
+    GetRepositoryRuleRepositoryRuleMergeQueue4()(RepositoryRuleMergeQueueable)
     GetRepositoryRuleRepositoryRuleNonFastForward()(RepositoryRuleNonFastForwardable)
     GetRepositoryRuleRepositoryRuleNonFastForward0()(RepositoryRuleNonFastForwardable)
     GetRepositoryRuleRepositoryRuleNonFastForward1()(RepositoryRuleNonFastForwardable)
     GetRepositoryRuleRepositoryRuleNonFastForward2()(RepositoryRuleNonFastForwardable)
+    GetRepositoryRuleRepositoryRuleNonFastForward3()(RepositoryRuleNonFastForwardable)
+    GetRepositoryRuleRepositoryRuleNonFastForward4()(RepositoryRuleNonFastForwardable)
     GetRepositoryRuleRepositoryRulePullRequest()(RepositoryRulePullRequestable)
     GetRepositoryRuleRepositoryRulePullRequest0()(RepositoryRulePullRequestable)
     GetRepositoryRuleRepositoryRulePullRequest1()(RepositoryRulePullRequestable)
     GetRepositoryRuleRepositoryRulePullRequest2()(RepositoryRulePullRequestable)
+    GetRepositoryRuleRepositoryRulePullRequest3()(RepositoryRulePullRequestable)
+    GetRepositoryRuleRepositoryRulePullRequest4()(RepositoryRulePullRequestable)
     GetRepositoryRuleRepositoryRuleRequiredDeployments()(RepositoryRuleRequiredDeploymentsable)
     GetRepositoryRuleRepositoryRuleRequiredDeployments0()(RepositoryRuleRequiredDeploymentsable)
     GetRepositoryRuleRepositoryRuleRequiredDeployments1()(RepositoryRuleRequiredDeploymentsable)
     GetRepositoryRuleRepositoryRuleRequiredDeployments2()(RepositoryRuleRequiredDeploymentsable)
+    GetRepositoryRuleRepositoryRuleRequiredDeployments3()(RepositoryRuleRequiredDeploymentsable)
+    GetRepositoryRuleRepositoryRuleRequiredDeployments4()(RepositoryRuleRequiredDeploymentsable)
     GetRepositoryRuleRepositoryRuleRequiredLinearHistory()(RepositoryRuleRequiredLinearHistoryable)
     GetRepositoryRuleRepositoryRuleRequiredLinearHistory0()(RepositoryRuleRequiredLinearHistoryable)
     GetRepositoryRuleRepositoryRuleRequiredLinearHistory1()(RepositoryRuleRequiredLinearHistoryable)
     GetRepositoryRuleRepositoryRuleRequiredLinearHistory2()(RepositoryRuleRequiredLinearHistoryable)
+    GetRepositoryRuleRepositoryRuleRequiredLinearHistory3()(RepositoryRuleRequiredLinearHistoryable)
+    GetRepositoryRuleRepositoryRuleRequiredLinearHistory4()(RepositoryRuleRequiredLinearHistoryable)
     GetRepositoryRuleRepositoryRuleRequiredSignatures()(RepositoryRuleRequiredSignaturesable)
     GetRepositoryRuleRepositoryRuleRequiredSignatures0()(RepositoryRuleRequiredSignaturesable)
     GetRepositoryRuleRepositoryRuleRequiredSignatures1()(RepositoryRuleRequiredSignaturesable)
     GetRepositoryRuleRepositoryRuleRequiredSignatures2()(RepositoryRuleRequiredSignaturesable)
+    GetRepositoryRuleRepositoryRuleRequiredSignatures3()(RepositoryRuleRequiredSignaturesable)
+    GetRepositoryRuleRepositoryRuleRequiredSignatures4()(RepositoryRuleRequiredSignaturesable)
     GetRepositoryRuleRepositoryRuleRequiredStatusChecks()(RepositoryRuleRequiredStatusChecksable)
     GetRepositoryRuleRepositoryRuleRequiredStatusChecks0()(RepositoryRuleRequiredStatusChecksable)
     GetRepositoryRuleRepositoryRuleRequiredStatusChecks1()(RepositoryRuleRequiredStatusChecksable)
     GetRepositoryRuleRepositoryRuleRequiredStatusChecks2()(RepositoryRuleRequiredStatusChecksable)
+    GetRepositoryRuleRepositoryRuleRequiredStatusChecks3()(RepositoryRuleRequiredStatusChecksable)
+    GetRepositoryRuleRepositoryRuleRequiredStatusChecks4()(RepositoryRuleRequiredStatusChecksable)
     GetRepositoryRuleRepositoryRuleTagNamePattern()(RepositoryRuleTagNamePatternable)
     GetRepositoryRuleRepositoryRuleTagNamePattern0()(RepositoryRuleTagNamePatternable)
     GetRepositoryRuleRepositoryRuleTagNamePattern1()(RepositoryRuleTagNamePatternable)
     GetRepositoryRuleRepositoryRuleTagNamePattern2()(RepositoryRuleTagNamePatternable)
+    GetRepositoryRuleRepositoryRuleTagNamePattern3()(RepositoryRuleTagNamePatternable)
+    GetRepositoryRuleRepositoryRuleTagNamePattern4()(RepositoryRuleTagNamePatternable)
     GetRepositoryRuleRepositoryRuleUpdate()(RepositoryRuleUpdateable)
     GetRepositoryRuleRepositoryRuleUpdate0()(RepositoryRuleUpdateable)
     GetRepositoryRuleRepositoryRuleUpdate1()(RepositoryRuleUpdateable)
     GetRepositoryRuleRepositoryRuleUpdate2()(RepositoryRuleUpdateable)
+    GetRepositoryRuleRepositoryRuleUpdate3()(RepositoryRuleUpdateable)
+    GetRepositoryRuleRepositoryRuleUpdate4()(RepositoryRuleUpdateable)
     GetRepositoryRuleRepositoryRuleWorkflows()(RepositoryRuleWorkflowsable)
     GetRepositoryRuleRepositoryRuleWorkflows0()(RepositoryRuleWorkflowsable)
     GetRepositoryRuleRepositoryRuleWorkflows1()(RepositoryRuleWorkflowsable)
     GetRepositoryRuleRepositoryRuleWorkflows2()(RepositoryRuleWorkflowsable)
+    GetRepositoryRuleRepositoryRuleWorkflows3()(RepositoryRuleWorkflowsable)
+    GetRepositoryRuleRepositoryRuleWorkflows4()(RepositoryRuleWorkflowsable)
     GetRepositoryRuleRequiredDeployments()(RepositoryRuleRequiredDeploymentsable)
     GetRepositoryRuleRequiredLinearHistory()(RepositoryRuleRequiredLinearHistoryable)
     GetRepositoryRuleRequiredSignatures()(RepositoryRuleRequiredSignaturesable)
@@ -1853,86 +2567,128 @@ type RepositoryRuleable interface {
     SetRepositoryRuleRepositoryRuleBranchNamePattern0(value RepositoryRuleBranchNamePatternable)()
     SetRepositoryRuleRepositoryRuleBranchNamePattern1(value RepositoryRuleBranchNamePatternable)()
     SetRepositoryRuleRepositoryRuleBranchNamePattern2(value RepositoryRuleBranchNamePatternable)()
+    SetRepositoryRuleRepositoryRuleBranchNamePattern3(value RepositoryRuleBranchNamePatternable)()
+    SetRepositoryRuleRepositoryRuleBranchNamePattern4(value RepositoryRuleBranchNamePatternable)()
     SetRepositoryRuleRepositoryRuleCodeScanning(value RepositoryRuleCodeScanningable)()
     SetRepositoryRuleRepositoryRuleCodeScanning0(value RepositoryRuleCodeScanningable)()
     SetRepositoryRuleRepositoryRuleCodeScanning1(value RepositoryRuleCodeScanningable)()
     SetRepositoryRuleRepositoryRuleCodeScanning2(value RepositoryRuleCodeScanningable)()
+    SetRepositoryRuleRepositoryRuleCodeScanning3(value RepositoryRuleCodeScanningable)()
+    SetRepositoryRuleRepositoryRuleCodeScanning4(value RepositoryRuleCodeScanningable)()
     SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern(value RepositoryRuleCommitAuthorEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern0(value RepositoryRuleCommitAuthorEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern1(value RepositoryRuleCommitAuthorEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern2(value RepositoryRuleCommitAuthorEmailPatternable)()
+    SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern3(value RepositoryRuleCommitAuthorEmailPatternable)()
+    SetRepositoryRuleRepositoryRuleCommitAuthorEmailPattern4(value RepositoryRuleCommitAuthorEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCommitMessagePattern(value RepositoryRuleCommitMessagePatternable)()
     SetRepositoryRuleRepositoryRuleCommitMessagePattern0(value RepositoryRuleCommitMessagePatternable)()
     SetRepositoryRuleRepositoryRuleCommitMessagePattern1(value RepositoryRuleCommitMessagePatternable)()
     SetRepositoryRuleRepositoryRuleCommitMessagePattern2(value RepositoryRuleCommitMessagePatternable)()
+    SetRepositoryRuleRepositoryRuleCommitMessagePattern3(value RepositoryRuleCommitMessagePatternable)()
+    SetRepositoryRuleRepositoryRuleCommitMessagePattern4(value RepositoryRuleCommitMessagePatternable)()
     SetRepositoryRuleRepositoryRuleCommitterEmailPattern(value RepositoryRuleCommitterEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCommitterEmailPattern0(value RepositoryRuleCommitterEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCommitterEmailPattern1(value RepositoryRuleCommitterEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCommitterEmailPattern2(value RepositoryRuleCommitterEmailPatternable)()
+    SetRepositoryRuleRepositoryRuleCommitterEmailPattern3(value RepositoryRuleCommitterEmailPatternable)()
+    SetRepositoryRuleRepositoryRuleCommitterEmailPattern4(value RepositoryRuleCommitterEmailPatternable)()
     SetRepositoryRuleRepositoryRuleCreation(value RepositoryRuleCreationable)()
     SetRepositoryRuleRepositoryRuleCreation0(value RepositoryRuleCreationable)()
     SetRepositoryRuleRepositoryRuleCreation1(value RepositoryRuleCreationable)()
     SetRepositoryRuleRepositoryRuleCreation2(value RepositoryRuleCreationable)()
+    SetRepositoryRuleRepositoryRuleCreation3(value RepositoryRuleCreationable)()
+    SetRepositoryRuleRepositoryRuleCreation4(value RepositoryRuleCreationable)()
     SetRepositoryRuleRepositoryRuleDeletion(value RepositoryRuleDeletionable)()
     SetRepositoryRuleRepositoryRuleDeletion0(value RepositoryRuleDeletionable)()
     SetRepositoryRuleRepositoryRuleDeletion1(value RepositoryRuleDeletionable)()
     SetRepositoryRuleRepositoryRuleDeletion2(value RepositoryRuleDeletionable)()
+    SetRepositoryRuleRepositoryRuleDeletion3(value RepositoryRuleDeletionable)()
+    SetRepositoryRuleRepositoryRuleDeletion4(value RepositoryRuleDeletionable)()
     SetRepositoryRuleRepositoryRuleMember1(value RepositoryRuleMember1able)()
     SetRepositoryRuleRepositoryRuleMember10(value RepositoryRuleMember1able)()
     SetRepositoryRuleRepositoryRuleMember11(value RepositoryRuleMember1able)()
     SetRepositoryRuleRepositoryRuleMember12(value RepositoryRuleMember1able)()
+    SetRepositoryRuleRepositoryRuleMember13(value RepositoryRuleMember1able)()
+    SetRepositoryRuleRepositoryRuleMember14(value RepositoryRuleMember1able)()
     SetRepositoryRuleRepositoryRuleMember2(value RepositoryRuleMember2able)()
     SetRepositoryRuleRepositoryRuleMember20(value RepositoryRuleMember2able)()
     SetRepositoryRuleRepositoryRuleMember21(value RepositoryRuleMember2able)()
     SetRepositoryRuleRepositoryRuleMember22(value RepositoryRuleMember2able)()
+    SetRepositoryRuleRepositoryRuleMember23(value RepositoryRuleMember2able)()
+    SetRepositoryRuleRepositoryRuleMember24(value RepositoryRuleMember2able)()
     SetRepositoryRuleRepositoryRuleMember3(value RepositoryRuleMember3able)()
     SetRepositoryRuleRepositoryRuleMember30(value RepositoryRuleMember3able)()
     SetRepositoryRuleRepositoryRuleMember31(value RepositoryRuleMember3able)()
     SetRepositoryRuleRepositoryRuleMember32(value RepositoryRuleMember3able)()
+    SetRepositoryRuleRepositoryRuleMember33(value RepositoryRuleMember3able)()
+    SetRepositoryRuleRepositoryRuleMember34(value RepositoryRuleMember3able)()
     SetRepositoryRuleRepositoryRuleMember4(value RepositoryRuleMember4able)()
     SetRepositoryRuleRepositoryRuleMember40(value RepositoryRuleMember4able)()
     SetRepositoryRuleRepositoryRuleMember41(value RepositoryRuleMember4able)()
     SetRepositoryRuleRepositoryRuleMember42(value RepositoryRuleMember4able)()
+    SetRepositoryRuleRepositoryRuleMember43(value RepositoryRuleMember4able)()
+    SetRepositoryRuleRepositoryRuleMember44(value RepositoryRuleMember4able)()
     SetRepositoryRuleRepositoryRuleMergeQueue(value RepositoryRuleMergeQueueable)()
     SetRepositoryRuleRepositoryRuleMergeQueue0(value RepositoryRuleMergeQueueable)()
     SetRepositoryRuleRepositoryRuleMergeQueue1(value RepositoryRuleMergeQueueable)()
     SetRepositoryRuleRepositoryRuleMergeQueue2(value RepositoryRuleMergeQueueable)()
+    SetRepositoryRuleRepositoryRuleMergeQueue3(value RepositoryRuleMergeQueueable)()
+    SetRepositoryRuleRepositoryRuleMergeQueue4(value RepositoryRuleMergeQueueable)()
     SetRepositoryRuleRepositoryRuleNonFastForward(value RepositoryRuleNonFastForwardable)()
     SetRepositoryRuleRepositoryRuleNonFastForward0(value RepositoryRuleNonFastForwardable)()
     SetRepositoryRuleRepositoryRuleNonFastForward1(value RepositoryRuleNonFastForwardable)()
     SetRepositoryRuleRepositoryRuleNonFastForward2(value RepositoryRuleNonFastForwardable)()
+    SetRepositoryRuleRepositoryRuleNonFastForward3(value RepositoryRuleNonFastForwardable)()
+    SetRepositoryRuleRepositoryRuleNonFastForward4(value RepositoryRuleNonFastForwardable)()
     SetRepositoryRuleRepositoryRulePullRequest(value RepositoryRulePullRequestable)()
     SetRepositoryRuleRepositoryRulePullRequest0(value RepositoryRulePullRequestable)()
     SetRepositoryRuleRepositoryRulePullRequest1(value RepositoryRulePullRequestable)()
     SetRepositoryRuleRepositoryRulePullRequest2(value RepositoryRulePullRequestable)()
+    SetRepositoryRuleRepositoryRulePullRequest3(value RepositoryRulePullRequestable)()
+    SetRepositoryRuleRepositoryRulePullRequest4(value RepositoryRulePullRequestable)()
     SetRepositoryRuleRepositoryRuleRequiredDeployments(value RepositoryRuleRequiredDeploymentsable)()
     SetRepositoryRuleRepositoryRuleRequiredDeployments0(value RepositoryRuleRequiredDeploymentsable)()
     SetRepositoryRuleRepositoryRuleRequiredDeployments1(value RepositoryRuleRequiredDeploymentsable)()
     SetRepositoryRuleRepositoryRuleRequiredDeployments2(value RepositoryRuleRequiredDeploymentsable)()
+    SetRepositoryRuleRepositoryRuleRequiredDeployments3(value RepositoryRuleRequiredDeploymentsable)()
+    SetRepositoryRuleRepositoryRuleRequiredDeployments4(value RepositoryRuleRequiredDeploymentsable)()
     SetRepositoryRuleRepositoryRuleRequiredLinearHistory(value RepositoryRuleRequiredLinearHistoryable)()
     SetRepositoryRuleRepositoryRuleRequiredLinearHistory0(value RepositoryRuleRequiredLinearHistoryable)()
     SetRepositoryRuleRepositoryRuleRequiredLinearHistory1(value RepositoryRuleRequiredLinearHistoryable)()
     SetRepositoryRuleRepositoryRuleRequiredLinearHistory2(value RepositoryRuleRequiredLinearHistoryable)()
+    SetRepositoryRuleRepositoryRuleRequiredLinearHistory3(value RepositoryRuleRequiredLinearHistoryable)()
+    SetRepositoryRuleRepositoryRuleRequiredLinearHistory4(value RepositoryRuleRequiredLinearHistoryable)()
     SetRepositoryRuleRepositoryRuleRequiredSignatures(value RepositoryRuleRequiredSignaturesable)()
     SetRepositoryRuleRepositoryRuleRequiredSignatures0(value RepositoryRuleRequiredSignaturesable)()
     SetRepositoryRuleRepositoryRuleRequiredSignatures1(value RepositoryRuleRequiredSignaturesable)()
     SetRepositoryRuleRepositoryRuleRequiredSignatures2(value RepositoryRuleRequiredSignaturesable)()
+    SetRepositoryRuleRepositoryRuleRequiredSignatures3(value RepositoryRuleRequiredSignaturesable)()
+    SetRepositoryRuleRepositoryRuleRequiredSignatures4(value RepositoryRuleRequiredSignaturesable)()
     SetRepositoryRuleRepositoryRuleRequiredStatusChecks(value RepositoryRuleRequiredStatusChecksable)()
     SetRepositoryRuleRepositoryRuleRequiredStatusChecks0(value RepositoryRuleRequiredStatusChecksable)()
     SetRepositoryRuleRepositoryRuleRequiredStatusChecks1(value RepositoryRuleRequiredStatusChecksable)()
     SetRepositoryRuleRepositoryRuleRequiredStatusChecks2(value RepositoryRuleRequiredStatusChecksable)()
+    SetRepositoryRuleRepositoryRuleRequiredStatusChecks3(value RepositoryRuleRequiredStatusChecksable)()
+    SetRepositoryRuleRepositoryRuleRequiredStatusChecks4(value RepositoryRuleRequiredStatusChecksable)()
     SetRepositoryRuleRepositoryRuleTagNamePattern(value RepositoryRuleTagNamePatternable)()
     SetRepositoryRuleRepositoryRuleTagNamePattern0(value RepositoryRuleTagNamePatternable)()
     SetRepositoryRuleRepositoryRuleTagNamePattern1(value RepositoryRuleTagNamePatternable)()
     SetRepositoryRuleRepositoryRuleTagNamePattern2(value RepositoryRuleTagNamePatternable)()
+    SetRepositoryRuleRepositoryRuleTagNamePattern3(value RepositoryRuleTagNamePatternable)()
+    SetRepositoryRuleRepositoryRuleTagNamePattern4(value RepositoryRuleTagNamePatternable)()
     SetRepositoryRuleRepositoryRuleUpdate(value RepositoryRuleUpdateable)()
     SetRepositoryRuleRepositoryRuleUpdate0(value RepositoryRuleUpdateable)()
     SetRepositoryRuleRepositoryRuleUpdate1(value RepositoryRuleUpdateable)()
     SetRepositoryRuleRepositoryRuleUpdate2(value RepositoryRuleUpdateable)()
+    SetRepositoryRuleRepositoryRuleUpdate3(value RepositoryRuleUpdateable)()
+    SetRepositoryRuleRepositoryRuleUpdate4(value RepositoryRuleUpdateable)()
     SetRepositoryRuleRepositoryRuleWorkflows(value RepositoryRuleWorkflowsable)()
     SetRepositoryRuleRepositoryRuleWorkflows0(value RepositoryRuleWorkflowsable)()
     SetRepositoryRuleRepositoryRuleWorkflows1(value RepositoryRuleWorkflowsable)()
     SetRepositoryRuleRepositoryRuleWorkflows2(value RepositoryRuleWorkflowsable)()
+    SetRepositoryRuleRepositoryRuleWorkflows3(value RepositoryRuleWorkflowsable)()
+    SetRepositoryRuleRepositoryRuleWorkflows4(value RepositoryRuleWorkflowsable)()
     SetRepositoryRuleRequiredDeployments(value RepositoryRuleRequiredDeploymentsable)()
     SetRepositoryRuleRequiredLinearHistory(value RepositoryRuleRequiredLinearHistoryable)()
     SetRepositoryRuleRequiredSignatures(value RepositoryRuleRequiredSignaturesable)()
