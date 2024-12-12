@@ -10,7 +10,7 @@ import (
 type V2EnterprisesItemUsersRequestBuilder struct {
     i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.BaseRequestBuilder
 }
-// V2EnterprisesItemUsersRequestBuilderGetQueryParameters > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user's metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can't sign in. If you want to ensure the user can't re-join in the future, use the delete request. Only users who weren't permanently deleted will appear in the result list.
+// V2EnterprisesItemUsersRequestBuilderGetQueryParameters lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user's metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can't sign in. If you want to ensure the user can't re-join in the future, use the delete request. Only users who weren't permanently deleted will appear in the result list.
 type V2EnterprisesItemUsersRequestBuilderGetQueryParameters struct {
     // Used for pagination: the number of results to return per page.
     Count *int32 `uriparametername:"count"`
@@ -44,7 +44,7 @@ func NewV2EnterprisesItemUsersRequestBuilder(rawUrl string, requestAdapter i2ae4
     urlParams["request-raw-url"] = rawUrl
     return NewV2EnterprisesItemUsersRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Get > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user's metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can't sign in. If you want to ensure the user can't re-join in the future, use the delete request. Only users who weren't permanently deleted will appear in the result list.
+// Get lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user's metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can't sign in. If you want to ensure the user can't re-join in the future, use the delete request. Only users who weren't permanently deleted will appear in the result list.
 // returns a ScimEnterpriseUserListable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a ScimError error when the service returns a 429 status code
@@ -71,7 +71,7 @@ func (m *V2EnterprisesItemUsersRequestBuilder) Get(ctx context.Context, requestC
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseUserListable), nil
 }
-// Post > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
+// Post creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
 // returns a ScimEnterpriseUserResponseable when successful
 // returns a ScimError error when the service returns a 400 status code
 // returns a ScimError error when the service returns a 429 status code
@@ -98,7 +98,7 @@ func (m *V2EnterprisesItemUsersRequestBuilder) Post(ctx context.Context, body i6
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.ScimEnterpriseUserResponseable), nil
 }
-// ToGetRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user's metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can't sign in. If you want to ensure the user can't re-join in the future, use the delete request. Only users who weren't permanently deleted will appear in the result list.
+// ToGetRequestInformation lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user's metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can't sign in. If you want to ensure the user can't re-join in the future, use the delete request. Only users who weren't permanently deleted will appear in the result list.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemUsersRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[V2EnterprisesItemUsersRequestBuilderGetQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -106,7 +106,7 @@ func (m *V2EnterprisesItemUsersRequestBuilder) ToGetRequestInformation(ctx conte
     requestInfo.Headers.TryAdd("Accept", "application/scim+json")
     return requestInfo, nil
 }
-// ToPostRequestInformation > [!NOTE]> SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
+// ToPostRequestInformation creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
 // returns a *RequestInformation when successful
 func (m *V2EnterprisesItemUsersRequestBuilder) ToPostRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.Userable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.POST, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
