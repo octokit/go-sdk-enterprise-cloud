@@ -27,7 +27,7 @@ type ItemSecretScanningAlertsRequestBuilderGetQueryParameters struct {
     Per_page *int32 `uriparametername:"per_page"`
     // A comma-separated list of resolutions. Only secret scanning alerts with one of these resolutions are listed. Valid resolutions are `false_positive`, `wont_fix`, `revoked`, `pattern_edited`, `pattern_deleted` or `used_in_tests`.
     Resolution *string `uriparametername:"resolution"`
-    // A comma-separated list of secret types to return. By default all secret types are returned.See "[Supported secret scanning patterns](https://docs.github.com/enterprise-cloud@latest//code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets)"for a complete list of secret types.
+    // A comma-separated list of secret types to return. All default secret patterns are returned. To return experimental patterns, pass the token name(s) in the parameter. See "[Supported secret scanning patterns](https://docs.github.com/enterprise-cloud@latest//enterprise-cloud@latest/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets)" for a complete list of secret types.
     Secret_type *string `uriparametername:"secret_type"`
     // The property to sort the results by. `created` means when the alert was created. `updated` means when the alert was updated or resolved.
     Sort *i0997a540be96230613e35afb4ef529cb044bc00ec923c719492c344368cd3161.GetSortQueryParameterType `uriparametername:"sort"`
