@@ -45,6 +45,11 @@ func (m *ItemRepoItemRequestBuilder) AutomatedSecurityFixes()(*ItemItemAutomated
 func (m *ItemRepoItemRequestBuilder) Branches()(*ItemItemBranchesRequestBuilder) {
     return NewItemItemBranchesRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// BypassRequests the bypassRequests property
+// returns a *ItemItemBypassRequestsRequestBuilder when successful
+func (m *ItemRepoItemRequestBuilder) BypassRequests()(*ItemItemBypassRequestsRequestBuilder) {
+    return NewItemItemBypassRequestsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // CheckRuns the checkRuns property
 // returns a *ItemItemCheckRunsRequestBuilder when successful
 func (m *ItemRepoItemRequestBuilder) CheckRuns()(*ItemItemCheckRunsRequestBuilder) {

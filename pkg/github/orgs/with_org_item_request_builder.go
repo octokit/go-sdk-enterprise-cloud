@@ -35,6 +35,11 @@ func (m *WithOrgItemRequestBuilder) AuditLog()(*ItemAuditLogRequestBuilder) {
 func (m *WithOrgItemRequestBuilder) Blocks()(*ItemBlocksRequestBuilder) {
     return NewItemBlocksRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// BypassRequests the bypassRequests property
+// returns a *ItemBypassRequestsRequestBuilder when successful
+func (m *WithOrgItemRequestBuilder) BypassRequests()(*ItemBypassRequestsRequestBuilder) {
+    return NewItemBypassRequestsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // BySecurity_product gets an item from the github.com/octokit/go-sdk-enterprise-cloud/pkg/github.orgs.item.item collection
 // returns a *ItemWithSecurity_productItemRequestBuilder when successful
 func (m *WithOrgItemRequestBuilder) BySecurity_product(security_product string)(*ItemWithSecurity_productItemRequestBuilder) {
