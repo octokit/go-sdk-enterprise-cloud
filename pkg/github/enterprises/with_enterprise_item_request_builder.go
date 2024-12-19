@@ -45,6 +45,11 @@ func (m *WithEnterpriseItemRequestBuilder) Code_security_and_analysis()(*ItemCod
 func (m *WithEnterpriseItemRequestBuilder) CodeScanning()(*ItemCodeScanningRequestBuilder) {
     return NewItemCodeScanningRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// CodeSecurity the codeSecurity property
+// returns a *ItemCodeSecurityRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) CodeSecurity()(*ItemCodeSecurityRequestBuilder) {
+    return NewItemCodeSecurityRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // NewWithEnterpriseItemRequestBuilderInternal instantiates a new WithEnterpriseItemRequestBuilder and sets the default values.
 func NewWithEnterpriseItemRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*WithEnterpriseItemRequestBuilder) {
     m := &WithEnterpriseItemRequestBuilder{
@@ -77,6 +82,16 @@ func (m *WithEnterpriseItemRequestBuilder) Dependabot()(*ItemDependabotRequestBu
 // returns a *ItemLicenseSyncStatusRequestBuilder when successful
 func (m *WithEnterpriseItemRequestBuilder) LicenseSyncStatus()(*ItemLicenseSyncStatusRequestBuilder) {
     return NewItemLicenseSyncStatusRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
+// Properties the properties property
+// returns a *ItemPropertiesRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) Properties()(*ItemPropertiesRequestBuilder) {
+    return NewItemPropertiesRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
+// Rulesets the rulesets property
+// returns a *ItemRulesetsRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) Rulesets()(*ItemRulesetsRequestBuilder) {
+    return NewItemRulesetsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
 // SecretScanning the secretScanning property
 // returns a *ItemSecretScanningRequestBuilder when successful
