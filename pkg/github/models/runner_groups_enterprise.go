@@ -17,6 +17,8 @@ type RunnerGroupsEnterprise struct {
     id *float64
     // The name property
     name *string
+    // The identifier of a hosted compute network configuration.
+    network_configuration_id *string
     // If `true`, the runner group will be restricted to running only the workflows specified in the `selected_workflows` array.
     restricted_to_workflows *bool
     // The runners_url property
@@ -111,6 +113,16 @@ func (m *RunnerGroupsEnterprise) GetFieldDeserializers()(map[string]func(i878a80
         }
         return nil
     }
+    res["network_configuration_id"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetStringValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetNetworkConfigurationId(val)
+        }
+        return nil
+    }
     res["restricted_to_workflows"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
         val, err := n.GetBoolValue()
         if err != nil {
@@ -194,6 +206,11 @@ func (m *RunnerGroupsEnterprise) GetId()(*float64) {
 func (m *RunnerGroupsEnterprise) GetName()(*string) {
     return m.name
 }
+// GetNetworkConfigurationId gets the network_configuration_id property value. The identifier of a hosted compute network configuration.
+// returns a *string when successful
+func (m *RunnerGroupsEnterprise) GetNetworkConfigurationId()(*string) {
+    return m.network_configuration_id
+}
 // GetRestrictedToWorkflows gets the restricted_to_workflows property value. If `true`, the runner group will be restricted to running only the workflows specified in the `selected_workflows` array.
 // returns a *bool when successful
 func (m *RunnerGroupsEnterprise) GetRestrictedToWorkflows()(*bool) {
@@ -252,6 +269,12 @@ func (m *RunnerGroupsEnterprise) Serialize(writer i878a80d2330e89d26896388a3f487
     }
     {
         err := writer.WriteStringValue("name", m.GetName())
+        if err != nil {
+            return err
+        }
+    }
+    {
+        err := writer.WriteStringValue("network_configuration_id", m.GetNetworkConfigurationId())
         if err != nil {
             return err
         }
@@ -324,6 +347,10 @@ func (m *RunnerGroupsEnterprise) SetId(value *float64)() {
 func (m *RunnerGroupsEnterprise) SetName(value *string)() {
     m.name = value
 }
+// SetNetworkConfigurationId sets the network_configuration_id property value. The identifier of a hosted compute network configuration.
+func (m *RunnerGroupsEnterprise) SetNetworkConfigurationId(value *string)() {
+    m.network_configuration_id = value
+}
 // SetRestrictedToWorkflows sets the restricted_to_workflows property value. If `true`, the runner group will be restricted to running only the workflows specified in the `selected_workflows` array.
 func (m *RunnerGroupsEnterprise) SetRestrictedToWorkflows(value *bool)() {
     m.restricted_to_workflows = value
@@ -356,6 +383,7 @@ type RunnerGroupsEnterpriseable interface {
     GetHostedRunnersUrl()(*string)
     GetId()(*float64)
     GetName()(*string)
+    GetNetworkConfigurationId()(*string)
     GetRestrictedToWorkflows()(*bool)
     GetRunnersUrl()(*string)
     GetSelectedOrganizationsUrl()(*string)
@@ -367,6 +395,7 @@ type RunnerGroupsEnterpriseable interface {
     SetHostedRunnersUrl(value *string)()
     SetId(value *float64)()
     SetName(value *string)()
+    SetNetworkConfigurationId(value *string)()
     SetRestrictedToWorkflows(value *bool)()
     SetRunnersUrl(value *string)()
     SetSelectedOrganizationsUrl(value *string)()

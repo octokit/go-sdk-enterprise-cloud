@@ -57,6 +57,11 @@ func (m *ItemActionsRunnerGroupsWithRunner_group_ItemRequestBuilder) Get(ctx con
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.RunnerGroupsOrgable), nil
 }
+// HostedRunners the hostedRunners property
+// returns a *ItemActionsRunnerGroupsItemHostedRunnersRequestBuilder when successful
+func (m *ItemActionsRunnerGroupsWithRunner_group_ItemRequestBuilder) HostedRunners()(*ItemActionsRunnerGroupsItemHostedRunnersRequestBuilder) {
+    return NewItemActionsRunnerGroupsItemHostedRunnersRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // Patch updates the `name` and `visibility` of a self-hosted runner group in an organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
 // returns a RunnerGroupsOrgable when successful
 // [API method documentation]
