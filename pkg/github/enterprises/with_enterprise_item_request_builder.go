@@ -83,6 +83,16 @@ func (m *WithEnterpriseItemRequestBuilder) Dependabot()(*ItemDependabotRequestBu
 func (m *WithEnterpriseItemRequestBuilder) LicenseSyncStatus()(*ItemLicenseSyncStatusRequestBuilder) {
     return NewItemLicenseSyncStatusRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// NetworkConfigurations the networkConfigurations property
+// returns a *ItemNetworkConfigurationsRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) NetworkConfigurations()(*ItemNetworkConfigurationsRequestBuilder) {
+    return NewItemNetworkConfigurationsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
+// NetworkSettings the networkSettings property
+// returns a *ItemNetworkSettingsRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) NetworkSettings()(*ItemNetworkSettingsRequestBuilder) {
+    return NewItemNetworkSettingsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // Properties the properties property
 // returns a *ItemPropertiesRequestBuilder when successful
 func (m *WithEnterpriseItemRequestBuilder) Properties()(*ItemPropertiesRequestBuilder) {
