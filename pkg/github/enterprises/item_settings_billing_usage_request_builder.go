@@ -14,13 +14,13 @@ type ItemSettingsBillingUsageRequestBuilder struct {
 type ItemSettingsBillingUsageRequestBuilderGetQueryParameters struct {
     // The ID corresponding to a cost center. The default value is no cost center.
     Cost_center_id *string `uriparametername:"cost_center_id"`
-    // If specified, only return results for a single day. The value of `day` is an integer between `1` and `31`.
+    // If specified, only return results for a single day. The value of `day` is an integer between `1` and `31`. If no `year` or `month` is specified, the default `year` and `month` are used.
     Day *int32 `uriparametername:"day"`
-    // If specified, only return results for a single hour. The value of `hour` is an integer between `0` and `23`.
+    // If specified, only return results for a single hour. The value of `hour` is an integer between `0` and `23`. If no `year`, `month`, or `day` is specified, the default `year`, `month`, and `day` are used.
     Hour *int32 `uriparametername:"hour"`
-    // If specified, only return results for a single month. The value of `month` is an integer between `1` and `12`.
+    // If specified, only return results for a single month. The value of `month` is an integer between `1` and `12`. If no year is specified the default `year` is used.
     Month *int32 `uriparametername:"month"`
-    // If specified, only return results for a single year. The value of `year` is an integer with four digits representing a year. For example, `2024`. Default value is the current year.
+    // If specified, only return results for a single year. The value of `year` is an integer with four digits representing a year. For example, `2025`. Default value is the current year.
     Year *int32 `uriparametername:"year"`
 }
 // NewItemSettingsBillingUsageRequestBuilderInternal instantiates a new ItemSettingsBillingUsageRequestBuilder and sets the default values.
