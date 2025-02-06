@@ -26,6 +26,7 @@ func NewItemItemActionsRunnersGenerateJitconfigRequestBuilder(rawUrl string, req
 // Post generates a configuration that can be passed to the runner application at startup.The authenticated user must have admin access to the repository.OAuth tokens and personal access tokens (classic) need the`repo` scope to use this endpoint.
 // returns a ItemItemActionsRunnersGenerateJitconfigPostResponseable when successful
 // returns a BasicError error when the service returns a 404 status code
+// returns a BasicError error when the service returns a 409 status code
 // returns a ValidationErrorSimple error when the service returns a 422 status code
 // [API method documentation]
 // 
@@ -37,6 +38,7 @@ func (m *ItemItemActionsRunnersGenerateJitconfigRequestBuilder) Post(ctx context
     }
     errorMapping := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.ErrorMappings {
         "404": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
+        "409": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateBasicErrorFromDiscriminatorValue,
         "422": i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CreateValidationErrorSimpleFromDiscriminatorValue,
     }
     res, err := m.BaseRequestBuilder.RequestAdapter.Send(ctx, requestInfo, CreateItemItemActionsRunnersGenerateJitconfigPostResponseFromDiscriminatorValue, errorMapping)
