@@ -13,6 +13,8 @@ type Announcement struct {
     announcement *string
     // The time at which the announcement expires. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. To set an announcement that never expires, omit this parameter, set it to `null`, or set it to an empty string.
     expires_at *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time
+    // Whether an announcement can be dismissed by the user.
+    user_dismissible *bool
 }
 // NewAnnouncement instantiates a new Announcement and sets the default values.
 func NewAnnouncement()(*Announcement) {
@@ -65,7 +67,22 @@ func (m *Announcement) GetFieldDeserializers()(map[string]func(i878a80d2330e89d2
         }
         return nil
     }
+    res["user_dismissible"] = func (n i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.ParseNode) error {
+        val, err := n.GetBoolValue()
+        if err != nil {
+            return err
+        }
+        if val != nil {
+            m.SetUserDismissible(val)
+        }
+        return nil
+    }
     return res
+}
+// GetUserDismissible gets the user_dismissible property value. Whether an announcement can be dismissed by the user.
+// returns a *bool when successful
+func (m *Announcement) GetUserDismissible()(*bool) {
+    return m.user_dismissible
 }
 // Serialize serializes information the current object
 func (m *Announcement) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
@@ -77,6 +94,12 @@ func (m *Announcement) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e
     }
     {
         err := writer.WriteTimeValue("expires_at", m.GetExpiresAt())
+        if err != nil {
+            return err
+        }
+    }
+    {
+        err := writer.WriteBoolValue("user_dismissible", m.GetUserDismissible())
         if err != nil {
             return err
         }
@@ -101,11 +124,17 @@ func (m *Announcement) SetAnnouncement(value *string)() {
 func (m *Announcement) SetExpiresAt(value *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)() {
     m.expires_at = value
 }
+// SetUserDismissible sets the user_dismissible property value. Whether an announcement can be dismissed by the user.
+func (m *Announcement) SetUserDismissible(value *bool)() {
+    m.user_dismissible = value
+}
 type Announcementable interface {
     i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.AdditionalDataHolder
     i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.Parsable
     GetAnnouncement()(*string)
     GetExpiresAt()(*i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)
+    GetUserDismissible()(*bool)
     SetAnnouncement(value *string)()
     SetExpiresAt(value *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time)()
+    SetUserDismissible(value *bool)()
 }
