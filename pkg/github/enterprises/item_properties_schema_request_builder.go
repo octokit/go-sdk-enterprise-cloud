@@ -63,6 +63,11 @@ func (m *ItemPropertiesSchemaRequestBuilder) Get(ctx context.Context, requestCon
     }
     return val, nil
 }
+// Organizations the organizations property
+// returns a *ItemPropertiesSchemaOrganizationsRequestBuilder when successful
+func (m *ItemPropertiesSchemaRequestBuilder) Organizations()(*ItemPropertiesSchemaOrganizationsRequestBuilder) {
+    return NewItemPropertiesSchemaOrganizationsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // Patch > [!NOTE]> This endpoint is in public preview and is subject to change.Creates new or updates existing custom properties defined for an enterprise in a batch.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a []CustomPropertyable when successful
 // returns a BasicError error when the service returns a 403 status code
