@@ -33,6 +33,8 @@ type ItemPersonalAccessTokenRequestsRequestBuilderGetQueryParameters struct {
     Repository *string `uriparametername:"repository"`
     // The property by which to sort the results.
     Sort *i36fc4ef1d6b81a809f590950bffaea825a8ede841666554e6532b4de87c79070.GetSortQueryParameterType `uriparametername:"sort"`
+    // The ID of the token
+    Token_id []string `uriparametername:"token_id"`
 }
 // ByPat_request_id gets an item from the github.com/octokit/go-sdk-enterprise-cloud/pkg/github.orgs.item.personalAccessTokenRequests.item collection
 // returns a *ItemPersonalAccessTokenRequestsWithPat_request_ItemRequestBuilder when successful
@@ -47,7 +49,7 @@ func (m *ItemPersonalAccessTokenRequestsRequestBuilder) ByPat_request_id(pat_req
 // NewItemPersonalAccessTokenRequestsRequestBuilderInternal instantiates a new ItemPersonalAccessTokenRequestsRequestBuilder and sets the default values.
 func NewItemPersonalAccessTokenRequestsRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*ItemPersonalAccessTokenRequestsRequestBuilder) {
     m := &ItemPersonalAccessTokenRequestsRequestBuilder{
-        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/orgs/{org}/personal-access-token-requests{?direction*,last_used_after*,last_used_before*,owner*,page*,per_page*,permission*,repository*,sort*}", pathParameters),
+        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/orgs/{org}/personal-access-token-requests{?direction*,last_used_after*,last_used_before*,owner*,page*,per_page*,permission*,repository*,sort*,token_id*}", pathParameters),
     }
     return m
 }
