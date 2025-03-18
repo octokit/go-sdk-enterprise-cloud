@@ -68,7 +68,7 @@ func (m *ItemPropertiesSchemaRequestBuilder) Get(ctx context.Context, requestCon
 func (m *ItemPropertiesSchemaRequestBuilder) Organizations()(*ItemPropertiesSchemaOrganizationsRequestBuilder) {
     return NewItemPropertiesSchemaOrganizationsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
-// Patch > [!NOTE]> This endpoint is in public preview and is subject to change.Creates new or updates existing custom properties defined for an enterprise in a batch.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// Patch > [!NOTE]> This endpoint is in public preview and is subject to change.Creates new or updates existing custom properties defined for an enterprise in a batch.If the property already exists, the existing property will be replaced with the new values.Missing optional values will fall back to default values, previous values will be overwritten.E.g. if a property exists with `values_editable_by: org_and_repo_actors` and it's updated without specifying `values_editable_by`, it will be updated to default value `org_actors`.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a []CustomPropertyable when successful
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -104,7 +104,7 @@ func (m *ItemPropertiesSchemaRequestBuilder) ToGetRequestInformation(ctx context
     requestInfo.Headers.TryAdd("Accept", "application/json")
     return requestInfo, nil
 }
-// ToPatchRequestInformation > [!NOTE]> This endpoint is in public preview and is subject to change.Creates new or updates existing custom properties defined for an enterprise in a batch.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// ToPatchRequestInformation > [!NOTE]> This endpoint is in public preview and is subject to change.Creates new or updates existing custom properties defined for an enterprise in a batch.If the property already exists, the existing property will be replaced with the new values.Missing optional values will fall back to default values, previous values will be overwritten.E.g. if a property exists with `values_editable_by: org_and_repo_actors` and it's updated without specifying `values_editable_by`, it will be updated to default value `org_actors`.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a *RequestInformation when successful
 func (m *ItemPropertiesSchemaRequestBuilder) ToPatchRequestInformation(ctx context.Context, body ItemPropertiesSchemaPatchRequestBodyable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PATCH, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
