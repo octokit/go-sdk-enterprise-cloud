@@ -5,13 +5,14 @@ const (
     COMPLETED_GETREQUEST_STATUSQUERYPARAMETERTYPE GetRequest_statusQueryParameterType = iota
     CANCELLED_GETREQUEST_STATUSQUERYPARAMETERTYPE
     EXPIRED_GETREQUEST_STATUSQUERYPARAMETERTYPE
+    DELETED_GETREQUEST_STATUSQUERYPARAMETERTYPE
     DENIED_GETREQUEST_STATUSQUERYPARAMETERTYPE
     OPEN_GETREQUEST_STATUSQUERYPARAMETERTYPE
     ALL_GETREQUEST_STATUSQUERYPARAMETERTYPE
 )
 
 func (i GetRequest_statusQueryParameterType) String() string {
-    return []string{"completed", "cancelled", "expired", "denied", "open", "all"}[i]
+    return []string{"completed", "cancelled", "expired", "deleted", "denied", "open", "all"}[i]
 }
 func ParseGetRequest_statusQueryParameterType(v string) (any, error) {
     result := COMPLETED_GETREQUEST_STATUSQUERYPARAMETERTYPE
@@ -22,6 +23,8 @@ func ParseGetRequest_statusQueryParameterType(v string) (any, error) {
             result = CANCELLED_GETREQUEST_STATUSQUERYPARAMETERTYPE
         case "expired":
             result = EXPIRED_GETREQUEST_STATUSQUERYPARAMETERTYPE
+        case "deleted":
+            result = DELETED_GETREQUEST_STATUSQUERYPARAMETERTYPE
         case "denied":
             result = DENIED_GETREQUEST_STATUSQUERYPARAMETERTYPE
         case "open":

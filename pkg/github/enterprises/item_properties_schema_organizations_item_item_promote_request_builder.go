@@ -23,7 +23,7 @@ func NewItemPropertiesSchemaOrganizationsItemItemPromoteRequestBuilder(rawUrl st
     urlParams["request-raw-url"] = rawUrl
     return NewItemPropertiesSchemaOrganizationsItemItemPromoteRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Put > [!NOTE]> This endpoint is in public preview and is subject to change.Promotes an existing organization custom property to an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// Put promotes an existing organization custom property to an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a CustomPropertyable when successful
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -48,7 +48,7 @@ func (m *ItemPropertiesSchemaOrganizationsItemItemPromoteRequestBuilder) Put(ctx
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CustomPropertyable), nil
 }
-// ToPutRequestInformation > [!NOTE]> This endpoint is in public preview and is subject to change.Promotes an existing organization custom property to an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// ToPutRequestInformation promotes an existing organization custom property to an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a *RequestInformation when successful
 func (m *ItemPropertiesSchemaOrganizationsItemItemPromoteRequestBuilder) ToPutRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PUT, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)

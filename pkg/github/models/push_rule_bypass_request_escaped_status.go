@@ -9,11 +9,12 @@ const (
     CANCELLED_PUSHRULEBYPASSREQUEST_STATUS
     COMPLETED_PUSHRULEBYPASSREQUEST_STATUS
     EXPIRED_PUSHRULEBYPASSREQUEST_STATUS
+    DELETED_PUSHRULEBYPASSREQUEST_STATUS
     OPEN_PUSHRULEBYPASSREQUEST_STATUS
 )
 
 func (i PushRuleBypassRequest_status) String() string {
-    return []string{"pending", "denied", "approved", "cancelled", "completed", "expired", "open"}[i]
+    return []string{"pending", "denied", "approved", "cancelled", "completed", "expired", "deleted", "open"}[i]
 }
 func ParsePushRuleBypassRequest_status(v string) (any, error) {
     result := PENDING_PUSHRULEBYPASSREQUEST_STATUS
@@ -30,6 +31,8 @@ func ParsePushRuleBypassRequest_status(v string) (any, error) {
             result = COMPLETED_PUSHRULEBYPASSREQUEST_STATUS
         case "expired":
             result = EXPIRED_PUSHRULEBYPASSREQUEST_STATUS
+        case "deleted":
+            result = DELETED_PUSHRULEBYPASSREQUEST_STATUS
         case "open":
             result = OPEN_PUSHRULEBYPASSREQUEST_STATUS
         default:

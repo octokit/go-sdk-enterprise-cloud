@@ -23,7 +23,7 @@ func NewItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder(rawUrl st
     urlParams["request-raw-url"] = rawUrl
     return NewItemPropertiesSchemaWithCustom_property_nameItemRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Delete > [!NOTE]> This endpoint is in public preview and is subject to change.Remove a custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// Delete remove a custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
 // [API method documentation]
@@ -44,7 +44,7 @@ func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) Delete(
     }
     return nil
 }
-// Get > [!NOTE]> This endpoint is in public preview and is subject to change.Gets a custom property that is defined for an enterprise.Enterprise members can read these properties.
+// Get gets a custom property that is defined for an enterprise.Enterprise members can read these properties.
 // returns a CustomPropertyable when successful
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -69,7 +69,7 @@ func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) Get(ctx
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CustomPropertyable), nil
 }
-// Put > [!NOTE]> This endpoint is in public preview and is subject to change.Creates a new or updates an existing custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// Put creates a new or updates an existing custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a CustomPropertyable when successful
 // returns a BasicError error when the service returns a 403 status code
 // returns a BasicError error when the service returns a 404 status code
@@ -94,7 +94,7 @@ func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) Put(ctx
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CustomPropertyable), nil
 }
-// ToDeleteRequestInformation > [!NOTE]> This endpoint is in public preview and is subject to change.Remove a custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// ToDeleteRequestInformation remove a custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a *RequestInformation when successful
 func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) ToDeleteRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DELETE, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -102,7 +102,7 @@ func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) ToDelet
     requestInfo.Headers.TryAdd("Accept", "application/json")
     return requestInfo, nil
 }
-// ToGetRequestInformation > [!NOTE]> This endpoint is in public preview and is subject to change.Gets a custom property that is defined for an enterprise.Enterprise members can read these properties.
+// ToGetRequestInformation gets a custom property that is defined for an enterprise.Enterprise members can read these properties.
 // returns a *RequestInformation when successful
 func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) ToGetRequestInformation(ctx context.Context, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.GET, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
@@ -110,7 +110,7 @@ func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) ToGetRe
     requestInfo.Headers.TryAdd("Accept", "application/json")
     return requestInfo, nil
 }
-// ToPutRequestInformation > [!NOTE]> This endpoint is in public preview and is subject to change.Creates a new or updates an existing custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
+// ToPutRequestInformation creates a new or updates an existing custom property that is defined for an enterprise.To use this endpoint, the authenticated user must be an administrator for the enterprise.
 // returns a *RequestInformation when successful
 func (m *ItemPropertiesSchemaWithCustom_property_nameItemRequestBuilder) ToPutRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CustomPropertySetPayloadable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.PUT, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)
