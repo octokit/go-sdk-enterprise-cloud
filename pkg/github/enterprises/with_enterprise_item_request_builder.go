@@ -23,6 +23,11 @@ func (m *WithEnterpriseItemRequestBuilder) Announcement()(*ItemAnnouncementReque
 func (m *WithEnterpriseItemRequestBuilder) AuditLog()(*ItemAuditLogRequestBuilder) {
     return NewItemAuditLogRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// BypassRequests the bypassRequests property
+// returns a *ItemBypassRequestsRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) BypassRequests()(*ItemBypassRequestsRequestBuilder) {
+    return NewItemBypassRequestsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // BySecurity_product gets an item from the github.com/octokit/go-sdk-enterprise-cloud/pkg/github.enterprises.item.item collection
 // returns a *ItemWithSecurity_productItemRequestBuilder when successful
 func (m *WithEnterpriseItemRequestBuilder) BySecurity_product(security_product string)(*ItemWithSecurity_productItemRequestBuilder) {
@@ -82,6 +87,16 @@ func (m *WithEnterpriseItemRequestBuilder) Dependabot()(*ItemDependabotRequestBu
 // returns a *ItemLicenseSyncStatusRequestBuilder when successful
 func (m *WithEnterpriseItemRequestBuilder) LicenseSyncStatus()(*ItemLicenseSyncStatusRequestBuilder) {
     return NewItemLicenseSyncStatusRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
+// NetworkConfigurations the networkConfigurations property
+// returns a *ItemNetworkConfigurationsRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) NetworkConfigurations()(*ItemNetworkConfigurationsRequestBuilder) {
+    return NewItemNetworkConfigurationsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
+// NetworkSettings the networkSettings property
+// returns a *ItemNetworkSettingsRequestBuilder when successful
+func (m *WithEnterpriseItemRequestBuilder) NetworkSettings()(*ItemNetworkSettingsRequestBuilder) {
+    return NewItemNetworkSettingsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
 // Properties the properties property
 // returns a *ItemPropertiesRequestBuilder when successful

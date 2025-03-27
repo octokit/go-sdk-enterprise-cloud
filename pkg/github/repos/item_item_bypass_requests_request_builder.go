@@ -26,3 +26,8 @@ func NewItemItemBypassRequestsRequestBuilder(rawUrl string, requestAdapter i2ae4
 func (m *ItemItemBypassRequestsRequestBuilder) PushRules()(*ItemItemBypassRequestsPushRulesRequestBuilder) {
     return NewItemItemBypassRequestsPushRulesRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// SecretScanning the secretScanning property
+// returns a *ItemItemBypassRequestsSecretScanningRequestBuilder when successful
+func (m *ItemItemBypassRequestsRequestBuilder) SecretScanning()(*ItemItemBypassRequestsSecretScanningRequestBuilder) {
+    return NewItemItemBypassRequestsSecretScanningRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}

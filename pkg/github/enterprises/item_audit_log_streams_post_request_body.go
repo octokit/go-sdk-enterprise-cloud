@@ -13,7 +13,7 @@ type ItemAuditLogStreamsPostRequestBody struct {
     // The vendor_specific property
     vendor_specific ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specificable
 }
-// ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific composed type wrapper for classes i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3AccessKeysConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3OidcConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AzureBlobConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AzureHubConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.DatadogConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable
+// ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific composed type wrapper for classes i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3AccessKeysConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3OidcConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AzureBlobConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AzureHubConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.DatadogConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable, i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable
 type ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific struct {
     // Composed type representation for type i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3AccessKeysConfigable
     amazonS3AccessKeysConfig i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3AccessKeysConfigable
@@ -27,6 +27,8 @@ type ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific s
     datadogConfig i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.DatadogConfigable
     // Composed type representation for type i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable
     googleCloudConfig i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable
+    // Composed type representation for type i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable
+    hecConfig i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable
     // Composed type representation for type i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable
     splunkConfig i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable
 }
@@ -91,6 +93,11 @@ func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specif
 func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific) GetGoogleCloudConfig()(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable) {
     return m.googleCloudConfig
 }
+// GetHecConfig gets the hecConfig property value. Composed type representation for type i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable
+// returns a HecConfigable when successful
+func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific) GetHecConfig()(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable) {
+    return m.hecConfig
+}
 // GetIsComposedType determines if the current object is a wrapper around a composed type
 // returns a bool when successful
 func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific) GetIsComposedType()(bool) {
@@ -133,6 +140,11 @@ func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specif
         if err != nil {
             return err
         }
+    } else if m.GetHecConfig() != nil {
+        err := writer.WriteObjectValue("", m.GetHecConfig())
+        if err != nil {
+            return err
+        }
     } else if m.GetSplunkConfig() != nil {
         err := writer.WriteObjectValue("", m.GetSplunkConfig())
         if err != nil {
@@ -165,6 +177,10 @@ func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specif
 func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific) SetGoogleCloudConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable)() {
     m.googleCloudConfig = value
 }
+// SetHecConfig sets the hecConfig property value. Composed type representation for type i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable
+func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific) SetHecConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable)() {
+    m.hecConfig = value
+}
 // SetSplunkConfig sets the splunkConfig property value. Composed type representation for type i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable
 func (m *ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specific) SetSplunkConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable)() {
     m.splunkConfig = value
@@ -177,6 +193,7 @@ type ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specificab
     GetAzureHubConfig()(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AzureHubConfigable)
     GetDatadogConfig()(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.DatadogConfigable)
     GetGoogleCloudConfig()(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable)
+    GetHecConfig()(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable)
     GetSplunkConfig()(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable)
     SetAmazonS3AccessKeysConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3AccessKeysConfigable)()
     SetAmazonS3OidcConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AmazonS3OidcConfigable)()
@@ -184,6 +201,7 @@ type ItemAuditLogStreamsPostRequestBody_StreamsPostRequestBody_vendor_specificab
     SetAzureHubConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.AzureHubConfigable)()
     SetDatadogConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.DatadogConfigable)()
     SetGoogleCloudConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.GoogleCloudConfigable)()
+    SetHecConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.HecConfigable)()
     SetSplunkConfig(value i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.SplunkConfigable)()
 }
 // NewItemAuditLogStreamsPostRequestBody instantiates a new ItemAuditLogStreamsPostRequestBody and sets the default values.

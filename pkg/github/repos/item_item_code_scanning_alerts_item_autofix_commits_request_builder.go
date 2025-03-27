@@ -23,7 +23,7 @@ func NewItemItemCodeScanningAlertsItemAutofixCommitsRequestBuilder(rawUrl string
     urlParams["request-raw-url"] = rawUrl
     return NewItemItemCodeScanningAlertsItemAutofixCommitsRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Post commits an autofix for a code scanning alert.If an autofix is commited as a result of this request, then this endpoint will return a 201 Created response.OAuth app tokens and personal access tokens (classic) need the `repo` scope to use this endpoint with private or public repositories, or the `public_repo` scope to use this endpoint with only public repositories.
+// Post commits an autofix for a code scanning alert.If an autofix is committed as a result of this request, then this endpoint will return a 201 Created response.OAuth app tokens and personal access tokens (classic) need the `repo` scope to use this endpoint with private or public repositories, or the `public_repo` scope to use this endpoint with only public repositories.
 // returns a CodeScanningAutofixCommitsResponseable when successful
 // returns a BasicError error when the service returns a 400 status code
 // returns a BasicError error when the service returns a 403 status code
@@ -52,7 +52,7 @@ func (m *ItemItemCodeScanningAlertsItemAutofixCommitsRequestBuilder) Post(ctx co
     }
     return res.(i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CodeScanningAutofixCommitsResponseable), nil
 }
-// ToPostRequestInformation commits an autofix for a code scanning alert.If an autofix is commited as a result of this request, then this endpoint will return a 201 Created response.OAuth app tokens and personal access tokens (classic) need the `repo` scope to use this endpoint with private or public repositories, or the `public_repo` scope to use this endpoint with only public repositories.
+// ToPostRequestInformation commits an autofix for a code scanning alert.If an autofix is committed as a result of this request, then this endpoint will return a 201 Created response.OAuth app tokens and personal access tokens (classic) need the `repo` scope to use this endpoint with private or public repositories, or the `public_repo` scope to use this endpoint with only public repositories.
 // returns a *RequestInformation when successful
 func (m *ItemItemCodeScanningAlertsItemAutofixCommitsRequestBuilder) ToPostRequestInformation(ctx context.Context, body i65c45deea5ef786561f9cd3a81f83eacee03df1f39b7b57e269c7f0477b77b5d.CodeScanningAutofixCommitsable, requestConfiguration *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestConfiguration[i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.DefaultQueryParameters])(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformationWithMethodAndUrlTemplateAndPathParameters(i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.POST, m.BaseRequestBuilder.UrlTemplate, m.BaseRequestBuilder.PathParameters)

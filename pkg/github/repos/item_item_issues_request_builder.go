@@ -37,6 +37,8 @@ type ItemItemIssuesRequestBuilderGetQueryParameters struct {
     Sort *i9100b48fb51d8d4dd37e82dd5e06dc99d474eda9c69f6b68676b03363441f27d.GetSortQueryParameterType `uriparametername:"sort"`
     // Indicates the state of the issues to return.
     State *i9100b48fb51d8d4dd37e82dd5e06dc99d474eda9c69f6b68676b03363441f27d.GetStateQueryParameterType `uriparametername:"state"`
+    // Can be the name of an issue type. If the string `*` is passed, issues with any type are accepted. If the string `none` is passed, issues without type are returned.
+    Type *string `uriparametername:"type"`
 }
 // ByIssue_number gets an item from the github.com/octokit/go-sdk-enterprise-cloud/pkg/github.repos.item.item.issues.item collection
 // returns a *ItemItemIssuesWithIssue_numberItemRequestBuilder when successful
@@ -56,7 +58,7 @@ func (m *ItemItemIssuesRequestBuilder) Comments()(*ItemItemIssuesCommentsRequest
 // NewItemItemIssuesRequestBuilderInternal instantiates a new ItemItemIssuesRequestBuilder and sets the default values.
 func NewItemItemIssuesRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*ItemItemIssuesRequestBuilder) {
     m := &ItemItemIssuesRequestBuilder{
-        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/repos/{owner%2Did}/{repo%2Did}/issues{?assignee*,creator*,direction*,labels*,mentioned*,milestone*,page*,per_page*,since*,sort*,state*}", pathParameters),
+        BaseRequestBuilder: *i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewBaseRequestBuilder(requestAdapter, "{+baseurl}/repos/{owner%2Did}/{repo%2Did}/issues{?assignee*,creator*,direction*,labels*,mentioned*,milestone*,page*,per_page*,since*,sort*,state*,type*}", pathParameters),
     }
     return m
 }

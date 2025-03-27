@@ -50,6 +50,11 @@ func (m *ItemRepoItemRequestBuilder) Branches()(*ItemItemBranchesRequestBuilder)
 func (m *ItemRepoItemRequestBuilder) BypassRequests()(*ItemItemBypassRequestsRequestBuilder) {
     return NewItemItemBypassRequestsRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
 }
+// BypassResponses the bypassResponses property
+// returns a *ItemItemBypassResponsesRequestBuilder when successful
+func (m *ItemRepoItemRequestBuilder) BypassResponses()(*ItemItemBypassResponsesRequestBuilder) {
+    return NewItemItemBypassResponsesRequestBuilderInternal(m.BaseRequestBuilder.PathParameters, m.BaseRequestBuilder.RequestAdapter)
+}
 // CheckRuns the checkRuns property
 // returns a *ItemItemCheckRunsRequestBuilder when successful
 func (m *ItemRepoItemRequestBuilder) CheckRuns()(*ItemItemCheckRunsRequestBuilder) {

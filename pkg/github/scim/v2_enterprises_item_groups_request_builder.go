@@ -16,7 +16,7 @@ type V2EnterprisesItemGroupsRequestBuilderGetQueryParameters struct {
     Count *int32 `uriparametername:"count"`
     // Excludes the specified attribute from being returned in the results. Using this parameter can speed up response time.
     ExcludedAttributes *string `uriparametername:"excludedAttributes"`
-    // If specified, only results that match the specified filter will be returned. Multiple filters are not supported. Possible filters are `externalId`, `id`, and `displayName`. For example, `?filter="externalId eq '9138790-10932-109120392-12321'"`.
+    // If specified, only results that match the specified filter will be returned. Multiple filters are not supported. Possible filters are `externalId`, `id`, and `displayName`. For example, `?filter=externalId eq "9138790-10932-109120392-12321"`.
     Filter *string `uriparametername:"filter"`
     // Used for pagination: the starting index of the first result to return when paginating through values.
     StartIndex *int32 `uriparametername:"startIndex"`
